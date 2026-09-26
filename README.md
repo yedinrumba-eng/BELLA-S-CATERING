@@ -14,7 +14,7 @@ No se requiere instalar dependencias para abrir el sitio:
 python -m http.server 8000
 ```
 
-Visita `http://localhost:8000`. El sitio consta de HTML, CSS, JavaScript y assets locales. La animación usa una copia local de GSAP y ScrollTrigger. Tailwind Play CDN se carga para la vista de desarrollo; el contenido y el diseño básico siguen siendo legibles sin conexión.
+Visita `http://localhost:8000`. El sitio consta de HTML, CSS, JavaScript y assets locales. La animación usa una copia local de GSAP y ScrollTrigger. Los estilos y scripts visuales son locales; el sitio se puede revisar sin cargar bibliotecas externas.
 
 ## Estructura pública
 
@@ -26,10 +26,10 @@ Visita `http://localhost:8000`. El sitio consta de HTML, CSS, JavaScript y asset
 
 ## Seguridad y privacidad
 
-Este repositorio es público. No contiene claves, contraseñas, archivos `.env`, respuestas del cuestionario de negocio ni fotos originales de referencia. El archivo `.gitignore` excluye esos materiales. Antes de cada commit y del primer push se revisan los archivos preparados con `git diff --cached --name-only` y una búsqueda de secretos. El número de contacto comercial que se muestre en la web será público por definición para permitir consultas; ningún dato enviado por el visitante se almacena en este sitio.
+Este repositorio es público. No contiene claves, contraseñas, archivos `.env`, respuestas del cuestionario de negocio ni fotos originales de referencia. El archivo `.gitignore` excluye esos materiales; `.env.example` muestra que no se necesitan credenciales. `_headers` define una política de contenido y cabeceras de privacidad para Cloudflare Pages. Antes de cada commit y del primer push se revisan los archivos preparados con `git diff --cached --name-only` y una búsqueda de secretos. El número de contacto comercial que se muestre en la web será público por definición para permitir consultas; ningún dato enviado por el visitante se almacena en este sitio.
 
 Las imágenes generadas de Jenny y de platos son material editorial. Su selección para una galería o para describir preparaciones concretas requiere aprobación de Bella’s Catering. No se copian imágenes, textos ni código de las webs usadas como referencias visuales.
 
 ## Próximo paso
 
-Sigue la revisión de seguridad, privacidad, accesibilidad y SEO antes de publicar.
+Sigue la revisión de accesibilidad, rendimiento y SEO antes de publicar. Las cabeceras deben comprobarse en Cloudflare Pages después del despliegue.

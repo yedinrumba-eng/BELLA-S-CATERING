@@ -5,7 +5,7 @@ Carril A: una landing en español, mantenida por Yedin, sin datos guardados.
 | Capa | Decisión | Por qué |
 |---|---|---|
 | Estructura | HTML semántico y JavaScript simple | Una página y contenido controlado por Yedin. |
-| Estilos | Tailwind por CDN más CSS propio | Respeta el carril A; los detalles editoriales necesitan reglas propias. |
+| Estilos | CSS propio local | Las clases visibles ya tienen reglas propias; se retiró Tailwind Play CDN porque añadía un script externo sin uso. |
 | Tipografía | Cormorant Garamond y Manrope locales | Titular editorial y lectura clara sin fuente remota. |
 | Movimiento | GSAP + ScrollTrigger locales | Control de la escena gastronómica sin dependencia de red. |
 | Imágenes | WebP local en ASSETS/images/ desde archivos dados por Yedin | Propiedad de los assets y menos peso. |
@@ -21,6 +21,7 @@ Carril A: una landing en español, mantenida por Yedin, sin datos guardados.
 | Base de datos o backend | El contacto sale hacia WhatsApp. |
 | Pago en línea | Jenny no lo pidió para esta versión. |
 | Assets de Aveline o Sofra | Son referencias visuales; la web usará material de Bella’s. |
+| Tailwind Play CDN | Ninguna clase del HTML depende de utilidades Tailwind; cargar ese script externo solo ampliaba la superficie de riesgo. |
 
 ## Puesta en marcha
 

@@ -22,7 +22,9 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 ## Fase 3 — Entrega
 
-- [ ] **S3.1** — revisión de seguridad, privacidad, accesibilidad y entrega; push/despliegue solo cuando Yedin lo pida.
+- [x] **S3.1** — seguridad y privacidad: CSS local, cabeceras Cloudflare, .env.example y escaneo de archivos publicables; Chrome 1440/390 sin peticiones externas, errores ni desbordamiento.
+- [ ] **S3.2** — accesibilidad y rendimiento: teclado, movimiento reducido, foco, imágenes y carga.
+- [ ] **S3.3** — SEO y preparación de publicación: metadatos, robots y página 404; dominio y despliegue pendientes de Yedin.
 
 ## Bitácora
 
@@ -45,9 +47,11 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 26/09/2026 — S2.9: Chrome confirmó 4 pasos, 6 preguntas, enlaces FAQ en ambas navegaciones y respuesta de meal prep honesta. Salida real 320×720: {"width":320,"height":720,"count":6,"initialClosed":true,"firstOpened":true,"steps":4,"faqCount":6,"faqLinks":2,"overflow":false,"processRight":320,"faqRight":320,"mealAnswer":true,"quoteKicker":"Hablemos de tu evento · 09","errors":[]}. Se corrigió el título del proceso en escritorio antes de repetir la prueba.
 
+26/09/2026 — S3.1: escaneo de archivos publicables: {"files":46,"textFiles":25,"privatePaths":0,"secretHits":0,"webps":16,"metadataHits":0,"envExample":true,"headers":true}. Chrome sin red externa a 1440 px: {"width":1440,"headerSyntax":true,"headerKeys":["Content-Security-Policy","X-Content-Type-Options","Referrer-Policy","X-Frame-Options","Permissions-Policy"],"remoteScripts":0,"missingLocal":[],"remoteRequests":0,"overflow":false,"heroLoaded":1600,"gsapLoaded":true,"sceneImages":[1100,1100,1100,1440,1440],"formPresent":true,"errors":[]}. Cabeceras HTTP en producción pendientes del despliegue.
+
 ## Deuda técnica
 
-🟡 Antes de publicar: sustituir o proteger la dependencia Tailwind CDN con versión fija y política de contenido, añadir `_headers`, `robots.txt`, `sitemap.xml` y `404.html`. Repetir escaneo de archivos preparados antes del primer push. No bloquea la revisión local de S2.4.
+🟡 Antes de publicar: añadir `robots.txt` y `404.html`; el sitemap necesita el dominio definitivo. Comprobar cabeceras HTTP reales tras desplegar y repetir el escaneo de archivos preparados antes del primer push.
 
 ## Lecciones ya pagadas
 

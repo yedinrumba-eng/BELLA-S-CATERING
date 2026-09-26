@@ -13,5 +13,7 @@ ASSETS/meal-prep-source/
 ASSETS/brand/*-preview.png
 
 # Private business notes and original identity references
-PRD.MD
-docs/PRD-RESPUESTAS.md
+**/[Pp][Rr][Dd]*
+docs/*RESPUESTAS*
+*.heic
+*.HEIC

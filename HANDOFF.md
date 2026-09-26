@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.9; próximo: S3.1 (seguridad, accesibilidad y entrega)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S3.1; próximo: S3.2 (accesibilidad y rendimiento)
 
 ## Estado
 
@@ -20,11 +20,13 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 10. S2.7 cerrado — cápsula clara con sello, enlaces y CTA al formulario; menú móvil accesible con Escape, clic fuera, ancla y resize. Chrome a 1440/1100/1024/390/320 px, sin desbordamiento ni errores.
 11. S2.8 cerrado — siete comentarios aportados por Yedin, atribuidos como reacciones a la cocina y sin afirmar que son reseñas de catering. Chrome a 1440/768/390/320 px: frases exactas, sin desbordamiento ni errores.
 12. S2.9 cerrado — cuatro pasos y seis preguntas frecuentes, con enlace en ambos menús. Chrome a 1440/768/390/320 px: FAQ con teclado y toque, sin desbordamiento ni errores.
-13. S3.1 — seguridad, accesibilidad, SEO y revisión final antes de un eventual push o despliegue. No hay push ni deploy.
+13. S3.1 cerrado — sin script externo de Tailwind, _headers para Cloudflare, .env.example, ignorados privados y escaneo de material publicable. Chrome sin red externa a 1440/390 px, imágenes/GSAP cargados, sin errores ni desbordamiento. Las cabeceras aún requieren verificación tras desplegar.
+14. S3.2 — accesibilidad y rendimiento.
+15. S3.3 — SEO y preparación de publicación; sin push ni deploy hasta pedido expreso.
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 reacciones sin afirmar experiencia de servicio; D15 proceso sin condiciones inventadas. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 reacciones sin afirmar experiencia de servicio; D15 proceso sin condiciones inventadas; D16 CSS local y protección de repo público. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -98,6 +100,17 @@ Chrome/Playwright con red externa bloqueada. Salida real:
 ~~~
 
 La primera captura de escritorio mostró el título en la columna incorrecta; se corrigió y se repitió la prueba.
+
+## Evidencia de S3.1
+
+Chrome/Playwright sin red externa. Salida real:
+
+~~~text
+{"width":1440,"headerSyntax":true,"headerKeys":["Content-Security-Policy","X-Content-Type-Options","Referrer-Policy","X-Frame-Options","Permissions-Policy"],"remoteScripts":0,"missingLocal":[],"remoteRequests":0,"overflow":false,"heroLoaded":1600,"gsapLoaded":true,"sceneImages":[1100,1100,1100,1440,1440],"formPresent":true,"errors":[]}
+{"width":390,"headerSyntax":true,"headerKeys":["Content-Security-Policy","X-Content-Type-Options","Referrer-Policy","X-Frame-Options","Permissions-Policy"],"remoteScripts":0,"missingLocal":[],"remoteRequests":0,"overflow":false,"heroLoaded":1600,"gsapLoaded":true,"sceneImages":[1100,1100,1100,1440,1440],"formPresent":true,"errors":[]}
+~~~
+
+Escaneo de archivos publicables: `{"files":46,"textFiles":25,"privatePaths":0,"secretHits":0,"webps":16,"metadataHits":0,"envExample":true,"headers":true}`. `git check-ignore -v` confirmó PRD, respuestas, HEIC y `.env` excluidos, y `.env.example` permitido. Sintaxis de `_headers` contrastada con la documentación oficial de Cloudflare Pages; falta comprobar la respuesta HTTP real tras desplegar.
 
 ## Datos pendientes
 
