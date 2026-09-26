@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S3.2; próximo: S3.3 (SEO y preparación de entrega)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.10; próximo: S3.3 (SEO y preparación de entrega)
 
 ## Estado
 
@@ -18,15 +18,16 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 8. S2.5 cerrado — seis filas de acordeón: cinco servicios confirmados con imágenes conceptuales y meal prep marcado «En exploración». Chrome a 1440/768/390/320 px: hover, click, teclado y tap, fotos cargadas y sin desbordamiento ni errores.
 9. S2.6 cerrado — formulario sin nombre, correo ni teléfono que prepara un mensaje de WhatsApp tras validación local; no lo envía ni almacena. Chrome a 1440/768/390/320 px comprobó codificación y ausencia de desbordamiento.
 10. S2.7 cerrado — cápsula clara con sello, enlaces y CTA al formulario; menú móvil accesible con Escape, clic fuera, ancla y resize. Chrome a 1440/1100/1024/390/320 px, sin desbordamiento ni errores.
-11. S2.8 cerrado — siete comentarios aportados por Yedin, atribuidos como reacciones a la cocina y sin afirmar que son reseñas de catering. Chrome a 1440/768/390/320 px: frases exactas, sin desbordamiento ni errores.
+11. S2.8 cerrado — siete frases atribuidas con precisión. La clasificación inicial como reacciones quedó superada por la confirmación de clientes en S2.10.
 12. S2.9 cerrado — cuatro pasos y seis preguntas frecuentes, con enlace en ambos menús. Chrome a 1440/768/390/320 px: FAQ con teclado y toque, sin desbordamiento ni errores.
 13. S3.1 cerrado — sin script externo de Tailwind, _headers para Cloudflare, .env.example, ignorados privados y escaneo de material publicable. Chrome sin red externa a 1440/390 px, imágenes/GSAP cargados, sin errores ni desbordamiento. Las cabeceras aún requieren verificación tras desplegar.
 14. S3.2 cerrado — foco de teclado con contraste mejorado; Chrome a 1440/390/320 px y modo de movimiento reducido: salto al contenido, acordeones, etiquetas, anclas e imágenes comprobados, sin red externa ni errores.
 15. S3.3 — SEO y preparación de publicación; sin push ni deploy hasta pedido expreso.
+16. S2.10 cerrado — testimonios reclasificados como de clientes tras la aclaración de Yedin; Chrome 1440/768/390/320 px, citas exactas y sin desbordamiento.
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 reacciones sin afirmar experiencia de servicio; D15 proceso sin condiciones inventadas; D16 CSS local y protección de repo público; D17 foco de teclado con contraste suficiente. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 criterio inicial superado por D18; D15 proceso sin condiciones inventadas; D16 CSS local y protección de repo público; D17 foco de teclado con contraste suficiente; D18 testimonios de clientes confirmados por Yedin. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -121,6 +122,17 @@ Chrome/Playwright, 390 px con movimiento reducido. Salida real:
 ~~~
 
 En modo normal el foco de un acordeón se dibuja como borde sólido de 3 px rgb(146, 118, 63). Contraste calculado: 3.78:1 sobre papel y 4.1:1 sobre fondo oscuro. Imágenes WebP totales: 2,582,560 bytes; carga inicial en Chrome 390 px: 10 de 22 imágenes, portada cargada y fuentes locales listas. No se ejecutó Lighthouse todavía.
+
+## Evidencia de S2.10
+
+Las frases de S2.8 no cambiaron. Tras la confirmación de Yedin, el texto visible las identifica como testimonios de clientes. Chrome/Playwright, salida real:
+
+~~~text
+{"width":1440,"height":900,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"46.08px","note":"Testimonios de clientes que contrataron a Jenny para sus eventos.","errors":[]}
+{"width":320,"height":720,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"31px","note":"Testimonios de clientes que contrataron a Jenny para sus eventos.","errors":[]}
+~~~
+
+La salida antigua de S2.8 documenta el texto previo a esta aclaración.
 
 ## Datos pendientes
 

@@ -17,8 +17,10 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S2.5** — seis filas de acordeón visual: cinco servicios confirmados y meal prep en exploración; Chrome a 1440/768/390/320 px.
 - [x] **S2.6** — formulario que prepara WhatsApp sin guardar ni enviar el mensaje; Chrome a 1440/768/390/320 px, validación y codificación comprobadas.
 - [x] **S2.7** — navegación cápsula de Bella, adaptable y accesible; Chrome a 1440/1100/1024/390/320 px y escena corta de 1440×600.
-- [x] **S2.8** — siete reacciones atribuidas como comentarios sobre la cocina; Chrome a 1440/768/390/320 px, sin desbordamiento.
+- [x] **S2.8** — siete frases y atribuciones exactas; clasificación como testimonios actualizada en S2.10.
 - [x] **S2.9** — cuatro pasos de trabajo y seis preguntas frecuentes; Chrome a 1440/768/390/320 px, teclado y toque.
+
+- [x] **S2.10** — tras la confirmación de Yedin, las siete frases se presentan como testimonios de clientes. Chrome 1440/768/390/320 px: citas intactas y sin desbordamiento.
 
 ## Fase 3 — Entrega
 
@@ -50,6 +52,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S3.1: escaneo de archivos publicables: {"files":46,"textFiles":25,"privatePaths":0,"secretHits":0,"webps":16,"metadataHits":0,"envExample":true,"headers":true}. Chrome sin red externa a 1440 px: {"width":1440,"headerSyntax":true,"headerKeys":["Content-Security-Policy","X-Content-Type-Options","Referrer-Policy","X-Frame-Options","Permissions-Policy"],"remoteScripts":0,"missingLocal":[],"remoteRequests":0,"overflow":false,"heroLoaded":1600,"gsapLoaded":true,"sceneImages":[1100,1100,1100,1440,1440],"formPresent":true,"errors":[]}. Cabeceras HTTP en producción pendientes del despliegue.
 
 26/09/2026 — S3.2: Chrome 390 px con movimiento reducido: {"skip":true,"serviceOpen":true,"faqOpen":true,"missingAlt":0,"missingDimensions":0,"brokenAnchors":0,"unlabeledControls":0,"overflow":false,"sceneMotion":false,"triggers":0,"remoteRequests":0,"errors":[]}. Foco normal de 3 px con contraste 3.78:1/4.1:1; imágenes WebP suman 2,582,560 bytes, 10 de 22 cargan inicialmente.
+
+26/09/2026 — S2.10: Yedin confirmó que las personas citadas contrataron a Jenny. Chrome a 320×720: {"width":320,"height":720,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"31px","note":"Testimonios de clientes que contrataron a Jenny para sus eventos.","errors":[]}.
 
 ## Deuda técnica
 

@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S3.2 cerrados. Continuar S3.3 SEO y preparación de entrega. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.10 y S3.1–S3.2 cerrados. Continuar S3.3 SEO y preparación de entrega. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -32,13 +32,15 @@ S1.1–S3.2 cerrados. Continuar S3.3 SEO y preparación de entrega. No publicar 
 
 - **D13** — La navegación adopta una cápsula clara con enlaces propios y botón al formulario; permanece en el flujo para no cubrir la escena de platos.
 
-- **D14** — Las siete frases aportadas por Yedin se atribuyen literalmente como reacciones a publicaciones de Jenny; no se presentan como reseñas verificadas de eventos porque no prueban esa experiencia.
+- **D14** — Criterio inicial superado por D18: faltaba confirmar si las personas habían contratado a Jenny.
 
 - **D15** — El proceso se describe en cuatro pasos sin plazos ni condiciones inventadas; las preguntas frecuentes aclaran el alcance confirmado y que meal prep sigue en exploración.
 
 - **D16** — CSS local sin Tailwind Play CDN: el HTML no usa utilidades de Tailwind, por lo que quitar el script externo reduce peticiones y superficie de riesgo. _headers protege la publicación estática y .gitignore separa PRD, credenciales y fotos originales del repositorio público.
 
 - **D17** — El foco de teclado usa un dorado más oscuro, con contraste mayor a 3:1 tanto sobre papel claro como sobre fondo oscuro. La auditoría recorre teclado, enlaces, imágenes y movimiento reducido en Chrome.
+
+- **D18** — Las siete frases se muestran como testimonios de clientes, porque Yedin confirmó que esas personas contrataron a Jenny para sus eventos. Se mantienen las citas y atribuciones originales, sin añadir resultados ni detalles de servicio.
 
 ## Verificación
 
