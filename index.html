@@ -16,6 +16,7 @@
     <link rel="preload" href="ASSETS/fonts/manrope-regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/motion.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
@@ -57,11 +58,26 @@
           <div class="hero-photo-caption" aria-hidden="true"><span>El arte de recibir</span><span>01 / Bella’s</span></div>
         </div>
       </section>
-    </main>
+      <section class="food-scene" aria-labelledby="food-scene-title">
+        <p class="food-scene__eyebrow">Una celebración para los sentidos · 02</p>
+        <h2 class="food-scene__heading" id="food-scene-title">Cada plato,<br /><em>un momento.</em></h2>
+        <p class="food-scene__note">Sabores pensados para quedarse en la memoria.</p>
+        <div class="food-scene__stage" aria-label="Presentaciones gastronómicas de Bella’s Catering">
+          <span class="food-scene__orbit food-scene__orbit--one" aria-hidden="true"></span>
+          <span class="food-scene__orbit food-scene__orbit--two" aria-hidden="true"></span>
+          <div class="food-scene__plate food-scene__plate--left"><img src="ASSETS/images/dish-seafood.webp" alt="Pasta cremosa con mariscos y carne en plato turquesa" width="1100" height="1100" loading="lazy" /></div>
+          <div class="food-scene__plate food-scene__plate--main"><img src="ASSETS/images/dish-glazed.webp" alt="Preparación glaseada con plátano y hierbas frescas" width="1100" height="1473" loading="lazy" /></div>
+          <div class="food-scene__plate food-scene__plate--right"><img src="ASSETS/images/dish-steak.webp" alt="Corte de carne sobre puré con setas" width="1100" height="1100" loading="lazy" /></div>
+        </div>
+        <p class="food-scene__footer">La experiencia empieza en la mesa.</p>
+      </section>    </main>
 
     <footer class="site-footer">
       <p>Bella’s Catering · Santiago de los Caballeros</p>
       <a href="https://wa.me/18494530297?text=Hola%2C%20quiero%20conocer%20los%20servicios%20de%20Bella%E2%80%99s%20Catering." target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp ↗</a>
     </footer>
+    <script src="js/vendor/gsap.min.js"></script>
+    <script src="js/vendor/ScrollTrigger.min.js"></script>
+    <script src="js/motion.js"></script>
   </body>
 </html>

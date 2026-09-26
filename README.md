@@ -14,7 +14,7 @@ No se requiere instalar dependencias para abrir el sitio:
 python -m http.server 8000
 ```
 
-Visita `http://localhost:8000`. El sitio consta de HTML, CSS, JavaScript y assets locales. Algunas animaciones y utilidades de estilo cargan desde CDN cuando hay conexión; el contenido básico sigue siendo legible sin ellas.
+Visita `http://localhost:8000`. El sitio consta de HTML, CSS, JavaScript y assets locales. La animación usa una copia local de GSAP y ScrollTrigger. Tailwind Play CDN se carga para la vista de desarrollo; el contenido y el diseño básico siguen siendo legibles sin conexión.
 
 ## Estructura pública
 
