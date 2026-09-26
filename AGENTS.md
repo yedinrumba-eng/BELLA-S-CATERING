@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.6 cerrados. Continuar S2.7 navegación; luego S2.8 reacciones y S2.9 proceso/preguntas frecuentes. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.7 cerrados. Continuar S2.8 reacciones; luego S2.9 proceso/preguntas frecuentes. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -29,6 +29,8 @@ S1.1–S2.6 cerrados. Continuar S2.7 navegación; luego S2.8 reacciones y S2.9 p
 - **D10** — Cinco platos locales se relevan durante el scroll dentro de una escena de una pantalla, con componentes decorativos en las transiciones. GSAP recalcula las posiciones al cambiar el ancho y ofrece tres platos quietos con movimiento reducido; así la escena se mantiene encuadrada sin imponer animación a quien la desactiva.
 - **D11** — Los cinco servicios confirmados se abren en un acordeón con foto conceptual; meal prep aparece separado como «En exploración», sin precio, fecha ni compra, porque Jenny todavía lo considera.
 - **D12** — El formulario construye un mensaje de WhatsApp en el navegador tras la acción del visitante y no almacena datos; meal prep queda fuera de la lista de contratación mientras no esté confirmado.
+
+- **D13** — La navegación adopta una cápsula clara con enlaces propios y botón al formulario; permanece en el flujo para no cubrir la escena de platos.
 
 ## Verificación
 

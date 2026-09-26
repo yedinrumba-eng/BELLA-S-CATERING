@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.6; próximo: S2.7 (navegación cápsula)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.7; próximo: S2.8 (reacciones sociales)
 
 ## Estado
 
@@ -17,14 +17,14 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 7. S2.4 cerrado — cinco platos locales con dos relevos de scroll y dos ráfagas decorativas. Chrome a 1440×900, 1440×600, 390×667 y 320×568: sección completa en pantalla, sin desbordamiento ni errores; resize recalcula escala y posición; movimiento reducido muestra tres platos quietos.
 8. S2.5 cerrado — seis filas de acordeón: cinco servicios confirmados con imágenes conceptuales y meal prep marcado «En exploración». Chrome a 1440/768/390/320 px: hover, click, teclado y tap, fotos cargadas y sin desbordamiento ni errores.
 9. S2.6 cerrado — formulario sin nombre, correo ni teléfono que prepara un mensaje de WhatsApp tras validación local; no lo envía ni almacena. Chrome a 1440/768/390/320 px comprobó codificación y ausencia de desbordamiento.
-10. S2.7 — barra de navegación cápsula con identidad de Bella’s.
+10. S2.7 cerrado — cápsula clara con sello, enlaces y CTA al formulario; menú móvil accesible con Escape, clic fuera, ancla y resize. Chrome a 1440/1100/1024/390/320 px, sin desbordamiento ni errores.
 11. S2.8 — comentarios compartidos sobre la cocina de Jenny, sin presentarlos como reseñas verificadas de servicios.
 12. S2.9 — proceso y preguntas frecuentes.
 13. S3.1 — seguridad, accesibilidad, SEO y revisión final antes de un eventual push o despliegue. No hay push ni deploy.
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -66,6 +66,18 @@ Chrome/Playwright con toda petición externa bloqueada; apertura interceptada si
 {"width":320,"height":720,"blankBlocked":true,"spacesBlocked":true,"overflow":false,"sectionRight":320,"viewportRight":320,"openCount":1,"hostValid":true,"target":"_blank","features":"noopener,noreferrer","messageIncludesService":true,"messageIncludesDate":true,"messageIncludesGuests":true,"messageIncludesLocation":true,"messageIncludesIdea":true,"errors":[]}
 {"openCount":1,"negativeBlocked":true,"service":true,"omitsDate":true,"omitsGuests":true,"omitsLocation":true,"skipTop":-80}
 ~~~
+
+## Evidencia de S2.7
+
+Chrome/Playwright, sin peticiones externas. Salida real:
+
+~~~text
+{"width":1440,"height":900,"mobile":false,"interactions":{},"overflow":false,"header":[29,14,1411,98],"headerRadius":"100px","navLinks":["#servicios","#chef","#galeria"],"ctaHash":"#cotizar","quoteExists":true,"errors":[]}
+{"width":390,"height":844,"initial":{"header":[12,10,378,80],"overflow":false},"enterOpen":true,"escapeClosed":true,"focusReturned":true,"spaceOpen":true,"outsideClosed":true,"linkClosed":true,"hash":"#cotizar","focusAtQuote":true,"resizeClosed":true,"errors":[]}
+{"width":320,"height":720,"initial":{"header":[12,10,308,80],"overflow":false},"enterOpen":true,"escapeClosed":true,"focusReturned":true,"spaceOpen":true,"outsideClosed":true,"linkClosed":true,"hash":"#cotizar","focusAtQuote":true,"resizeClosed":null,"errors":[]}
+~~~
+
+Repetición S2.4 a 1440×600: plato derecho termina en y=509; pie empieza en y=555.
 
 ## Datos pendientes
 
