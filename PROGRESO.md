@@ -23,7 +23,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 ## Fase 3 — Entrega
 
 - [x] **S3.1** — seguridad y privacidad: CSS local, cabeceras Cloudflare, .env.example y escaneo de archivos publicables; Chrome 1440/390 sin peticiones externas, errores ni desbordamiento.
-- [ ] **S3.2** — accesibilidad y rendimiento: teclado, movimiento reducido, foco, imágenes y carga.
+- [x] **S3.2** — teclado, movimiento reducido, foco, imágenes y carga inicial comprobados en Chrome a 1440/390/320 px.
 - [ ] **S3.3** — SEO y preparación de publicación: metadatos, robots y página 404; dominio y despliegue pendientes de Yedin.
 
 ## Bitácora
@@ -48,6 +48,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S2.9: Chrome confirmó 4 pasos, 6 preguntas, enlaces FAQ en ambas navegaciones y respuesta de meal prep honesta. Salida real 320×720: {"width":320,"height":720,"count":6,"initialClosed":true,"firstOpened":true,"steps":4,"faqCount":6,"faqLinks":2,"overflow":false,"processRight":320,"faqRight":320,"mealAnswer":true,"quoteKicker":"Hablemos de tu evento · 09","errors":[]}. Se corrigió el título del proceso en escritorio antes de repetir la prueba.
 
 26/09/2026 — S3.1: escaneo de archivos publicables: {"files":46,"textFiles":25,"privatePaths":0,"secretHits":0,"webps":16,"metadataHits":0,"envExample":true,"headers":true}. Chrome sin red externa a 1440 px: {"width":1440,"headerSyntax":true,"headerKeys":["Content-Security-Policy","X-Content-Type-Options","Referrer-Policy","X-Frame-Options","Permissions-Policy"],"remoteScripts":0,"missingLocal":[],"remoteRequests":0,"overflow":false,"heroLoaded":1600,"gsapLoaded":true,"sceneImages":[1100,1100,1100,1440,1440],"formPresent":true,"errors":[]}. Cabeceras HTTP en producción pendientes del despliegue.
+
+26/09/2026 — S3.2: Chrome 390 px con movimiento reducido: {"skip":true,"serviceOpen":true,"faqOpen":true,"missingAlt":0,"missingDimensions":0,"brokenAnchors":0,"unlabeledControls":0,"overflow":false,"sceneMotion":false,"triggers":0,"remoteRequests":0,"errors":[]}. Foco normal de 3 px con contraste 3.78:1/4.1:1; imágenes WebP suman 2,582,560 bytes, 10 de 22 cargan inicialmente.
 
 ## Deuda técnica
 

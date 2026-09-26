@@ -157,7 +157,8 @@
 @media (max-height: 620px) and (max-width: 760px) {
   .food-scene.is-motion .food-scene__stage { top: 66%; }
   .food-scene.is-motion .food-scene__plate { width: min(62%, 42svh); }
-}@media (prefers-reduced-motion: reduce) {
+}
+@media (prefers-reduced-motion: reduce) {
   .food-scene__plate { will-change: auto; }
   .food-scene__fragments { display: none; }
 }
