@@ -11,8 +11,11 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 ## Fase 2 — Oferta y conversión
 
 - [x] **S2.1** — cinco servicios y biografía de Jenny contrastados con PRD; enlaces, fotos y móvil comprobados.
-- [ ] **S2.2** — galería de carta y buffet. Parar hasta selección de Yedin.
-- [ ] **S2.3** — formulario que prepara WhatsApp. Verificar mensaje sin enviarlo.
+- [x] **S2.2** — galería conceptual de carta y buffet con seis imágenes; Chrome a 1440/390/320 px.
+- [ ] **S2.3** — portada, biografía y tamaños de lectura.
+- [ ] **S2.4** — intercambio de platos al hacer scroll y efecto de componentes.
+- [ ] **S2.5** — acordeón visual de servicios y meal prep en exploración.
+- [ ] **S2.6** — formulario que prepara WhatsApp. Verificar mensaje sin enviarlo.
 
 ## Fase 3 — Entrega
 
@@ -20,7 +23,11 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 ## Bitácora
 
-26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.`r`n26/09/2026 — S1.2: portada renderizada a 1440 y 390 px, fotos cargadas, sin scroll horizontal; menú abre con Enter.`n26/09/2026 — S1.3: tres platos WebP renderizados; animación GSAP cambia y=-580 a y=0; en movimiento reducido el plato queda estático y visible.`n26/09/2026 — S2.1: navegador a 1440/390/320 px: 5 servicios, 2 fotos de biografía cargadas, enlaces internos resueltos y sin desbordamiento; menú móvil llega a #chef.
+26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
+26/09/2026 — S1.2: portada renderizada a 1440 y 390 px, fotos cargadas, sin scroll horizontal; menú abre con Enter.
+26/09/2026 — S1.3: tres platos WebP renderizados; animación GSAP cambia y=-580 a y=0; en movimiento reducido el plato queda estático y visible.
+26/09/2026 — S2.1: navegador a 1440/390/320 px: 5 servicios, 2 fotos de biografía cargadas, enlaces internos resueltos y sin desbordamiento; menú móvil llega a #chef.
+26/09/2026 — S2.2: Chrome a 1440/390/320 px: 6 fotos cargadas, 2 categorías y sin desbordamiento.
 
 ## Deuda técnica
 

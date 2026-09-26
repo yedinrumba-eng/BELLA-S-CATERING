@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-Construir S1.1, S1.2, S1.3 y S2.1 en orden. **Parar antes de S2.2, la galería**, para elegir platos a la carta y buffet con Yedin. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.2 cerrados. Continuar S2.3–S2.5 en orden con el nuevo pedido de Yedin; luego S2.6 formulario. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -22,6 +22,7 @@ Construir S1.1, S1.2, S1.3 y S2.1 en orden. **Parar antes de S2.2, la galería**
 - **D3** — Cloudflare Pages, porque Yedin eligió esa plataforma y dominio propio.
 - **D4** — Cormorant Garamond y Manrope locales, porque equilibran carácter editorial y lectura móvil sin depender de una fuente remota.
 - **D5** — Fotos generadas de Jenny sirven como arte editorial, no como evidencia de un evento real; evita prometer escenas documentales que no ocurrieron.`n- **D6** — GSAP y ScrollTrigger locales, porque la animación acordada debe funcionar sin depender de un CDN en producción.`n- **D7** — Servicios agrupados en cinco bloques, porque presentan toda la oferta confirmada por Jenny sin convertir la página en un catálogo inventado.
+- **D8** — Galería con seis imágenes conceptuales etiquetadas, porque Yedin las aportó como dirección visual y los platos finales se personalizan por evento.
 
 ## Verificación
 

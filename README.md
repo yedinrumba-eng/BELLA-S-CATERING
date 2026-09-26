@@ -4,7 +4,7 @@ Sitio en español de Bella’s Catering, servicio de catering, chef privado y as
 
 ## Estado
 
-Proyecto en construcción. Portada, animación, servicios y biografía están implementados. La galería de platos y buffet requiere selección y aprobación de imágenes antes de incorporarla. Todavía no hay sitio publicado.
+Proyecto en construcción. Portada, animación, servicios y biografía están implementados. La galería conceptual de platos y buffet ya está incorporada; los nombres y preparaciones finales quedan sujetos a revisión con Jenny. Todavía no hay sitio publicado.
 
 ## Vista local
 
@@ -32,4 +32,4 @@ Las imágenes generadas de Jenny y de platos son material editorial. Su selecci�
 
 ## Próximo paso
 
-Pausa antes de S2.2: seleccionar con Yedin los platos a la carta y los buffets que representan la oferta real. Después continuará el formulario de cotización hacia WhatsApp y la preparación del despliegue.
+Sigue la revisión de portada, biografía, movimiento y servicios; después el formulario hacia WhatsApp y la preparación del despliegue.

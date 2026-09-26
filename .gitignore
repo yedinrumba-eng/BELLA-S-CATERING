@@ -9,6 +9,7 @@ test-results/
 tmp/
 
 ASSETS/CHEF/
+ASSETS/meal-prep-source/
 ASSETS/brand/*-preview.png
 
 # Private business notes and original identity references
