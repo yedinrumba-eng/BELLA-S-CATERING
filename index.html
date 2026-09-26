@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/motion.css" />
     <link rel="stylesheet" href="css/sections.css" />
     <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/quote.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
@@ -164,6 +165,48 @@
         </div>
         <p class="gallery__note">Imágenes conceptuales. Cada menú y montaje se define con Jenny según el evento.</p>
       </section>
+      <section class="quote" id="cotizar" aria-labelledby="quote-title">
+        <div class="quote__intro">
+          <p class="quote__eyebrow">Hablemos de tu evento · 06</p>
+          <h2 id="quote-title">Hagamos algo<br /><em>memorable.</em></h2>
+          <p>Cuéntanos lo que imaginas y prepararemos una propuesta a tu medida.</p>
+          <p class="quote__privacy">Preparamos tu mensaje para WhatsApp. Tú decides si lo envías; esta página no guarda lo que escribes.</p>
+        </div>
+        <form class="quote__form" id="quote-form">
+          <div class="quote__field">
+            <label for="quote-service">Servicio <span aria-hidden="true">*</span></label>
+            <select id="quote-service" name="service" required>
+              <option value="">Selecciona un servicio</option>
+              <option>Catering &amp; buffet</option>
+              <option>Chef privado</option>
+              <option>Diseño de menús</option>
+              <option>Asesoría gastronómica</option>
+              <option>Equipos para eventos</option>
+            </select>
+          </div>
+          <div class="quote__row">
+            <div class="quote__field">
+              <label for="quote-date">Fecha aproximada</label>
+              <input id="quote-date" name="date" type="date" />
+            </div>
+            <div class="quote__field">
+              <label for="quote-guests">Invitados aproximados</label>
+              <input id="quote-guests" name="guests" type="number" min="1" max="100000" inputmode="numeric" placeholder="Ej. 50" />
+            </div>
+          </div>
+          <div class="quote__field">
+            <label for="quote-location">Ciudad o zona</label>
+            <input id="quote-location" name="location" type="text" maxlength="80" autocomplete="off" placeholder="¿Dónde será?" />
+          </div>
+          <div class="quote__field">
+            <label for="quote-details">Cuéntanos tu idea <span aria-hidden="true">*</span></label>
+            <textarea id="quote-details" name="details" rows="4" maxlength="500" required placeholder="El tipo de ocasión, lo que te gustaría servir y cualquier detalle importante"></textarea>
+          </div>
+          <button class="quote__submit" type="submit">Preparar mensaje <span aria-hidden="true">↗</span></button>
+          <p class="quote__footnote">Al continuar se abrirá WhatsApp con tu mensaje listo para revisar.</p>
+          <p class="quote__error" role="alert" hidden>No pudimos abrir WhatsApp. Puedes usar el enlace de contacto al pie de la página.</p>
+        </form>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -174,5 +217,6 @@
     <script src="js/vendor/ScrollTrigger.min.js"></script>
     <script src="js/motion.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/quote.js"></script>
   </body>
 </html>

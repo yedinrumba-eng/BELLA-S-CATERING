@@ -1,0 +1,99 @@
+.quote {
+  display: grid;
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+  gap: clamp(48px, 7vw, 128px);
+  padding: clamp(95px, 10vw, 160px) clamp(24px, 8.2vw, 150px);
+  color: var(--cream);
+  background: var(--night);
+}
+.quote__intro { max-width: 620px; }
+.quote__eyebrow {
+  margin: 0 0 42px;
+  color: #c9b885;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.quote h2 {
+  margin: 0;
+  font-family: "Cormorant", Georgia, serif;
+  font-size: clamp(74px, 8.3vw, 138px);
+  font-weight: 400;
+  letter-spacing: -.055em;
+  line-height: .82;
+}
+.quote h2 em { color: #c9b885; font-weight: 400; }
+.quote__intro > p:not(.quote__eyebrow) {
+  max-width: 480px;
+  margin: 37px 0 0;
+  font-size: 20px;
+  line-height: 1.65;
+}
+.quote__intro .quote__privacy {
+  max-width: 430px;
+  margin-top: 52px !important;
+  color: #c8cdc7;
+  font-size: 15px !important;
+  line-height: 1.7;
+}
+.quote__form {
+  align-self: start;
+  display: grid;
+  gap: 23px;
+  width: 100%;
+  padding: clamp(28px, 3.8vw, 58px);
+  color: var(--ink);
+  background: var(--paper);
+}
+.quote__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.quote__field { display: grid; gap: 9px; min-width: 0; }
+.quote__field label { font-size: 15px; font-weight: 600; }
+.quote__field label span { color: #9b593c; }
+.quote__field input,
+.quote__field select,
+.quote__field textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 52px;
+  border: 1px solid #bab9b0;
+  border-radius: 0;
+  padding: 13px 15px;
+  color: var(--ink);
+  background: #fffdf8;
+  font: 17px/1.4 "Manrope", Arial, sans-serif;
+}
+.quote__field textarea { min-height: 130px; resize: vertical; }
+.quote__field input::placeholder, .quote__field textarea::placeholder { color: #777a73; opacity: 1; }
+.quote__field input:focus, .quote__field select:focus, .quote__field textarea:focus { border-color: var(--ink); }
+.quote__submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 58px;
+  border: 1px solid var(--ink);
+  padding: 0 20px;
+  color: var(--cream);
+  background: var(--ink);
+  font: 600 16px "Manrope", Arial, sans-serif;
+  cursor: pointer;
+}
+.quote__submit:hover { color: var(--ink); background: var(--gold); }
+.quote__submit span { font-size: 23px; font-weight: 400; }
+.quote__footnote { margin: -6px 0 0; color: #666b63; font-size: 14px; line-height: 1.55; }
+.quote__error { margin: 0; color: #8d3428; font-size: 15px; line-height: 1.5; }
+
+@media (max-width: 980px) {
+  .quote { grid-template-columns: 1fr; gap: 47px; }
+  .quote__intro .quote__privacy { margin-top: 28px !important; }
+}
+@media (max-width: 600px) {
+  .quote { padding: 89px 23px 95px; }
+  .quote__eyebrow { margin-bottom: 33px; }
+  .quote h2 { font-size: clamp(63px, 14vw, 88px); }
+  .quote__intro > p:not(.quote__eyebrow) { margin-top: 28px; font-size: 17px; }
+  .quote__intro .quote__privacy { font-size: 14px !important; }
+  .quote__form { gap: 20px; padding: 25px 20px; }
+  .quote__row { grid-template-columns: 1fr; gap: 20px; }
+  .quote__field input, .quote__field select, .quote__field textarea { font-size: 16px; }
+}

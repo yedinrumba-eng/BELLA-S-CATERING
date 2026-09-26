@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.5; próximo: S2.6 (formulario de cotización)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.6; próximo: S2.7 (navegación cápsula)
 
 ## Estado
 
@@ -16,7 +16,7 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 6. S2.3 cerrado — plato editorial en portada, retrato de Jenny en arco de biografía y descripciones más grandes. Chrome a 1440/1100/980/820/768/390/320 px: ambas imágenes cargadas, textos 18/16 px, sin desbordamiento ni errores de página. El menú pasa a modo compacto hasta 1100 px y la bio a una columna hasta 980 px.
 7. S2.4 cerrado — cinco platos locales con dos relevos de scroll y dos ráfagas decorativas. Chrome a 1440×900, 1440×600, 390×667 y 320×568: sección completa en pantalla, sin desbordamiento ni errores; resize recalcula escala y posición; movimiento reducido muestra tres platos quietos.
 8. S2.5 cerrado — seis filas de acordeón: cinco servicios confirmados con imágenes conceptuales y meal prep marcado «En exploración». Chrome a 1440/768/390/320 px: hover, click, teclado y tap, fotos cargadas y sin desbordamiento ni errores.
-9. S2.6 — formulario que prepara un mensaje de WhatsApp sin almacenar datos.
+9. S2.6 cerrado — formulario sin nombre, correo ni teléfono que prepara un mensaje de WhatsApp tras validación local; no lo envía ni almacena. Chrome a 1440/768/390/320 px comprobó codificación y ausencia de desbordamiento.
 10. S2.7 — barra de navegación cápsula con identidad de Bella’s.
 11. S2.8 — comentarios compartidos sobre la cocina de Jenny, sin presentarlos como reseñas verificadas de servicios.
 12. S2.9 — proceso y preguntas frecuentes.
@@ -24,7 +24,7 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -55,6 +55,16 @@ Chrome/Playwright con la red externa bloqueada. Salida real:
 ~~~text
 {"width":1440,"height":900,"count":6,"closedInitially":true,"interactions":{"firstHoverOpen":true,"clickAfterHoverKeepsOpen":true,"secondHoverOpen":true,"firstClosed":true,"enterOpens":true,"spaceOpens":true,"mealHoverOpen":true},"overflow":false,"openCount":1,"mealLabel":"En exploración","badgeRight":515,"viewportRight":1440,"bodySize":"19px","titleSize":"48.96px","images":[{"loaded":true,"width":1536,"height":1024},{"loaded":true,"width":1536,"height":1024},{"loaded":true,"width":1536,"height":1024}],"errors":[]}
 {"width":320,"height":720,"count":6,"closedInitially":true,"interactions":{"firstTapOpen":true,"secondTapOpen":true,"firstClosed":true,"mealTapOpen":true},"overflow":false,"openCount":1,"mealLabel":"En exploración","badgeRight":166,"viewportRight":320,"bodySize":"17px","titleSize":"32px","images":[{"loaded":true,"width":1536,"height":1024},{"loaded":true,"width":1536,"height":1024},{"loaded":true,"width":1536,"height":1024}],"errors":[]}
+~~~
+
+## Evidencia de S2.6
+
+Chrome/Playwright con toda petición externa bloqueada; apertura interceptada sin contactar WhatsApp. Salida real:
+
+~~~text
+{"width":1440,"height":900,"blankBlocked":true,"spacesBlocked":true,"overflow":false,"sectionRight":1440,"viewportRight":1440,"openCount":1,"hostValid":true,"target":"_blank","features":"noopener,noreferrer","messageIncludesService":true,"messageIncludesDate":true,"messageIncludesGuests":true,"messageIncludesLocation":true,"messageIncludesIdea":true,"errors":[]}
+{"width":320,"height":720,"blankBlocked":true,"spacesBlocked":true,"overflow":false,"sectionRight":320,"viewportRight":320,"openCount":1,"hostValid":true,"target":"_blank","features":"noopener,noreferrer","messageIncludesService":true,"messageIncludesDate":true,"messageIncludesGuests":true,"messageIncludesLocation":true,"messageIncludesIdea":true,"errors":[]}
+{"openCount":1,"negativeBlocked":true,"service":true,"omitsDate":true,"omitsGuests":true,"omitsLocation":true,"skipTop":-80}
 ~~~
 
 ## Datos pendientes
