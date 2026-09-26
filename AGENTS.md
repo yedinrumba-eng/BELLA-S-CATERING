@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.8 cerrados. Continuar S2.9 proceso/preguntas frecuentes. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.9 cerrados. Continuar S3.1 revisión de seguridad, accesibilidad, SEO y entrega. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -33,6 +33,8 @@ S1.1–S2.8 cerrados. Continuar S2.9 proceso/preguntas frecuentes. No publicar n
 - **D13** — La navegación adopta una cápsula clara con enlaces propios y botón al formulario; permanece en el flujo para no cubrir la escena de platos.
 
 - **D14** — Las siete frases aportadas por Yedin se atribuyen literalmente como reacciones a publicaciones de Jenny; no se presentan como reseñas verificadas de eventos porque no prueban esa experiencia.
+
+- **D15** — El proceso se describe en cuatro pasos sin plazos ni condiciones inventadas; las preguntas frecuentes aclaran el alcance confirmado y que meal prep sigue en exploración.
 
 ## Verificación
 

@@ -32,4 +32,4 @@ Las imágenes generadas de Jenny y de platos son material editorial. Su selecci�
 
 ## Próximo paso
 
-Siguen el proceso y las preguntas frecuentes; después, la revisión de seguridad y accesibilidad antes de publicar.
+Sigue la revisión de seguridad, privacidad, accesibilidad y SEO antes de publicar.

@@ -18,7 +18,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S2.6** — formulario que prepara WhatsApp sin guardar ni enviar el mensaje; Chrome a 1440/768/390/320 px, validación y codificación comprobadas.
 - [x] **S2.7** — navegación cápsula de Bella, adaptable y accesible; Chrome a 1440/1100/1024/390/320 px y escena corta de 1440×600.
 - [x] **S2.8** — siete reacciones atribuidas como comentarios sobre la cocina; Chrome a 1440/768/390/320 px, sin desbordamiento.
-- [ ] **S2.9** — proceso y preguntas frecuentes.
+- [x] **S2.9** — cuatro pasos de trabajo y seis preguntas frecuentes; Chrome a 1440/768/390/320 px, teclado y toque.
 
 ## Fase 3 — Entrega
 
@@ -42,6 +42,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S2.7: Chrome confirmó menú móvil con Enter, Espacio, Escape, clic fuera, ancla y resize. Salida real 320×720: {"width":320,"height":720,"initial":{"header":[12,10,308,80],"overflow":false},"enterOpen":true,"escapeClosed":true,"focusReturned":true,"spaceOpen":true,"outsideClosed":true,"linkClosed":true,"hash":"#cotizar","focusAtQuote":true,"resizeClosed":null,"errors":[]}. Escena 1440×600: plato derecho termina y=509; pie empieza y=555.
 
 26/09/2026 — S2.8: Chrome confirmó 7 frases y atribuciones exactas, sin desbordamiento ni errores. Salida real 320×720: {"width":320,"height":720,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"31px","note":"Comentarios compartidos sobre publicaciones de Jenny; no son reseñas verificadas de eventos.","errors":[]}
+
+26/09/2026 — S2.9: Chrome confirmó 4 pasos, 6 preguntas, enlaces FAQ en ambas navegaciones y respuesta de meal prep honesta. Salida real 320×720: {"width":320,"height":720,"count":6,"initialClosed":true,"firstOpened":true,"steps":4,"faqCount":6,"faqLinks":2,"overflow":false,"processRight":320,"faqRight":320,"mealAnswer":true,"quoteKicker":"Hablemos de tu evento · 09","errors":[]}. Se corrigió el título del proceso en escritorio antes de repetir la prueba.
 
 ## Deuda técnica
 
