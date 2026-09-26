@@ -5,7 +5,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 ## Fase 1 — Identidad y portada
 
 - [x] **S1.1** — sello vectorial, fuentes propias y assets iniciales. SVG validado y renderizado; tres fotos WebP comprobadas.
-- [ ] **S1.2** — portada editorial adaptable. Verificar navegador a 1440 y 390 px.
+- [x] **S1.2** — portada editorial adaptable. Navegador comprobado a 1440 y 390 px; menú móvil con teclado.
 - [ ] **S1.3** — escena gastronómica con movimiento. Verificar scroll, teclado y movimiento reducido.
 
 ## Fase 2 — Oferta y conversión
@@ -20,7 +20,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 ## Bitácora
 
-26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
+26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.`r`n26/09/2026 — S1.2: portada renderizada a 1440 y 390 px, fotos cargadas, sin scroll horizontal; menú abre con Enter.
 
 ## Deuda técnica
 
@@ -33,4 +33,3 @@ Los HEIC no se abrían con el visor por defecto de la sesión; un conversor loca
 ## Descartado y por qué
 
 Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. Assets de las webs de referencia: solo guían el diseño.
-

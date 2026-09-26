@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S1.1; próximo: S1.2
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S1.2; próximo: S1.3
 
 ## Estado
 
@@ -9,7 +9,7 @@ La carpeta era nueva y no tenía código. Yedin autorizó construir desde S1.1 h
 ## Orden inmediato
 
 1. S1.1 cerrado — sello SVG renderizado, fuentes con licencia local y tres fotos WebP; salida: SVG valid: 0 0 360 360 bytes 1694; Jenny 1500x1500 118086 bytes, plating 1280x1440 140208 bytes, team 1280x1440 157640 bytes.
-2. S1.2 — portada responsiva. Comprobar en navegador a 1440 y 390 px.
+2. S1.2 cerrado — portada en navegador a 1440 y 390 px: foto cargada, sin desbordamiento; menú móvil abre con Enter y enlaces correctos.
 3. S1.3 — escena gastronómica animada. Comprobar scroll y movimiento reducido.
 4. S2.1 — servicios y biografía real. Comprobar contenido, navegación y móvil.
 5. Parar: galería S2.2 espera selección de platos a la carta y buffets.
@@ -25,4 +25,3 @@ Dominio, registro final del negocio y aprobación de galería por Yedin y Jenny.
 ## Lecciones ya pagadas
 
 No hay bugs de implementación aún. En preparación, algunas imágenes HEIC no abrían en el visor habitual; se pudieron convertir localmente para revisar todas las referencias de Jenny.
-
