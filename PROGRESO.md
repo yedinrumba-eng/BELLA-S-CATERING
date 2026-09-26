@@ -22,6 +22,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 - [x] **S2.10** — tras la confirmación de Yedin, las siete frases se presentan como testimonios de clientes. Chrome 1440/768/390/320 px: citas intactas y sin desbordamiento.
 
+- [!] **S2.11** — efecto /PRODUCT EXPLOTION 3D real: el flujo Higgsfield requiere Blender 4.2+ y un conector local. No se encontró Blender instalado; se pidió autorización antes de añadir software. La animación GSAP existente continúa operativa.
+
 ## Fase 3 — Entrega
 
 - [x] **S3.1** — seguridad y privacidad: CSS local, cabeceras Cloudflare, .env.example y escaneo de archivos publicables; Chrome 1440/390 sin peticiones externas, errores ni desbordamiento.
