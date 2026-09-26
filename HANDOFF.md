@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.10; próximo: S3.3 (SEO y preparación de entrega)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S3.3; próximo: S3.4 (dominio y publicación autorizada)
 
 ## Estado
 
@@ -22,12 +22,12 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 12. S2.9 cerrado — cuatro pasos y seis preguntas frecuentes, con enlace en ambos menús. Chrome a 1440/768/390/320 px: FAQ con teclado y toque, sin desbordamiento ni errores.
 13. S3.1 cerrado — sin script externo de Tailwind, _headers para Cloudflare, .env.example, ignorados privados y escaneo de material publicable. Chrome sin red externa a 1440/390 px, imágenes/GSAP cargados, sin errores ni desbordamiento. Las cabeceras aún requieren verificación tras desplegar.
 14. S3.2 cerrado — foco de teclado con contraste mejorado; Chrome a 1440/390/320 px y modo de movimiento reducido: salto al contenido, acordeones, etiquetas, anclas e imágenes comprobados, sin red externa ni errores.
-15. S3.3 — SEO y preparación de publicación; sin push ni deploy hasta pedido expreso.
+15. S3.3 cerrado — 404.html y CSS propio, robots.txt con bloqueo temporal y comprobación de recursos; Chrome 1440/390/320 px, sin desbordamiento. Falta validar HTTP en Cloudflare, dominio, sitemap y Lighthouse.
 16. S2.10 cerrado — testimonios reclasificados como de clientes tras la aclaración de Yedin; Chrome 1440/768/390/320 px, citas exactas y sin desbordamiento.
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 criterio inicial superado por D18; D15 proceso sin condiciones inventadas; D16 CSS local y protección de repo público; D17 foco de teclado con contraste suficiente; D18 testimonios de clientes confirmados por Yedin. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 criterio inicial superado por D18; D15 proceso sin condiciones inventadas; D16 CSS local y protección de repo público; D17 foco de teclado con contraste suficiente; D18 testimonios de clientes confirmados por Yedin; D19 indexación cerrada hasta tener dominio y publicación aprobada. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -133,6 +133,16 @@ Las frases de S2.8 no cambiaron. Tras la confirmación de Yedin, el texto visibl
 ~~~
 
 La salida antigua de S2.8 documenta el texto previo a esta aclaración.
+
+## Evidencia de S3.3
+
+Chrome/Playwright cargó la 404 con recursos locales en 1440, 390 y 320 px. Salida real móvil:
+
+~~~text
+{"width":320,"title":"Página no encontrada — Bella’s Catering","robots":"noindex, nofollow","heading":"Esta mesate espera en casa.","hero":1600,"style":"Cormorant, Georgia, serif","links":2,"overflow":false,"errors":[]}
+~~~
+
+Inspección visual confirmó el recorte circular tras corregir la altura de la imagen. Comprobación de rutas e indexación: {"absoluteAssets":["/ASSETS/brand/bellas-seal.svg","/css/base.css","/css/not-found.css","/ASSETS/brand/bellas-seal.svg","/ASSETS/images/hero-dish.webp"],"missing":[],"robots":"User-agent: *\nDisallow: /","homeNoindex":true}. Cloudflare documenta que un 404.html en la raíz se usa para errores 404, pero falta comprobar el estado HTTP real tras desplegar. Lighthouse no está instalado en el entorno y no se ejecutó.
 
 ## Datos pendientes
 

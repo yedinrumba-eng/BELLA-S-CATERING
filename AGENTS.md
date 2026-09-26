@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.10 y S3.1–S3.2 cerrados. Continuar S3.3 SEO y preparación de entrega. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y del pedido expreso de push. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -41,6 +41,8 @@ S1.1–S2.10 y S3.1–S3.2 cerrados. Continuar S3.3 SEO y preparación de entreg
 - **D17** — El foco de teclado usa un dorado más oscuro, con contraste mayor a 3:1 tanto sobre papel claro como sobre fondo oscuro. La auditoría recorre teclado, enlaces, imágenes y movimiento reducido en Chrome.
 
 - **D18** — Las siete frases se muestran como testimonios de clientes, porque Yedin confirmó que esas personas contrataron a Jenny para sus eventos. Se mantienen las citas y atribuciones originales, sin añadir resultados ni detalles de servicio.
+
+- **D19** — robots.txt y noindex mantienen el sitio fuera de buscadores durante la revisión; la URL canónica, el sitemap y los metadatos sociales absolutos esperan el dominio definitivo para no publicar direcciones inventadas. 404.html permite una respuesta propia en Cloudflare Pages.
 
 ## Verificación
 

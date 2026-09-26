@@ -26,7 +26,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 - [x] **S3.1** — seguridad y privacidad: CSS local, cabeceras Cloudflare, .env.example y escaneo de archivos publicables; Chrome 1440/390 sin peticiones externas, errores ni desbordamiento.
 - [x] **S3.2** — teclado, movimiento reducido, foco, imágenes y carga inicial comprobados en Chrome a 1440/390/320 px.
-- [ ] **S3.3** — SEO y preparación de publicación: metadatos, robots y página 404; dominio y despliegue pendientes de Yedin.
+- [x] **S3.3** — 404.html adaptable, robots con bloqueo temporal, rutas locales y noindex comprobados; dominio y HTTP reales pendientes.
+- [ ] **S3.4** — con dominio definitivo y orden de publicación: canónica, metadatos sociales absolutos, sitemap, abrir indexación, Lighthouse, push y comprobación del despliegue.
 
 ## Bitácora
 
@@ -55,9 +56,11 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 26/09/2026 — S2.10: Yedin confirmó que las personas citadas contrataron a Jenny. Chrome a 320×720: {"width":320,"height":720,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"31px","note":"Testimonios de clientes que contrataron a Jenny para sus eventos.","errors":[]}.
 
+26/09/2026 — S3.3: Chrome 404 a 1440/390/320 px: imagen cargada y sin desbordamiento ni errores. Salida real 320 px: {"width":320,"title":"Página no encontrada — Bella’s Catering","robots":"noindex, nofollow","heading":"Esta mesate espera en casa.","hero":1600,"style":"Cormorant, Georgia, serif","links":2,"overflow":false,"errors":[]}. Recursos: missing=[]; robots.txt bloquea todo y portada marca noindex. Estado HTTP y Lighthouse pendientes.
+
 ## Deuda técnica
 
-🟡 Antes de publicar: añadir `robots.txt` y `404.html`; el sitemap necesita el dominio definitivo. Comprobar cabeceras HTTP reales tras desplegar y repetir el escaneo de archivos preparados antes del primer push.
+🟡 Antes de publicar: crear sitemap con el dominio definitivo, abrir indexación, ejecutar Lighthouse, comprobar estado 404 y cabeceras HTTP tras desplegar. Repetir el escaneo de archivos preparados antes del primer push.
 
 ## Lecciones ya pagadas
 

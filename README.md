@@ -30,6 +30,10 @@ Este repositorio es público. No contiene claves, contraseñas, archivos `.env`,
 
 Las imágenes generadas de Jenny y de platos son material editorial. Su selección para una galería o para describir preparaciones concretas requiere aprobación de Bella’s Catering. No se copian imágenes, textos ni código de las webs usadas como referencias visuales.
 
+## Publicación pendiente
+
+La portada tiene noindex y robots.txt bloquea el rastreo mientras se revisa el sitio. 404.html muestra una salida clara si alguien visita una dirección inexistente. Antes de abrir la indexación hay que confirmar el dominio, añadir URL canónica y metadatos sociales absolutos, crear el sitemap, comprobar las cabeceras HTTP en Cloudflare y ejecutar Lighthouse. No se ha hecho push ni despliegue.
+
 ## Próximo paso
 
-Sigue la revisión de accesibilidad, rendimiento y SEO antes de publicar. Las cabeceras deben comprobarse en Cloudflare Pages después del despliegue.
+La preparación local de seguridad, accesibilidad y SEO está hecha. Faltan las comprobaciones del sitio desplegado y el dominio definitivo.
