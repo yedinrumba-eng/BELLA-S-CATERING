@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/motion.css" />
+    <link rel="stylesheet" href="css/sections.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
@@ -28,6 +29,8 @@
       </a>
       <nav class="desktop-nav" aria-label="Navegación principal">
         <a href="#inicio" aria-current="page">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#chef">La chef</a>
         <a href="https://wa.me/18494530297?text=Hola%2C%20quiero%20cotizar%20un%20evento%20con%20Bella%E2%80%99s%20Catering." target="_blank" rel="noopener noreferrer">Cotizar</a>
       </nav>
       <a class="header-cta" href="https://wa.me/18494530297?text=Hola%2C%20quiero%20cotizar%20un%20evento%20con%20Bella%E2%80%99s%20Catering." target="_blank" rel="noopener noreferrer">Hablemos de tu evento <span aria-hidden="true">↗</span></a>
@@ -35,6 +38,8 @@
         <summary aria-label="Abrir menú"><span></span><span></span></summary>
         <nav aria-label="Navegación móvil">
           <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#chef">La chef</a>
           <a href="https://wa.me/18494530297?text=Hola%2C%20quiero%20cotizar%20un%20evento%20con%20Bella%E2%80%99s%20Catering." target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
         </nav>
       </details>
@@ -70,7 +75,41 @@
           <div class="food-scene__plate food-scene__plate--right"><img src="ASSETS/images/dish-steak.webp" alt="Corte de carne sobre puré con setas" width="1100" height="1100" loading="lazy" /></div>
         </div>
         <p class="food-scene__footer">La experiencia empieza en la mesa.</p>
-      </section>    </main>
+      </section>
+      <section class="services" id="servicios" aria-labelledby="services-title">
+        <div class="services__intro">
+          <div>
+            <p class="section-kicker">Lo que hacemos · 03</p>
+            <h2 id="services-title">Hecho para<br /><em>tu ocasión.</em></h2>
+          </div>
+          <p>Desde una cena íntima hasta una celebración grande, creamos una propuesta a la medida de tu evento, tus invitados y tus gustos.</p>
+        </div>
+        <div class="services__list">
+          <article class="service"><span class="service__number">01</span><h3>Catering &amp; buffet</h3><p>Para bodas, cumpleaños, bautizos y celebraciones especiales. La propuesta puede incluir comida, montaje, vajilla, meseros, decoración y limpieza, según cada evento.</p><span class="service__mark" aria-hidden="true">↗</span></article>
+          <article class="service"><span class="service__number">02</span><h3>Chef privado</h3><p>Una experiencia gastronómica personal para reuniones en casa o villas privadas, con menú pensado alrededor de quienes se sientan a la mesa.</p><span class="service__mark" aria-hidden="true">↗</span></article>
+          <article class="service"><span class="service__number">03</span><h3>Diseño de menús</h3><p>Creación de propuestas a la carta, de comida rápida o para ocasiones especiales. Adaptamos sabores, formato y porciones a lo que necesitas.</p><span class="service__mark" aria-hidden="true">↗</span></article>
+          <article class="service"><span class="service__number">04</span><h3>Asesoría gastronómica</h3><p>Apoyo para cocinas comerciales y restaurantes: instalación, menús, capacitación, costos, recetas, porciones y organización de la producción.</p><span class="service__mark" aria-hidden="true">↗</span></article>
+          <article class="service"><span class="service__number">05</span><h3>Equipos para eventos</h3><p>Soluciones de montaje con chafing dishes, vajilla y otros equipos. Combinamos materiales propios y alquileres según el tamaño de la celebración.</p><span class="service__mark" aria-hidden="true">↗</span></article>
+        </div>
+        <p class="services__note">Con base en Santiago de los Caballeros; atendemos otras provincias y villas privadas según las necesidades del evento.</p>
+      </section>
+
+      <section class="biography" id="chef" aria-labelledby="biography-title">
+        <div class="biography__visual">
+          <img src="ASSETS/images/jenny-plating.webp" alt="Representación editorial de Jenny Pereyra emplatando en una cocina profesional" width="1280" height="1440" loading="lazy" />
+          <img class="biography__secondary" src="ASSETS/images/jenny-with-team.webp" alt="Representación editorial de Jenny Pereyra preparando platos con un equipo de cocina" width="1280" height="1440" loading="lazy" />
+          <div class="biography__stamp" aria-hidden="true"><span>Jenny<br />Pereyra</span><small>Chef &amp; fundadora</small></div>
+        </div>
+        <div class="biography__copy">
+          <p class="section-kicker">Detrás de cada plato · 04</p>
+          <h2 id="biography-title">Soy Jenny.<br /><em>Mucho gusto.</em></h2>
+          <p class="biography__lead">Mi amor por la cocina comenzó en casa y hoy vive en cada celebración que preparo.</p>
+          <p class="biography__body">Soy Jenny Pereyra, creadora de Bella’s Catering. El nombre nace de mi hija, mi mayor inspiración para convertir una pasión de toda la vida en un proyecto propio. Estudié Artes Culinarias y sigo aprendiendo para llevar a cada mesa creatividad, dedicación y atención al detalle.</p>
+          <div class="biography__facts"><span><strong>~10 años</strong>de experiencia gastronómica</span><span><strong>1 año y 4 meses</strong>de formación en Artes Culinarias</span></div>
+          <a class="biography__link" href="https://wa.me/18494530297?text=Hola%2C%20quiero%20hablar%20con%20Jenny%20sobre%20un%20evento." target="_blank" rel="noopener noreferrer">Hablemos de tu celebración ↗</a>
+        </div>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <p>Bella’s Catering · Santiago de los Caballeros</p>

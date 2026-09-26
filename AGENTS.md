@@ -21,7 +21,7 @@ Construir S1.1, S1.2, S1.3 y S2.1 en orden. **Parar antes de S2.2, la galería**
 - **D2** — Aveline guía composición y Sofra los recortes; assets y textos son de Bella’s para tener identidad propia.
 - **D3** — Cloudflare Pages, porque Yedin eligió esa plataforma y dominio propio.
 - **D4** — Cormorant Garamond y Manrope locales, porque equilibran carácter editorial y lectura móvil sin depender de una fuente remota.
-- **D5** — Fotos generadas de Jenny sirven como arte editorial, no como evidencia de un evento real; evita prometer escenas documentales que no ocurrieron.`n- **D6** — GSAP y ScrollTrigger locales, porque la animación acordada debe funcionar sin depender de un CDN en producción.
+- **D5** — Fotos generadas de Jenny sirven como arte editorial, no como evidencia de un evento real; evita prometer escenas documentales que no ocurrieron.`n- **D6** — GSAP y ScrollTrigger locales, porque la animación acordada debe funcionar sin depender de un CDN en producción.`n- **D7** — Servicios agrupados en cinco bloques, porque presentan toda la oferta confirmada por Jenny sin convertir la página en un catálogo inventado.
 
 ## Verificación
 

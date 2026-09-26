@@ -1,0 +1,59 @@
+.section-kicker { margin: 0; color: #8d7449; font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; }
+.services { padding: 112px clamp(24px, 7.5vw, 130px) 125px; background: var(--paper); }
+.services__intro { display: grid; grid-template-columns: 1.2fr .8fr; gap: 6vw; align-items: end; padding-bottom: 64px; }
+.services h2, .biography h2 { margin: 20px 0 0; font-family: "Cormorant", Georgia, serif; font-size: clamp(78px, 8.1vw, 128px); font-weight: 400; letter-spacing: -.058em; line-height: .85; }
+.services h2 em, .biography h2 em { color: #9f834e; font-weight: 400; }
+.services__intro > p { max-width: 320px; margin: 0 0 2px; color: var(--ink-soft); font-size: 14px; line-height: 1.9; }
+.services__list { border-top: 1px solid #b8b3a6; }
+.service { display: grid; grid-template-columns: 65px minmax(220px, .75fr) 1fr 30px; gap: 24px; align-items: start; padding: 30px 0 34px; border-bottom: 1px solid #b8b3a6; }
+.service__number { padding-top: 12px; color: #9f834e; font-family: "Cormorant", Georgia, serif; font-size: 21px; font-style: italic; }
+.service h3 { margin: 0; font-family: "Cormorant", Georgia, serif; font-size: clamp(36px, 3.1vw, 51px); font-weight: 400; letter-spacing: -.035em; line-height: 1; }
+.service p { max-width: 530px; margin: 6px 0 0; color: var(--ink-soft); font-size: 13px; line-height: 1.85; }
+.service__mark { color: #9f834e; font-family: "Cormorant", Georgia, serif; font-size: 28px; line-height: 1; }
+.services__note { margin: 35px 0 0; color: #68695e; font-size: 12px; line-height: 1.7; }
+
+.biography { display: grid; grid-template-columns: 51% 49%; min-height: 850px; background: var(--paper-deep); }
+.biography__visual { position: relative; min-height: 850px; overflow: hidden; background: #363b38; }
+.biography__visual > img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 43%; }
+.biography__visual > .biography__secondary { position: absolute; bottom: 30px; left: 30px; width: clamp(145px, 15vw, 225px); height: auto; aspect-ratio: 4 / 5; border: 5px solid var(--paper-deep); object-fit: cover; object-position: 48% 50%; box-shadow: 0 12px 25px #0005; }
+.biography__stamp { position: absolute; right: 27px; bottom: 28px; width: 125px; height: 125px; padding: 12px; border: 1px solid #f6f1e8b0; border-radius: 50%; display: grid; place-content: center; color: #f6f1e8; background: #18201bcc; text-align: center; transform: rotate(-12deg); }
+.biography__stamp span { display: block; font-family: "Cormorant", Georgia, serif; font-size: 26px; font-style: italic; line-height: .9; }
+.biography__stamp small { display: block; margin-top: 7px; font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.biography__copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 95px clamp(35px, 6.3vw, 105px); }
+.biography h2 { max-width: 610px; font-size: clamp(76px, 7.5vw, 122px); }
+.biography__lead { max-width: 510px; margin: 40px 0 0; font-family: "Cormorant", Georgia, serif; font-size: clamp(27px, 2.8vw, 39px); line-height: 1.08; }
+.biography__body { max-width: 500px; margin: 30px 0 0; color: var(--ink-soft); font-size: 14px; line-height: 1.9; }
+.biography__facts { display: flex; gap: 28px; margin-top: 40px; padding-top: 21px; border-top: 1px solid #ada795; color: #5f5f55; font-size: 11px; line-height: 1.6; }
+.biography__facts strong { display: block; color: var(--ink); font-family: "Cormorant", Georgia, serif; font-size: 30px; font-weight: 400; line-height: 1.1; }
+.biography__link { margin-top: 39px; border-bottom: 1px solid var(--ink); padding-bottom: 7px; font-size: 12px; font-weight: 600; }
+.biography__link:hover { color: #8c6e39; border-color: #8c6e39; }
+
+@media (max-width: 980px) {
+  .services__intro { grid-template-columns: 1fr; gap: 26px; }
+  .service { grid-template-columns: 45px minmax(0, 1fr) 25px; gap: 15px; }
+  .service p { grid-column: 2; margin-top: -10px; }
+  .service__mark { grid-column: 3; grid-row: 1; }
+  .biography { grid-template-columns: 48% 52%; }
+  .biography__copy { padding: 55px 35px; }
+}
+
+@media (max-width: 760px) {
+  .services { padding: 82px 23px 95px; }
+  .services h2, .biography h2 { font-size: clamp(70px, 15vw, 98px); }
+  .services__intro { padding-bottom: 44px; }
+  .service { grid-template-columns: 28px minmax(0, 1fr) 18px; gap: 13px; padding: 25px 0 28px; }
+  .service__number { padding-top: 5px; font-size: 17px; }
+  .service h3 { font-size: clamp(31px, 8vw, 43px); }
+  .service p { font-size: 12px; line-height: 1.8; }
+  .service__mark { font-size: 22px; }
+  .biography { display: flex; flex-direction: column; }
+  .biography__visual { min-height: 0; height: 490px; }
+  .biography__visual > img { object-position: 50% 40%; }
+  .biography__visual > .biography__secondary { left: 18px; bottom: 18px; width: 135px; border-width: 4px; }
+  .biography__stamp { width: 105px; height: 105px; right: 20px; bottom: 20px; }
+  .biography__copy { padding: 78px 23px 88px; }
+  .biography__lead { margin-top: 31px; }
+  .biography__body { margin-top: 21px; font-size: 13px; }
+  .biography__facts { gap: 22px; }
+  .biography__facts strong { font-size: 24px; }
+}

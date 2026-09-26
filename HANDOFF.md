@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S1.3; próximo: S2.1
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.1; próximo: S2.2 (en pausa hasta recibir imágenes y selección de galería)
 
 ## Estado
 
@@ -11,8 +11,8 @@ La carpeta era nueva y no tenía código. Yedin autorizó construir desde S1.1 h
 1. S1.1 cerrado — sello SVG renderizado, fuentes con licencia local y tres fotos WebP; salida: SVG valid: 0 0 360 360 bytes 1694; Jenny 1500x1500 118086 bytes, plating 1280x1440 140208 bytes, team 1280x1440 157640 bytes.
 2. S1.2 cerrado — portada en navegador a 1440 y 390 px: foto cargada, sin desbordamiento; menú móvil abre con Enter y enlaces correctos.
 3. S1.3 cerrado — tres WebP optimizados; GSAP local. Scroll probado: plato central pasa de y=-580 a y=0. A 1440 y 390 px cargan las tres fotos sin desbordar; con movimiento reducido quedan visibles y quietas.
-4. S2.1 — servicios y biografía real. Comprobar contenido, navegación y móvil.
-5. Parar: galería S2.2 espera selección de platos a la carta y buffets.
+4. S2.1 cerrado — cinco servicios y biografía contrastados con las respuestas de Jenny. Navegador a 1440, 390 y 320 px: cinco tarjetas, sin desbordamiento, fotos cargadas; el menú móvil navega a #chef.
+5. Parar ahora: galería S2.2 espera nuevas imágenes y selección de platos a la carta y buffets. No hay push ni deploy.
 
 ## Decisiones vinculantes
 
