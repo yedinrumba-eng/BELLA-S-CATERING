@@ -53,18 +53,76 @@
   border-radius: 50%;
   box-shadow: 0 36px 70px #0008, 0 2px 8px #0007;
   background: #262522;
-  will-change: transform;
+  will-change: transform, opacity;
 }
-.food-scene__plate img { width: 100%; height: 100%; object-fit: cover; }
+.food-scene__plate img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .food-scene__plate--left { top: 145px; left: 2%; width: clamp(240px, 25vw, 365px); aspect-ratio: 1; transform: rotate(-13deg); }
 .food-scene__plate--left img { object-position: 50% 56%; }
 .food-scene__plate--main { z-index: 2; top: 0; left: 32%; width: clamp(380px, 38vw, 535px); aspect-ratio: 1; transform: rotate(6deg); }
 .food-scene__plate--main img { object-position: 50% 50%; }
 .food-scene__plate--right { top: 170px; right: 0; width: clamp(235px, 24vw, 350px); aspect-ratio: 1; transform: rotate(15deg); }
 .food-scene__plate--right img { object-position: 48% 52%; }
+.food-scene__plate--extra { display: none; }
+.food-scene.is-motion {
+  height: 100svh;
+  min-height: 0;
+  box-sizing: border-box;
+}
+.food-scene.is-motion .food-scene__stage {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  width: min(84%, 1150px);
+  height: min(520px, 65svh);
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+.food-scene.is-motion .food-scene__plate {
+  top: 50%;
+  right: auto;
+  left: 50%;
+  width: min(42%, 440px, 58svh);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+}
+.food-scene.is-motion .food-scene__plate--extra { display: block; visibility: hidden; }
 .food-scene__orbit { position: absolute; border: 1px solid #ceb98330; border-radius: 50%; pointer-events: none; }
 .food-scene__orbit--one { top: 82px; left: 12%; width: 500px; height: 500px; }
 .food-scene__orbit--two { top: 13px; right: 10%; width: 440px; height: 440px; }
+.food-scene__fragments {
+  position: absolute;
+  z-index: 4;
+  top: 46%;
+  left: 50%;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+.food-scene__fragment {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  filter: drop-shadow(0 4px 5px #0009);
+}
+.food-scene__fragment--leaf {
+  width: 26px;
+  height: 12px;
+  border-radius: 100% 0 100% 0;
+  background: linear-gradient(135deg, #7e9b58, #d4ca83);
+}
+.food-scene__fragment--seed {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d9a662;
+}
+.food-scene__fragment--ribbon {
+  width: 27px;
+  height: 8px;
+  border-radius: 50%;
+  border: 3px solid #e9d6a5;
+  transform: rotate(26deg);
+}
 .food-scene__footer { position: absolute; z-index: 3; right: clamp(24px, 7.5vw, 130px); bottom: 45px; margin: 0; color: #c7c5bb; font-family: "Cormorant", Georgia, serif; font-size: 21px; font-style: italic; }
 
 @media (max-width: 760px) {
@@ -75,11 +133,31 @@
   .food-scene__plate--left { top: 65px; left: -35px; width: 46%; }
   .food-scene__plate--main { top: 104px; left: 15%; width: 72%; }
   .food-scene__plate--right { top: 2px; right: -24px; width: 44%; }
+  .food-scene.is-motion .food-scene__stage { top: 55%; width: calc(100% - 46px); height: min(425px, 62svh); }
+  .food-scene.is-motion .food-scene__plate { top: 50%; width: min(72%, 52svh); }
   .food-scene__orbit--one { top: 0; left: -150px; width: 420px; height: 420px; }
   .food-scene__orbit--two { top: 110px; right: -160px; width: 380px; height: 380px; }
   .food-scene__footer { right: 23px; bottom: 26px; font-size: 18px; }
 }
-
-@media (prefers-reduced-motion: reduce) {
+@media (max-width: 400px) {
+  .food-scene__heading { font-size: clamp(56px, 15.5vw, 62px); }
+}
+@media (max-height: 760px) {
+  .food-scene.is-motion { padding-top: 42px; padding-bottom: 65px; }
+  .food-scene.is-motion .food-scene__heading { font-size: clamp(64px, 7vw, 100px); }
+  .food-scene.is-motion .food-scene__note { margin-top: 14px; }
+  .food-scene.is-motion .food-scene__footer { bottom: 20px; }
+}
+@media (max-height: 760px) and (max-width: 760px) {
+  .food-scene.is-motion { padding-top: 42px; }
+  .food-scene.is-motion .food-scene__heading { font-size: clamp(56px, 15vw, 74px); }
+  .food-scene.is-motion .food-scene__eyebrow { margin-bottom: 14px; }
+  .food-scene.is-motion .food-scene__stage { top: 57%; }
+}
+@media (max-height: 620px) and (max-width: 760px) {
+  .food-scene.is-motion .food-scene__stage { top: 66%; }
+  .food-scene.is-motion .food-scene__plate { width: min(62%, 42svh); }
+}@media (prefers-reduced-motion: reduce) {
   .food-scene__plate { will-change: auto; }
+  .food-scene__fragments { display: none; }
 }

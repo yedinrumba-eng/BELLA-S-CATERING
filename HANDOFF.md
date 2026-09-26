@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.3; próximo: S2.4 (intercambio de platos y componentes)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.4; próximo: S2.5 (acordeón de servicios y meal prep)
 
 ## Estado
 
@@ -14,13 +14,17 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 4. S2.1 cerrado — cinco servicios y biografía contrastados con las respuestas de Jenny. Navegador a 1440, 390 y 320 px: cinco tarjetas, sin desbordamiento, fotos cargadas; el menú móvil navega a #chef.
 5. S2.2 cerrado — seis imágenes WebP nuevas para carta y buffet. Chrome a 1440/390/320 px: seis tarjetas e imágenes cargadas, categorías y ancla presentes, sin desbordamiento.
 6. S2.3 cerrado — plato editorial en portada, retrato de Jenny en arco de biografía y descripciones más grandes. Chrome a 1440/1100/980/820/768/390/320 px: ambas imágenes cargadas, textos 18/16 px, sin desbordamiento ni errores de página. El menú pasa a modo compacto hasta 1100 px y la bio a una columna hasta 980 px.
-7. S2.4 — intercambio de platos al hacer scroll y efecto visual de componentes.
-8. S2.5 — acordeón de servicios y meal prep señalado como concepto futuro.
-9. S2.6 — formulario hacia WhatsApp. No hay push ni deploy.
+7. S2.4 cerrado — cinco platos locales con dos relevos de scroll y dos ráfagas decorativas. Chrome a 1440×900, 1440×600, 390×667 y 320×568: sección completa en pantalla, sin desbordamiento ni errores; resize recalcula escala y posición; movimiento reducido muestra tres platos quietos.
+8. S2.5 — acordeón visual de los cinco servicios confirmados, con imágenes y detalles; meal prep marcado «En exploración».
+9. S2.6 — formulario que prepara un mensaje de WhatsApp sin almacenar datos.
+10. S2.7 — barra de navegación cápsula con identidad de Bella’s.
+11. S2.8 — comentarios compartidos sobre la cocina de Jenny, sin presentarlos como reseñas verificadas de servicios.
+12. S2.9 — proceso y preguntas frecuentes.
+13. S3.1 — seguridad, accesibilidad, SEO y revisión final antes de un eventual push o despliegue. No hay push ni deploy.
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -32,6 +36,18 @@ D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudfl
 {"width":390,"overflow":false,"heroLoaded":1600,"bioLoaded":1500,"heroTextPx":"16px","bioTextPx":"16px","serviceTextPx":"16px","bioLead":"El amor por la cocina comenzó en casa y hoy vive en cada celebración que preparo.","mobileMenuVisible":true,"bioImgWidth":344,"bioImages":1,"errors":[]}
 {"width":320,"overflow":false,"heroLoaded":1600,"bioLoaded":1500,"heroTextPx":"16px","bioTextPx":"16px","serviceTextPx":"16px","bioLead":"El amor por la cocina comenzó en casa y hoy vive en cada celebración que preparo.","mobileMenuVisible":true,"bioImgWidth":274,"bioImages":1,"errors":[]}
 ```
+## Evidencia de S2.4
+
+`.playwright/s2-4-phases.cjs` y `.playwright/s2-4-short-desktop.cjs` en Chrome, con scroll real. Líneas de salida:
+
+```text
+{"width":1440,"height":900,"progress":0.54,"scene":[0,0,1440,900],"plates":[{"id":"0","rect":[-68,498,218,784],"opacity":"0.00"},{"id":"1","rect":[152,433,506,787],"opacity":"1.00"},{"id":"2","rect":[478,244,962,728],"opacity":"1.00"},{"id":"3","rect":[934,421,1288,775],"opacity":"1.00"},{"id":"4","rect":[1222,498,1508,784],"opacity":"0.00"}],"footer":[1074,830,1332,855],"overflow":false,"errors":[]}
+{"width":320,"height":568,"progress":0.28,"scene":[0,0,320,568],"plates":[{"id":"0","rect":[-7,339,113,459],"opacity":"1.00"},{"id":"1","rect":[67,282,253,469],"opacity":"1.00"},{"id":"2","rect":[207,339,327,459],"opacity":"1.00"},{"id":"3","rect":[281,365,391,475],"opacity":"0.00"},{"id":"4","rect":[281,365,391,475],"opacity":"0.00"}],"footer":[76,526,297,548],"overflow":false,"errors":[]}
+{"heading":[108,82,1008,258],"note":[108,272,1332,300],"footer":[1074,555,1332,580],"plates":[{"id":"0","rect":[-38,286,188,512],"opacity":"0"},{"id":"1","rect":[189,309,469,588],"opacity":"1"},{"id":"2","rect":[529,133,911,516],"opacity":"1"},{"id":"3","rect":[971,230,1251,509],"opacity":"1"},{"id":"4","rect":[1252,286,1478,512],"opacity":"0"}]}
+{"motion":false,"triggers":0,"plates":["block","block","block","none","none"],"overflow":false,"errors":[]}
+```
+
+En 320×568 la nota termina en y≈258 y el plato central empieza en y≈282. En 1440×600 el plato derecho acaba en y=509 y el pie empieza en y=555. Capturas ignoradas: `.playwright/s2-4-scene-320x568-fixed.png` y `.playwright/s2-4-scene-1440x600-fixed.png`.
 ## Datos pendientes
 
 Dominio, registro final del negocio y validación con Jenny de platos y preparaciones definitivos. Las fotos actuales se señalan como conceptuales.

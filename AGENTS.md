@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.3 cerrados. Continuar S2.4–S2.5 en orden con el nuevo pedido de Yedin; luego S2.6 formulario. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.4 cerrados. Continuar S2.5 acordeón visual y meal prep en exploración; luego S2.6 formulario, S2.7 navegación, S2.8 reacciones y S2.9 proceso/preguntas frecuentes. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -26,6 +26,7 @@ S1.1–S2.3 cerrados. Continuar S2.4–S2.5 en orden con el nuevo pedido de Yedi
 - **D7** — Servicios agrupados en cinco bloques, porque presentan toda la oferta confirmada por Jenny sin convertir la página en un catálogo inventado.
 - **D8** — Galería con seis imágenes conceptuales etiquetadas, porque Yedin las aportó como dirección visual y los platos finales se personalizan por evento.
 - **D9** — El plato ocupa la portada y el retrato de Jenny la biografía, porque la primera pantalla vende gastronomía y la segunda presenta a quien la crea; descripciones de 16–18 px mejoran la lectura.
+- **D10** — Cinco platos locales se relevan durante el scroll dentro de una escena de una pantalla, con componentes decorativos en las transiciones. GSAP recalcula las posiciones al cambiar el ancho y ofrece tres platos quietos con movimiento reducido; así la escena se mantiene encuadrada sin imponer animación a quien la desactiva.
 
 ## Verificación
 

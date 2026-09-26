@@ -13,13 +13,16 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S2.1** — cinco servicios y biografía de Jenny contrastados con PRD; enlaces, fotos y móvil comprobados.
 - [x] **S2.2** — galería conceptual de carta y buffet con seis imágenes; Chrome a 1440/390/320 px.
 - [x] **S2.3** — portada, biografía y tamaños de lectura; Chrome a 1440/1100/980/820/768/390/320 px.
-- [ ] **S2.4** — intercambio de platos al hacer scroll y efecto de componentes.
+- [x] **S2.4** — cinco platos con dos relevos y componentes decorativos; Chrome a 1440×900, 1440×600, 390×667 y 320×568, resize y movimiento reducido comprobados.
 - [ ] **S2.5** — acordeón visual de servicios y meal prep en exploración.
 - [ ] **S2.6** — formulario que prepara WhatsApp. Verificar mensaje sin enviarlo.
+- [ ] **S2.7** — navegación cápsula Bella’s, adaptable y accesible.
+- [ ] **S2.8** — reacciones sociales sobre la cocina de Jenny, con atribución exacta y sin afirmar que sean clientes de catering.
+- [ ] **S2.9** — proceso y preguntas frecuentes.
 
 ## Fase 3 — Entrega
 
-- [ ] **S3.1** — revisión y Cloudflare con dominio propio. Verificar sitio en vivo.
+- [ ] **S3.1** — revisión de seguridad, privacidad, accesibilidad y entrega; push/despliegue solo cuando Yedin lo pida.
 
 ## Bitácora
 
@@ -30,9 +33,11 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S2.2: Chrome a 1440/390/320 px: 6 fotos cargadas, 2 categorías y sin desbordamiento.
 26/09/2026 — S2.3: Chrome a 1440/1100/980/820/768/390/320 px: foto del plato 1600 px y retrato 1500 px cargados, descripciones 18/16 px, 1 foto en bio, sin desbordamiento ni errores. Salida real: {"width":820,"overflow":false,"heroLoaded":1600,"bioLoaded":1500,"heroTextPx":"18px","bioTextPx":"18px","serviceTextPx":"17px","bioLead":"El amor por la cocina comenzó en casa y hoy vive en cada celebración que preparo.","mobileMenuVisible":true,"bioImgWidth":672,"bioImages":1,"errors":[]}
 
+26/09/2026 — S2.4: Chrome con scroll en 1440×900, 1440×600, 390×667 y 320×568: dos relevos, platos encuadrados, sin desbordamiento ni errores. Salida real 320×568 progreso .28: {"width":320,"height":568,"progress":0.28,"scene":[0,0,320,568],"plates":[{"id":"0","rect":[-7,339,113,459],"opacity":"1.00"},{"id":"1","rect":[67,282,253,469],"opacity":"1.00"},{"id":"2","rect":[207,339,327,459],"opacity":"1.00"},{"id":"3","rect":[281,365,391,475],"opacity":"0.00"},{"id":"4","rect":[281,365,391,475],"opacity":"0.00"}],"footer":[76,526,297,548],"overflow":false,"errors":[]}. Movimiento reducido: {"motion":false,"triggers":0,"plates":["block","block","block","none","none"],"overflow":false,"errors":[]}
+
 ## Deuda técnica
 
-No identificada aún. Los datos pendientes del negocio están en `HANDOFF.md`.
+🟡 Antes de publicar: sustituir o proteger la dependencia Tailwind CDN con versión fija y política de contenido, añadir `_headers`, `robots.txt`, `sitemap.xml` y `404.html`. Repetir escaneo de archivos preparados antes del primer push. No bloquea la revisión local de S2.4.
 
 ## Lecciones ya pagadas
 
