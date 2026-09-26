@@ -44,6 +44,8 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D19** — robots.txt y noindex mantienen el sitio fuera de buscadores durante la revisión; la URL canónica, el sitemap y los metadatos sociales absolutos esperan el dominio definitivo para no publicar direcciones inventadas. 404.html permite una respuesta propia en Cloudflare Pages.
 
+- **D20** — La portada conserva la foto fija del plato y se descarta /PRODUCT EXPLOTION y cualquier render 3D, porque Yedin prefirió dejar la imagen sola. El relevo de platos al hacer scroll en la segunda sección sigue aprobado.
+
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
@@ -51,3 +53,5 @@ Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y
 ## Descartado y por qué
 
 Astro/CMS y backend, porque esta primera página no los necesita. Pagos, porque la venta se cierra mediante cotización. Imágenes de Aveline y Sofra, porque son referencias, no assets autorizados.
+
+/PRODUCT EXPLOTION y Blender, porque Yedin decidió conservar la fotografía del plato sin render ni explosión 3D.

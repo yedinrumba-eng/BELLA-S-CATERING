@@ -144,9 +144,9 @@ Chrome/Playwright cargó la 404 con recursos locales en 1440, 390 y 320 px. Sali
 
 Inspección visual confirmó el recorte circular tras corregir la altura de la imagen. Comprobación de rutas e indexación: {"absoluteAssets":["/ASSETS/brand/bellas-seal.svg","/css/base.css","/css/not-found.css","/ASSETS/brand/bellas-seal.svg","/ASSETS/images/hero-dish.webp"],"missing":[],"robots":"User-agent: *\nDisallow: /","homeNoindex":true}. Cloudflare documenta que un 404.html en la raíz se usa para errores 404, pero falta comprobar el estado HTTP real tras desplegar. Lighthouse no está instalado en el entorno y no se ejecutó.
 
-## Product Explosion pendiente
+## Product Explosion descartado
 
-El token /PRODUCT EXPLOTION se resolvió con la skill Higgsfield a un flujo de animación editable en Blender. Requiere Blender 4.2+ y el conector fnf-blender-mcp. No hay herramientas bl_* activas ni una instalación de Blender en las ubicaciones estándar o en el registro de programas. La guía de instalación indica no instalar Blender sin una solicitud explícita. Se pidió a Yedin autorización; no se sustituyó el flujo por otro ni se instaló software. La escena actual de cinco platos sigue animada con GSAP.
+Yedin decidió dejar la fotografía del plato sola en la portada. /PRODUCT EXPLOTION, Blender y el render 3D quedan descartados; no son trabajo pendiente. El relevo de cinco platos con GSAP en la segunda sección sigue aprobado.
 
 ## Datos pendientes
 

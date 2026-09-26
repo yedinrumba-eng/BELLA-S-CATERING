@@ -22,8 +22,6 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 - [x] **S2.10** — tras la confirmación de Yedin, las siete frases se presentan como testimonios de clientes. Chrome 1440/768/390/320 px: citas intactas y sin desbordamiento.
 
-- [!] **S2.11** — efecto /PRODUCT EXPLOTION 3D real: el flujo Higgsfield requiere Blender 4.2+ y un conector local. No se encontró Blender instalado; se pidió autorización antes de añadir software. La animación GSAP existente continúa operativa.
-
 ## Fase 3 — Entrega
 
 - [x] **S3.1** — seguridad y privacidad: CSS local, cabeceras Cloudflare, .env.example y escaneo de archivos publicables; Chrome 1440/390 sin peticiones externas, errores ni desbordamiento.
@@ -71,3 +69,5 @@ Los HEIC no se abrían con el visor por defecto de la sesión; un conversor loca
 ## Descartado y por qué
 
 Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. Assets de las webs de referencia: solo guían el diseño.
+
+/PRODUCT EXPLOTION y Blender: Yedin prefirió conservar la fotografía del plato sin render 3D. El relevo de imágenes al hacer scroll en la segunda sección continúa aprobado.
