@@ -4,7 +4,7 @@ Sitio en español de Bella’s Catering, servicio de catering, chef privado y as
 
 ## Estado
 
-Proyecto en construcción. Portada, animación, servicios y biografía están implementados. La galería conceptual de platos y buffet ya está incorporada; los nombres y preparaciones finales quedan sujetos a revisión con Jenny. Todavía no hay sitio publicado.
+Proyecto en construcción. Portada gastronómica, animación, servicios y biografía con retrato de Jenny están implementados. La galería conceptual de platos y buffet ya está incorporada; los nombres y preparaciones finales quedan sujetos a revisión con Jenny. Todavía no hay sitio publicado.
 
 ## Vista local
 

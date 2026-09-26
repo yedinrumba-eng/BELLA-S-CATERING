@@ -20,7 +20,7 @@
   position: relative;
   z-index: 2;
   color: #ddcaa7;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: .17em;
   text-transform: uppercase;
 }
@@ -37,7 +37,7 @@
   line-height: .88;
 }
 .food-scene__heading em { color: #cfb989; font-weight: 400; }
-.food-scene__note { margin: 26px 0 0; line-height: 1.7; letter-spacing: .06em; text-transform: none; }
+.food-scene__note { margin: 26px 0 0; font-size: 17px; line-height: 1.65; letter-spacing: 0; text-transform: none; }
 .food-scene__stage {
   position: relative;
   z-index: 1;
@@ -70,7 +70,7 @@
 @media (max-width: 760px) {
   .food-scene { min-height: 740px; padding: 70px 23px 85px; }
   .food-scene__heading { font-size: clamp(69px, 13vw, 95px); }
-  .food-scene__note { max-width: 230px; }
+  .food-scene__note { max-width: 290px; font-size: 16px; }
   .food-scene__stage { height: 425px; margin-top: 28px; }
   .food-scene__plate--left { top: 65px; left: -35px; width: 46%; }
   .food-scene__plate--main { top: 104px; left: 15%; width: 72%; }
