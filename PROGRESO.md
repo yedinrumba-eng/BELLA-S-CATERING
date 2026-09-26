@@ -29,6 +29,15 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S3.3** — 404.html adaptable, robots con bloqueo temporal, rutas locales y noindex comprobados; dominio y HTTP reales pendientes.
 - [ ] **S3.4** — con dominio definitivo y orden de publicación: canónica, metadatos sociales absolutos, sitemap, abrir indexación, Lighthouse, push y comprobación del despliegue.
 
+## Fase 4 — Pulido visual solicitado
+
+- [x] **S4.1** — cifras de Jenny más grandes y en negrita; Chrome 1440/390/320 px sin desbordamiento.
+- [ ] **S4.2** — revisar y reparar salida de la escena de platos; sumar imágenes durante el scroll.
+- [ ] **S4.3** — diferenciar el servicio expandido por color.
+- [ ] **S4.4** — proceso con fondos fotográficos al hover y títulos más fuertes.
+- [ ] **S4.5** — FAQ con presentación editorial más cuidada.
+- [ ] **S4.6** — footer principal con acabado premium.
+- [ ] **S4.7** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -57,6 +66,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S2.10: Yedin confirmó que las personas citadas contrataron a Jenny. Chrome a 320×720: {"width":320,"height":720,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"31px","note":"Testimonios de clientes que contrataron a Jenny para sus eventos.","errors":[]}.
 
 26/09/2026 — S3.3: Chrome 404 a 1440/390/320 px: imagen cargada y sin desbordamiento ni errores. Salida real 320 px: {"width":320,"title":"Página no encontrada — Bella’s Catering","robots":"noindex, nofollow","heading":"Esta mesate espera en casa.","hero":1600,"style":"Cormorant, Georgia, serif","links":2,"overflow":false,"errors":[]}. Recursos: missing=[]; robots.txt bloquea todo y portada marca noindex. Estado HTTP y Lighthouse pendientes.
+
+26/09/2026 — S4.1: Chrome a 1440/390/320 px confirmó Manrope 600 en cifras, tamaños 36/31.2/30 px, sin desbordamiento ni errores. Salida móvil: {"width":320,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"30px","weight":"600","columns":"274px","overflow":false,"itemOverflow":false,"errors":[]}.
 
 ## Deuda técnica
 

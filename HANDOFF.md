@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S3.3; próximo: S3.4 (dominio y publicación autorizada)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.1; próximo: S4.2 (escena de platos)
 
 ## Estado
 
@@ -144,6 +144,14 @@ Chrome/Playwright cargó la 404 con recursos locales en 1440, 390 y 320 px. Sali
 
 Inspección visual confirmó el recorte circular tras corregir la altura de la imagen. Comprobación de rutas e indexación: {"absoluteAssets":["/ASSETS/brand/bellas-seal.svg","/css/base.css","/css/not-found.css","/ASSETS/brand/bellas-seal.svg","/ASSETS/images/hero-dish.webp"],"missing":[],"robots":"User-agent: *\nDisallow: /","homeNoindex":true}. Cloudflare documenta que un 404.html en la raíz se usa para errores 404, pero falta comprobar el estado HTTP real tras desplegar. Lighthouse no está instalado en el entorno y no se ejecutó.
 
+## Evidencia de S4.1
+
+Las cifras de la biografía usan Manrope semibold y se apilan en móvil. Chrome/Playwright, salida real:
+
+~~~text
+{"width":1440,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"36px","weight":"600","columns":"250.078px 250.078px","overflow":false,"itemOverflow":false,"errors":[]}
+{"width":320,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"30px","weight":"600","columns":"274px","overflow":false,"itemOverflow":false,"errors":[]}
+~~~
 ## Product Explosion descartado
 
 Yedin decidió dejar la fotografía del plato sola en la portada. /PRODUCT EXPLOTION, Blender y el render 3D quedan descartados; no son trabajo pendiente. El relevo de cinco platos con GSAP en la segunda sección sigue aprobado.

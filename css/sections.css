@@ -39,8 +39,8 @@
 .biography h2 { max-width: 610px; font-size: clamp(76px, 7.5vw, 122px); }
 .biography__lead { max-width: 510px; margin: 40px 0 0; font-family: "Cormorant", Georgia, serif; font-size: clamp(27px, 2.8vw, 39px); line-height: 1.08; }
 .biography__body { max-width: 500px; margin: 30px 0 0; color: var(--ink-soft); font-size: 18px; line-height: 1.7; }
-.biography__facts { display: flex; gap: 28px; margin-top: 40px; padding-top: 21px; border-top: 1px solid #ada795; color: #5f5f55; font-size: 14px; line-height: 1.6; }
-.biography__facts strong { display: block; color: var(--ink); font-family: "Cormorant", Georgia, serif; font-size: 30px; font-weight: 400; line-height: 1.1; }
+.biography__facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%; margin-top: 40px; padding-top: 25px; border-top: 1px solid #ada795; color: #5f5f55; font-size: 16px; line-height: 1.5; }
+.biography__facts strong { display: block; margin-bottom: 8px; color: var(--ink); font-family: "Manrope", Arial, sans-serif; font-size: clamp(29px, 2.5vw, 36px); font-weight: 600; letter-spacing: -.055em; line-height: 1.13; }
 .biography__link { margin-top: 39px; border-bottom: 1px solid var(--ink); padding-bottom: 7px; font-size: 15px; font-weight: 600; }
 .biography__link:hover { color: #8c6e39; border-color: #8c6e39; }
 
@@ -74,7 +74,8 @@
   .biography__copy { padding: 78px 23px 88px; }
   .biography__lead { margin-top: 31px; }
   .biography__body { margin-top: 21px; font-size: 16px; }
-  .biography__facts { gap: 22px; }
-  .biography__facts strong { font-size: 24px; }
+  .biography__facts { grid-template-columns: 1fr; gap: 20px; font-size: 16px; }
+  .biography__facts span + span { border-top: 1px solid #c2bbaa; padding-top: 20px; }
+  .biography__facts strong { font-size: clamp(30px, 8vw, 35px); }
   .service__visual--meal { height: 300px; }
 }
