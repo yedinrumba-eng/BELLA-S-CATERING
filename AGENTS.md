@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.7 cerrados. Continuar S2.8 reacciones; luego S2.9 proceso/preguntas frecuentes. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.8 cerrados. Continuar S2.9 proceso/preguntas frecuentes. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -31,6 +31,8 @@ S1.1–S2.7 cerrados. Continuar S2.8 reacciones; luego S2.9 proceso/preguntas fr
 - **D12** — El formulario construye un mensaje de WhatsApp en el navegador tras la acción del visitante y no almacena datos; meal prep queda fuera de la lista de contratación mientras no esté confirmado.
 
 - **D13** — La navegación adopta una cápsula clara con enlaces propios y botón al formulario; permanece en el flujo para no cubrir la escena de platos.
+
+- **D14** — Las siete frases aportadas por Yedin se atribuyen literalmente como reacciones a publicaciones de Jenny; no se presentan como reseñas verificadas de eventos porque no prueban esa experiencia.
 
 ## Verificación
 

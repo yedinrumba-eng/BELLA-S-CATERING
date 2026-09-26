@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.7; próximo: S2.8 (reacciones sociales)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S2.8; próximo: S2.9 (proceso y preguntas frecuentes)
 
 ## Estado
 
@@ -18,13 +18,13 @@ La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería
 8. S2.5 cerrado — seis filas de acordeón: cinco servicios confirmados con imágenes conceptuales y meal prep marcado «En exploración». Chrome a 1440/768/390/320 px: hover, click, teclado y tap, fotos cargadas y sin desbordamiento ni errores.
 9. S2.6 cerrado — formulario sin nombre, correo ni teléfono que prepara un mensaje de WhatsApp tras validación local; no lo envía ni almacena. Chrome a 1440/768/390/320 px comprobó codificación y ausencia de desbordamiento.
 10. S2.7 cerrado — cápsula clara con sello, enlaces y CTA al formulario; menú móvil accesible con Escape, clic fuera, ancla y resize. Chrome a 1440/1100/1024/390/320 px, sin desbordamiento ni errores.
-11. S2.8 — comentarios compartidos sobre la cocina de Jenny, sin presentarlos como reseñas verificadas de servicios.
+11. S2.8 cerrado — siete comentarios aportados por Yedin, atribuidos como reacciones a la cocina y sin afirmar que son reseñas de catering. Chrome a 1440/768/390/320 px: frases exactas, sin desbordamiento ni errores.
 12. S2.9 — proceso y preguntas frecuentes.
 13. S3.1 — seguridad, accesibilidad, SEO y revisión final antes de un eventual push o despliegue. No hay push ni deploy.
 
 ## Decisiones vinculantes
 
-D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena. Ver `AGENTS.md` para los porqués.
+D1 sitio estático; D2 composición Aveline/Sofra con assets propios; D3 Cloudflare Pages; D4 fuentes locales; D5 fotos generadas como arte editorial; D6 GSAP local; D7 cinco servicios; D8 galería conceptual; D9 portada gastronómica y bio con retrato; D10 escena de cinco platos encuadrada y adaptable; D11 acordeón visual con meal prep diferenciado; D12 formulario local sin almacenamiento; D13 cápsula no fija para respetar la escena; D14 reacciones sin afirmar experiencia de servicio. Ver `AGENTS.md` para los porqués.
 
 ## Evidencia de S2.3
 
@@ -78,6 +78,15 @@ Chrome/Playwright, sin peticiones externas. Salida real:
 ~~~
 
 Repetición S2.4 a 1440×600: plato derecho termina en y=509; pie empieza en y=555.
+
+## Evidencia de S2.8
+
+Chrome/Playwright con red externa bloqueada. Salida real:
+
+~~~text
+{"width":1440,"height":900,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"46.08px","note":"Comentarios compartidos sobre publicaciones de Jenny; no son reseñas verificadas de eventos.","errors":[]}
+{"width":320,"height":720,"count":7,"exact":true,"overflow":false,"cardOverflow":false,"quotePx":"31px","note":"Comentarios compartidos sobre publicaciones de Jenny; no son reseñas verificadas de eventos.","errors":[]}
+~~~
 
 ## Datos pendientes
 
