@@ -26,7 +26,7 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 - **D7** — Servicios agrupados en cinco bloques, porque presentan toda la oferta confirmada por Jenny sin convertir la página en un catálogo inventado.
 - **D8** — Galería con seis imágenes conceptuales etiquetadas, porque Yedin las aportó como dirección visual y los platos finales se personalizan por evento.
 - **D9** — El plato ocupa la portada y el retrato de Jenny la biografía, porque la primera pantalla vende gastronomía y la segunda presenta a quien la crea; descripciones de 16–18 px mejoran la lectura.
-- **D10** — Cinco platos locales se relevan durante el scroll dentro de una escena de una pantalla, con componentes decorativos en las transiciones. GSAP recalcula las posiciones al cambiar el ancho y ofrece tres platos quietos con movimiento reducido; así la escena se mantiene encuadrada sin imponer animación a quien la desactiva.
+- **D10** — Criterio inicial de cinco platos, ampliado por D22 tras la nueva petición de Yedin.
 - **D11** — Los cinco servicios confirmados se abren en un acordeón con foto conceptual; meal prep aparece separado como «En exploración», sin precio, fecha ni compra, porque Jenny todavía lo considera.
 - **D12** — El formulario construye un mensaje de WhatsApp en el navegador tras la acción del visitante y no almacena datos; meal prep queda fuera de la lista de contratación mientras no esté confirmado.
 
@@ -47,6 +47,8 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 - **D20** — La portada conserva la foto fija del plato y se descarta /PRODUCT EXPLOTION y cualquier render 3D, porque Yedin prefirió dejar la imagen sola. El relevo de platos al hacer scroll en la segunda sección sigue aprobado.
 
 - **D21** — Las cifras de trayectoria usan Manrope semibold y mayor tamaño; en móvil se apilan para conservar lectura y jerarquía sin desbordar.
+
+- **D22** — Siete platos locales se relevan en la segunda sección y el último queda centrado. La animación sigue exactamente el scroll (scrub sin retraso) porque el retraso anterior dejaba el último plato invisible al soltar el pin; con movimiento reducido permanecen tres fotos estáticas. Dos nuevas fotos aportadas por Yedin se convirtieron a WebP sin metadatos.
 
 ## Verificación
 

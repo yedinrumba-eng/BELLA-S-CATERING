@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.1; próximo: S4.2 (escena de platos)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.2; próximo: S4.3 (estado abierto de servicios)
 
 ## Estado
 
@@ -152,6 +152,17 @@ Las cifras de la biografía usan Manrope semibold y se apilan en móvil. Chrome/
 {"width":1440,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"36px","weight":"600","columns":"250.078px 250.078px","overflow":false,"itemOverflow":false,"errors":[]}
 {"width":320,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"30px","weight":"600","columns":"274px","overflow":false,"itemOverflow":false,"errors":[]}
 ~~~
+## Evidencia de S4.2
+
+Se amplió la escena a siete fotos; seis pasan por el centro y la última cierra sola en el centro. El gesto rápido ya no deja la imagen a medio aparecer: Chrome/Playwright, salida real de escritorio y móvil al salir del pin:
+
+~~~text
+{"width":1440,"plates":7,"scroll":1,"animation":1,"finalOpacity":1,"finalLoaded":1100,"gap":0,"overflow":false,"errors":[]}
+{"width":390,"plates":7,"scroll":1,"animation":1,"finalOpacity":1,"finalLoaded":1100,"gap":0,"overflow":false,"errors":[]}
+{"reduced":true,"triggers":0,"visible":3,"overflow":false}
+~~~
+
+Los dos WebP nuevos son 1100×1100, 127854 y 85158 bytes; sin EXIF, XMP ni ICC. El cambio de oscuro a papel queda para el pulido visual final, pero no hay salto geométrico entre secciones.
 ## Product Explosion descartado
 
 Yedin decidió dejar la fotografía del plato sola en la portada. /PRODUCT EXPLOTION, Blender y el render 3D quedan descartados; no son trabajo pendiente. El relevo de cinco platos con GSAP en la segunda sección sigue aprobado.

@@ -32,7 +32,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 ## Fase 4 — Pulido visual solicitado
 
 - [x] **S4.1** — cifras de Jenny más grandes y en negrita; Chrome 1440/390/320 px sin desbordamiento.
-- [ ] **S4.2** — revisar y reparar salida de la escena de platos; sumar imágenes durante el scroll.
+- [x] **S4.2** — siete platos, seis llegan al centro; salida del pin sincronizada con scroll rápido, Chrome 1440/390/320 y movimiento reducido.
 - [ ] **S4.3** — diferenciar el servicio expandido por color.
 - [ ] **S4.4** — proceso con fondos fotográficos al hover y títulos más fuertes.
 - [ ] **S4.5** — FAQ con presentación editorial más cuidada.
@@ -68,6 +68,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S3.3: Chrome 404 a 1440/390/320 px: imagen cargada y sin desbordamiento ni errores. Salida real 320 px: {"width":320,"title":"Página no encontrada — Bella’s Catering","robots":"noindex, nofollow","heading":"Esta mesate espera en casa.","hero":1600,"style":"Cormorant, Georgia, serif","links":2,"overflow":false,"errors":[]}. Recursos: missing=[]; robots.txt bloquea todo y portada marca noindex. Estado HTTP y Lighthouse pendientes.
 
 26/09/2026 — S4.1: Chrome a 1440/390/320 px confirmó Manrope 600 en cifras, tamaños 36/31.2/30 px, sin desbordamiento ni errores. Salida móvil: {"width":320,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"30px","weight":"600","columns":"274px","overflow":false,"itemOverflow":false,"errors":[]}.
+
+26/09/2026 — S4.2: Chrome con scroll rápido desde la escena al servicio: {"width":390,"plates":7,"scroll":1,"animation":1,"finalOpacity":1,"finalLoaded":1100,"gap":0,"overflow":false,"errors":[]}; 390×844 y 320×568 sin desbordamiento ni errores. Movimiento reducido: {"reduced":true,"triggers":0,"visible":3,"overflow":false}. Dos fotos nuevas 1100×1100, sin EXIF/XMP/ICC.
 
 ## Deuda técnica
 
