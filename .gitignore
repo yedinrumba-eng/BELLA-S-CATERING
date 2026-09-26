@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.playwright/
+playwright-report/
+test-results/
+*.log
+tmp/
+
+ASSETS/CHEF/
+ASSETS/brand/*-preview.png
+
+# Private business notes and original identity references
+PRD.MD
+docs/PRD-RESPUESTAS.md
