@@ -62,6 +62,8 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D28** — Los encabezados, fotos y palabras del cierre entran con movimiento breve al aparecer en pantalla usando GSAP local; con movimiento reducido no se crea ningún revelado. El grupo de fotos anuncia sus controles y el README describe el estado real antes de un eventual push.
 
+- **D29** — Solo el titular principal del hero va en mayúsculas, porque Yedin lo pidió para esa sección; se ajustó el tamaño para conservar las dos líneas sin cortar texto. Santiago sube a 14 px en escritorio y 11 px en móvil para ganar presencia sin competir con el plato.
+
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.

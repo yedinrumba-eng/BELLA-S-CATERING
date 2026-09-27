@@ -76,6 +76,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 26/09/2026 — S4.8: Chrome confirmó 16 disparadores de revelado, imagen y palabra del footer visibles al llegar, modo reducido con 0 disparadores, nueve anclas válidas, secciones presentes y sin errores. Salida real: {"width":1440,"documentWidth":1440,"overflow":false,"sections":true,"photoCount":3}; {"width":390,"documentWidth":390,"overflow":false,"sections":true,"photoCount":3}; {"width":320,"documentWidth":320,"overflow":false,"sections":true,"photoCount":3}; {"anchors":[],"revealCount":16,"signature":{"opacity":"1","top":84},"footer":{"opacity":"1","text":"Catering"},"reduced":{"media":true,"triggers":0,"signatureOpacity":"1"},"errors":[]}.
 
+26/09/2026 — S4.9: Chrome confirmó text-transform uppercase en el H1, ubicación de 14 px en escritorio y 11 px en móvil, sin desbordamiento ni errores. Salida real 320 px: {"width":320,"caps":"uppercase","headingOverflow":false,"locationPx":"11px","documentWidth":320,"errors":[]}; pageErrors=[].
+
 ## Deuda técnica
 
 🟡 Antes de publicar: crear sitemap con el dominio definitivo, abrir indexación, ejecutar Lighthouse, comprobar estado 404 y cabeceras HTTP tras desplegar. Repetir el escaneo de archivos preparados antes del primer push.

@@ -23,16 +23,17 @@
   align-items: flex-start;
   padding: clamp(68px, 9vh, 115px) 18px 36px clamp(24px, 7.5vw, 130px);
 }
-.hero-location { margin: 0; color: #65685e; font-size: 10px; line-height: 1.6; letter-spacing: .11em; }
+.hero-location { margin: 0; color: #65685e; font-size: 14px; font-weight: 600; line-height: 1.6; letter-spacing: .08em; }
 .hero-location span { margin: 0 8px; color: var(--gold); }
 .hero h1 {
   margin: auto 0 0;
   font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(86px, 9.4vw, 158px);
+  font-size: clamp(70px, 7.5vw, 122px);
   line-height: .81;
   font-weight: 400;
   letter-spacing: -.068em;
-  white-space: nowrap;
+  white-space: normal;
+  text-transform: uppercase;
 }
 .hero h1 em { font-weight: 400; }
 .hero-intro { display: grid; grid-template-columns: minmax(0, 330px) auto; align-items: end; gap: clamp(26px, 3vw, 56px); margin-top: 49px; }
@@ -53,7 +54,7 @@
 
 @media (max-width: 1220px) {
   .hero { grid-template-columns: 56% 44%; }
-  .hero h1 { font-size: clamp(76px, 9vw, 116px); }
+  .hero h1 { font-size: clamp(70px, 7.5vw, 112px); }
   .hero-intro { grid-template-columns: 1fr; align-items: start; gap: 22px; margin-top: 35px; }
   .hero-intro p { max-width: 345px; }
   .hero-intro .button { width: max-content; }
@@ -63,8 +64,8 @@
   .hero { display: flex; flex-direction: column; min-height: 0; overflow: visible; }
   .hero::before { inset: 0 0 43% 0; }
   .hero-copy { padding: 56px 23px 42px; }
-  .hero-location { font-size: 9px; letter-spacing: .08em; }
-  .hero h1 { margin: 46px 0 0; font-size: clamp(75px, 17.2vw, 116px); line-height: .82; letter-spacing: -.065em; }
+  .hero-location { font-size: 11px; letter-spacing: .08em; }
+  .hero h1 { margin: 46px 0 0; font-size: clamp(65px, 14.2vw, 98px); line-height: .82; letter-spacing: -.065em; }
   .hero-intro { margin-top: 30px; gap: 25px; }
   .hero-intro p { max-width: 345px; font-size: 16px; line-height: 1.7; }
   .hero-intro .button { width: min(100%, 320px); }
@@ -76,6 +77,6 @@
 }
 
 @media (max-width: 400px) {
-  .hero h1 { font-size: 17.2vw; }
+  .hero h1 { font-size: 14vw; }
   .hero-visual { height: 385px; }
 }

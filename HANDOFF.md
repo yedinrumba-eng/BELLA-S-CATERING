@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.8; próximo: S3.4 (cuando haya dominio y publicación autorizada)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.9; próximo: S4.10 (footer e interludio de Jenny)
 
 ## Estado
+
+S4.9: hero en mayúsculas y ubicación más grande. Chrome 1440/1024/390/320 px: H1 sin corte, documentWidth=viewport, sin errores. Salida 320 px: {"caps":"uppercase","headingOverflow":false,"locationPx":"11px","documentWidth":320}. Nuevas peticiones aprobadas: mover la sección de la manera de Bella entre FAQ/testimonios, footer negro de referencia, tres testimonios oscuros y escenas parallax.
 
 S4.8 cerró el pulido local: revelados suaves en secciones y footer, con modo reducido estático; role=group en el selector fotográfico y README actualizado. Chrome a 1440/390/320 px: documentWidth=viewport, secciones presentes, tres fotos seleccionables, anclas=[] y errores=[]. Revelados=16; modo reducido: triggers=0 y foto visible. El primer push, URL canónica, sitemap, Lighthouse y verificación de cabeceras esperan dominio y orden de publicación.
 
