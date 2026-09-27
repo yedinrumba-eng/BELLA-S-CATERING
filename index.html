@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/quote.css" />
     <link rel="stylesheet" href="css/reactions.css" />
     <link rel="stylesheet" href="css/process.css" />
+    <link rel="stylesheet" href="css/signature.css" />
   </head>
   <body>
     <a class="skip-link" href="#contenido">Ir al contenido</a>
@@ -167,6 +168,44 @@
         </div>
         <p class="gallery__note">Imágenes conceptuales. Cada menú y montaje se define con Jenny según el evento.</p>
       </section>
+      <section class="signature" id="esencia" aria-labelledby="signature-title">
+        <img class="signature__backdrop" src="ASSETS/images/feature-buffet.webp" alt="" width="1400" height="1400" loading="lazy" />
+        <div class="signature__layout">
+          <div class="signature__copy">
+            <p class="signature__eyebrow">La esencia · Bella’s Catering</p>
+            <h2 id="signature-title">Una cocina<br /><em>para recordar.</em></h2>
+            <p>El sabor de cada celebración empieza con una idea: la tuya. Jenny la transforma en una experiencia hecha para compartir.</p>
+          </div>
+          <div class="signature__showcase">
+            <div class="signature__photos">
+              <figure class="signature__slide is-active" data-signature-slide="0" aria-hidden="false">
+                <img src="ASSETS/images/feature-steak.webp" alt="Plato conceptual de carne a la parrilla con papas y ensalada" width="1400" height="1400" loading="lazy" />
+                <figcaption>El detalle en cada plato <span>01 / 03</span></figcaption>
+              </figure>
+              <figure class="signature__slide" data-signature-slide="1" aria-hidden="true">
+                <img src="ASSETS/images/feature-pool-celebration.webp" alt="Mesa conceptual con ensalada junto a una piscina para una celebración" width="1400" height="1400" loading="lazy" />
+                <figcaption>Momentos para compartir <span>02 / 03</span></figcaption>
+              </figure>
+              <figure class="signature__slide" data-signature-slide="2" aria-hidden="true">
+                <img src="ASSETS/images/gallery-dumplings.webp" alt="Dumplings presentados en plato azul con salsa" width="1440" height="1440" loading="lazy" />
+                <figcaption>Sabores que sorprenden <span>03 / 03</span></figcaption>
+              </figure>
+            </div>
+            <div class="signature__controls" aria-label="Explorar fotografías">
+              <button type="button" data-signature-target="0" aria-label="Ver el plato de carne" aria-pressed="true"><img src="ASSETS/images/feature-steak.webp" alt="" width="1400" height="1400" loading="lazy" /><span>01</span></button>
+              <button type="button" data-signature-target="1" aria-label="Ver la celebración junto a la piscina" aria-pressed="false"><img src="ASSETS/images/feature-pool-celebration.webp" alt="" width="1400" height="1400" loading="lazy" /><span>02</span></button>
+              <button type="button" data-signature-target="2" aria-label="Ver los dumplings" aria-pressed="false"><img src="ASSETS/images/gallery-dumplings.webp" alt="" width="1440" height="1440" loading="lazy" /><span>03</span></button>
+            </div>
+          </div>
+          <div class="signature__aside">
+            <p>De la idea a la mesa</p>
+            <h3>La ocasión marca el menú.</h3>
+            <span>01 — Catering para eventos<br />02 — Cocina privada<br />03 — Menús a medida</span>
+            <a href="#cotizar">Conversemos de tu evento <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <p class="signature__note">Imágenes conceptuales. El menú se define para cada ocasión.</p>
+      </section>
       <section class="process" id="proceso" aria-labelledby="process-title">
         <div class="process__intro">
           <div>
@@ -296,6 +335,7 @@
     <script src="js/vendor/ScrollTrigger.min.js"></script>
     <script src="js/motion.js"></script>
     <script src="js/services.js"></script>
+    <script src="js/signature.js"></script>
     <script src="js/quote.js"></script>
     <script src="js/navigation.js"></script>
   </body>

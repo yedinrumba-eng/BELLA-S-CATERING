@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.6; próximo: S4.7 (sección visual)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.7; próximo: S4.8 (motion y revisión final)
 
 ## Estado
+
+S4.7 cerró la sección fotográfica La esencia: buffet de fondo y tres imágenes seleccionables con clic o teclado. Chrome a 1440/390/320 px cargó siete imágenes, sincronizó aria-pressed, sin desbordamiento ni errores. Salida real 320 px: {"width":320,"third":{"focused":"2","pressed":["false","false","true"]},"bounds":{"right":320,"width":320},"overflow":false,"errors":[]}.
 
 La carpeta era nueva y no tenía código. Yedin autorizó continuar con galería, refinamiento visual, movimiento y servicios tras recibir nuevas imágenes. `PRD.MD` contiene las respuestas originales de Jenny. Diseño aprobado: composición editorial de Aveline con detalles de Sofra, identidad Bella’s y Cloudflare Pages más adelante.
 

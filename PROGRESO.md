@@ -37,7 +37,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.4** — proceso con cuatro fotos existentes, degradado y títulos semibold; Chrome 1440/390/320 px, mouse y teclado.
 - [x] **S4.5** — FAQ editorial con foto, numeración y estado abierto; Chrome 1440/390/320 px y teclado.
 - [x] **S4.6** — cierre fotográfico con marca Bella y Catering a gran escala; Chrome 1440/760/390/320 px.
-- [ ] **S4.7** — nueva sección visual de la cocina de Jenny con fotografías y detalles editoriales.
+- [x] **S4.7** — sección fotográfica editorial con tres imágenes seleccionables; Chrome 1440/390/320 px, teclado, carga y desbordamiento comprobados.
 - [ ] **S4.8** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
 ## Bitácora
 
@@ -71,6 +71,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 26/09/2026 — S4.1: Chrome a 1440/390/320 px confirmó Manrope 600 en cifras, tamaños 36/31.2/30 px, sin desbordamiento ni errores. Salida móvil: {"width":320,"count":2,"font":"Manrope, Arial, sans-serif","fontSize":"30px","weight":"600","columns":"274px","overflow":false,"itemOverflow":false,"errors":[]}.
 
 26/09/2026 — S4.2: Chrome con scroll rápido desde la escena al servicio: {"width":390,"plates":7,"scroll":1,"animation":1,"finalOpacity":1,"finalLoaded":1100,"gap":0,"overflow":false,"errors":[]}; 390×844 y 320×568 sin desbordamiento ni errores. Movimiento reducido: {"reduced":true,"triggers":0,"visible":3,"overflow":false}. Dos fotos nuevas 1100×1100, sin EXIF/XMP/ICC.
+
+26/09/2026 — S4.7: Chrome a 1440/390/320 px confirmó tres controles, cambio por clic y foco, siete imágenes cargadas, aria-pressed sincronizado, sin desbordamiento ni errores. Salida real 320 px: {"width":320,"third":{"focused":"2","pressed":["false","false","true"]},"bounds":{"right":320,"width":320},"overflow":false,"errors":[]}.
 
 ## Deuda técnica
 

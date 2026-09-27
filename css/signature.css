@@ -1,0 +1,68 @@
+.signature {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--cream);
+  background: var(--night);
+}
+.signature__backdrop { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.signature::before { position: absolute; z-index: -1; inset: 0; background: #0b1515db; content: ""; }
+.signature__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1.14fr) minmax(0, .82fr);
+  gap: clamp(24px, 4vw, 68px);
+  align-items: center;
+  min-height: 790px;
+  padding: 100px clamp(24px, 6vw, 105px) 85px;
+}
+.signature__copy { align-self: start; padding-top: 65px; }
+.signature__eyebrow { margin: 0 0 67px; color: #dfc899; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.signature h2 { margin: 0; font-family: "Cormorant", Georgia, serif; font-size: clamp(65px, 6.7vw, 113px); font-weight: 400; letter-spacing: -.065em; line-height: .81; }
+.signature h2 em { color: #e6d1a5; font-weight: 400; }
+.signature__copy > p:last-child { max-width: 390px; margin: 49px 0 0; color: #edece5; font-size: 19px; line-height: 1.63; }
+.signature__showcase { min-width: 0; }
+.signature__photos { position: relative; height: clamp(480px, 41vw, 590px); border: 1px solid #e6dbc3b8; background: #1b241f; box-shadow: 0 35px 85px #0008; }
+.signature__slide { position: absolute; inset: 0; margin: 0; opacity: 0; transform: translateY(16px) scale(.985); transition: opacity .5s ease, transform .7s ease; pointer-events: none; }
+.signature__slide.is-active { z-index: 1; opacity: 1; transform: none; pointer-events: auto; }
+.signature__slide img { width: 100%; height: 100%; object-fit: cover; }
+.signature__slide::after { position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #0b1312c9); content: ""; }
+.signature__slide figcaption { position: absolute; z-index: 1; right: 25px; bottom: 25px; left: 25px; display: flex; justify-content: space-between; align-items: end; gap: 12px; font-family: "Cormorant", Georgia, serif; font-size: 30px; font-style: italic; line-height: 1; }
+.signature__slide figcaption span { font: 600 12px "Manrope", Arial, sans-serif; letter-spacing: .12em; white-space: nowrap; }
+.signature__controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; margin-top: 14px; }
+.signature__controls button { display: flex; align-items: center; gap: 11px; min-width: 0; min-height: 61px; border: 1px solid #f4ead865; padding: 5px; color: var(--cream); background: #1c2926d9; font: 600 13px "Manrope", Arial, sans-serif; cursor: pointer; transition: background-color .25s ease, color .25s ease, transform .25s ease; }
+.signature__controls button:hover { transform: translateY(-3px); }
+.signature__controls button[aria-pressed="true"] { color: var(--ink); background: #e8d6b2; border-color: #e8d6b2; }
+.signature__controls button img { width: 47px; height: 47px; flex: 0 0 47px; object-fit: cover; }
+.signature__aside { align-self: end; padding-bottom: 108px; }
+.signature__aside > p { margin: 0 0 20px; color: #dfc899; font-size: 13px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
+.signature__aside h3 { margin: 0 0 28px; font-family: "Cormorant", Georgia, serif; font-size: clamp(39px, 3.6vw, 60px); font-weight: 400; line-height: .98; }
+.signature__aside > span { display: block; color: #ece9df; font-size: 15px; line-height: 2; }
+.signature__aside a { display: inline-flex; align-items: center; gap: 22px; margin-top: 36px; border-bottom: 1px solid #e8d6b2; padding-bottom: 9px; font-size: 14px; font-weight: 600; }
+.signature__aside a:hover { color: #e8d6b2; }
+.signature__note { margin: 0; border-top: 1px solid #f1e8d43d; padding: 23px clamp(24px, 6vw, 105px) 28px; color: #d2d3ca; font-size: 13px; }
+@media (max-width: 1100px) {
+  .signature__layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; padding-top: 85px; }
+  .signature__copy { align-self: center; padding-top: 0; }
+  .signature__eyebrow { margin-bottom: 44px; }
+  .signature__showcase { grid-column: 2; grid-row: span 2; }
+  .signature__aside { align-self: start; padding-bottom: 0; }
+  .signature__photos { height: 600px; }
+}
+@media (max-width: 760px) {
+  .signature__layout { display: flex; flex-direction: column; align-items: stretch; gap: 42px; padding: 84px 23px 70px; }
+  .signature__eyebrow { margin-bottom: 37px; font-size: 11px; }
+  .signature h2 { font-size: clamp(73px, 14vw, 105px); }
+  .signature__copy > p:last-child { margin-top: 27px; font-size: 17px; }
+  .signature__photos { height: min(122vw, 480px); }
+  .signature__slide figcaption { right: 16px; bottom: 18px; left: 16px; font-size: 26px; }
+  .signature__controls button { min-height: 53px; gap: 7px; font-size: 11px; }
+  .signature__controls button img { width: 38px; height: 38px; flex-basis: 38px; }
+  .signature__aside h3 { max-width: 420px; font-size: 49px; }
+  .signature__aside > span { font-size: 15px; }
+  .signature__note { padding: 19px 23px 25px; }
+}
+@media (max-width: 340px) {
+  .signature__controls button { gap: 4px; }
+  .signature__controls button img { width: 34px; height: 34px; flex-basis: 34px; }
+  .signature__slide figcaption { font-size: 23px; }
+}

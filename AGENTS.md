@@ -58,6 +58,8 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D26** — El cierre usa una fotografía editorial de Jenny con la marca a gran escala sobre imagen y papel claro, según la referencia visual que Yedin mostró. La navegación y el contacto solo apuntan a información confirmada.
 
+- **D27** — La nueva sección La esencia cruza fondo de buffet, tres fotografías aportadas y texto editorial; los controles cambian la foto por mouse, clic o teclado. Responde a la referencia visual sin copiar sus imágenes ni presentar arte conceptual como evidencia documental de eventos.
+
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
