@@ -27,7 +27,7 @@
     reveal(".signature__copy, .signature__showcase, .signature__aside", 0.12);
     reveal(".process__intro, .faq__intro, .reactions__intro, .quote__intro");
     reveal(".process__step", 0.08);
-    reveal(".faq__visual, .site-footer__message");
-    reveal(".site-footer__image-word, .site-footer__base-word");
+    reveal(".faq__visual, .bella-way__message");
+    reveal(".bella-way__word, .site-footer__wordmark");
   });
 })();

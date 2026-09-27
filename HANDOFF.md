@@ -1,8 +1,11 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.9; próximo: S4.10 (footer e interludio de Jenny)
+Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.10; próximo: S4.11 (siete testimonios, tres oscuros)
 
 ## Estado
+
+S4.10: la escena fotográfica de Jenny vive entre FAQ y testimonios; footer negro con tres columnas informativas, enlaces reales y BELLA’S CATERING a gran escala. Chrome 1440/760/390/320 px: documentWidth=viewport, orden FAQ→manera→testimonios, footer rgb(16, 17, 16), anclas=[] y errores=[]. Al desplazar a la escena, la foto carga con naturalWidth=1280 tanto a 1440 como a 390 px. Salida 320 px: {"width":320,"documentWidth":320,"order":4,"wayImage":1280,"footerColor":"rgb(16, 17, 16)","word":[{"left":23,"right":181,"text":"BELLA’S"},{"left":65,"right":297,"text":"CATERING"}],"footerRight":320,"anchors":[]}.
+
 
 S4.9: hero en mayúsculas y ubicación más grande. Chrome 1440/1024/390/320 px: H1 sin corte, documentWidth=viewport, sin errores. Salida 320 px: {"caps":"uppercase","headingOverflow":false,"locationPx":"11px","documentWidth":320}. Nuevas peticiones aprobadas: mover la sección de la manera de Bella entre FAQ/testimonios, footer negro de referencia, tres testimonios oscuros y escenas parallax.
 

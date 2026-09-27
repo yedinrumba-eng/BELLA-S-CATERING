@@ -64,6 +64,7 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D29** — Solo el titular principal del hero va en mayúsculas, porque Yedin lo pidió para esa sección; se ajustó el tamaño para conservar las dos líneas sin cortar texto. Santiago sube a 14 px en escritorio y 11 px en móvil para ganar presencia sin competir con el plato.
 
+- **D30** — La escena fotográfica de Jenny queda entre FAQ y testimonios para darle una transición editorial al relato; el footer adopta fondo casi negro, tres columnas informativas, navegación real y una marca de gran formato según las capturas de referencia. Solo se publica información y enlaces confirmados.
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
