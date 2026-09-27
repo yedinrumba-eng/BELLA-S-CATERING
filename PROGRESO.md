@@ -44,6 +44,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.11** — tres testimonios oscuros y cuatro claros; Chrome 1440/760/390/320 px, citas intactas y sin desbordamiento.
 - [x] **S4.12** — dos interludios fotográficos con parallax local y fallback estático; Chrome 1440/390/320 px, modo reducido y sin desbordamiento.
 - [x] **S4.13** — revisión integral local: Chrome 1440/760/390/320 px, formulario, movimiento reducido, recursos y privacidad.
+- [x] **S4.14** — vista local restaurada en 127.0.0.1:8765; HTTP 200 y proceso aún activo tras cerrar la terminal.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -89,6 +90,9 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 ## Lecciones ya pagadas
 
+La vista previa local dejó de cargar aunque el sitio no cambió: el servidor temporal había terminado y el puerto 8765 no tenía listener. Antes de tocar código, comprobar el puerto; arrancar el servidor como proceso local independiente y verificar HTTP 200 desde otra ejecución.
+
+
 Una prueba de resize marcó 390 px de ancho al pasar a 320 px mientras scrollTo seguía una transición suave. No era desbordamiento persistente: al asentarse daba 320 px. La prueba final usa scroll instantáneo antes de refrescar ScrollTrigger.
 
 Los HEIC no se abrían con el visor por defecto de la sesión; un conversor local permitió revisar los seis retratos de Jenny.
@@ -111,3 +115,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 27/09/2026 — S4.12: Chrome 1440 px confirmó las dos fotos 1440 px, documentWidth=1440 y cambios de transform. Carga móvil limpia: a 390 px cada imagen pasó de y=-44.0747 a y=47.2906; a 320 px de y=-51.24 a y=46.6167. Movimiento reducido: {"reduced":true,"triggers":0,"visible":[{"loaded":1440,"opacity":"1"},{"loaded":1440,"opacity":"1"}],"errors":[]}.
 
 27/09/2026 — S4.13: Chrome 1440/760/390/320 px: documentWidth=viewport, heroCaps=uppercase, sectionOrder=true, parallaxCount=2, testimonials=7, dark=[1,4,7], badAnchors=[], missingAlt=0. Formulario: {"formOpened":true,"safeHost":true,"hasIdea":true}. Movimiento reducido/red: {"reduced":true,"triggers":0,"errors":[],"external":[]}. Auditoría offline: {"resourceCount":67,"missingResources":[],"trackedCount":61,"privateTracked":[],"secretPatternFiles":[]}; 21 WebP sin metadatos.
+
+27/09/2026 — S4.14: sin listener en 8765; tras iniciar el servidor local, {"status":200,"title":"Bella’s Catering — Chef Jenny Pereyra","bytes":32823,"listening":true}. Cinco segundos después: {"processAlive":true,"listener":true}.

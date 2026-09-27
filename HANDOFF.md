@@ -1,8 +1,11 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.13; próximo: S3.4 (publicación cuando haya dominio y orden de push)
+Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.14; próximo: S3.4 (publicación cuando haya dominio y orden de push)
 
 ## Estado
+
+S4.14: la vista local no abría porque el servidor de desarrollo ya no escuchaba en 127.0.0.1:8765; se volvió a iniciar como proceso local independiente. Salida HTTP real: {"status":200,"title":"Bella’s Catering — Chef Jenny Pereyra","bytes":32823,"listening":true}. Cinco segundos después: {"processAlive":true,"listener":true}. Este servidor es temporal de vista previa, no un despliegue público.
+
 
 S4.13: revisión integral local a 1440/760/390/320 px. Salida 320 px: {"width":320,"documentWidth":320,"heroCaps":"uppercase","locationPx":"11px","sectionOrder":true,"parallaxCount":2,"testimonials":7,"dark":[1,4,7],"footerWords":[[23,181],[65,297]],"badAnchors":[],"missingAlt":0}. Formulario: {"formOpened":true,"safeHost":true,"hasIdea":true}. Movimiento reducido/red: {"reduced":true,"triggers":0,"errors":[],"external":[]}. Auditoría offline: {"resourceCount":67,"missingResources":[],"trackedCount":61,"privateTracked":[],"secretPatternFiles":[]}; 21 WebP sin EXIF/XMP/IPTC/ICC. La captura móvil mostró el enlace de salto por la forma de capturar un footer más alto que el viewport; en la página real seguía arriba a -80 px, sin foco. No hubo push.
 
