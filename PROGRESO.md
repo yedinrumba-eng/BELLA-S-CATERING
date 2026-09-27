@@ -38,7 +38,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.5** — FAQ editorial con foto, numeración y estado abierto; Chrome 1440/390/320 px y teclado.
 - [x] **S4.6** — cierre fotográfico con marca Bella y Catering a gran escala; Chrome 1440/760/390/320 px.
 - [x] **S4.7** — sección fotográfica editorial con tres imágenes seleccionables; Chrome 1440/390/320 px, teclado, carga y desbordamiento comprobados.
-- [ ] **S4.8** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
+- [x] **S4.8** — entradas sutiles con scroll, revisión visual de secciones y accesibilidad; Chrome 1440/390/320 px y movimiento reducido.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -74,11 +74,15 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 26/09/2026 — S4.7: Chrome a 1440/390/320 px confirmó tres controles, cambio por clic y foco, siete imágenes cargadas, aria-pressed sincronizado, sin desbordamiento ni errores. Salida real 320 px: {"width":320,"third":{"focused":"2","pressed":["false","false","true"]},"bounds":{"right":320,"width":320},"overflow":false,"errors":[]}.
 
+26/09/2026 — S4.8: Chrome confirmó 16 disparadores de revelado, imagen y palabra del footer visibles al llegar, modo reducido con 0 disparadores, nueve anclas válidas, secciones presentes y sin errores. Salida real: {"width":1440,"documentWidth":1440,"overflow":false,"sections":true,"photoCount":3}; {"width":390,"documentWidth":390,"overflow":false,"sections":true,"photoCount":3}; {"width":320,"documentWidth":320,"overflow":false,"sections":true,"photoCount":3}; {"anchors":[],"revealCount":16,"signature":{"opacity":"1","top":84},"footer":{"opacity":"1","text":"Catering"},"reduced":{"media":true,"triggers":0,"signatureOpacity":"1"},"errors":[]}.
+
 ## Deuda técnica
 
 🟡 Antes de publicar: crear sitemap con el dominio definitivo, abrir indexación, ejecutar Lighthouse, comprobar estado 404 y cabeceras HTTP tras desplegar. Repetir el escaneo de archivos preparados antes del primer push.
 
 ## Lecciones ya pagadas
+
+Una prueba de resize marcó 390 px de ancho al pasar a 320 px mientras scrollTo seguía una transición suave. No era desbordamiento persistente: al asentarse daba 320 px. La prueba final usa scroll instantáneo antes de refrescar ScrollTrigger.
 
 Los HEIC no se abrían con el visor por defecto de la sesión; un conversor local permitió revisar los seis retratos de Jenny.
 

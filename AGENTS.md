@@ -60,6 +60,8 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D27** — La nueva sección La esencia cruza fondo de buffet, tres fotografías aportadas y texto editorial; los controles cambian la foto por mouse, clic o teclado. Responde a la referencia visual sin copiar sus imágenes ni presentar arte conceptual como evidencia documental de eventos.
 
+- **D28** — Los encabezados, fotos y palabras del cierre entran con movimiento breve al aparecer en pantalla usando GSAP local; con movimiento reducido no se crea ningún revelado. El grupo de fotos anuncia sus controles y el README describe el estado real antes de un eventual push.
+
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.

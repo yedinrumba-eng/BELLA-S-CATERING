@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.7; próximo: S4.8 (motion y revisión final)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.8; próximo: S3.4 (cuando haya dominio y publicación autorizada)
 
 ## Estado
+
+S4.8 cerró el pulido local: revelados suaves en secciones y footer, con modo reducido estático; role=group en el selector fotográfico y README actualizado. Chrome a 1440/390/320 px: documentWidth=viewport, secciones presentes, tres fotos seleccionables, anclas=[] y errores=[]. Revelados=16; modo reducido: triggers=0 y foto visible. El primer push, URL canónica, sitemap, Lighthouse y verificación de cabeceras esperan dominio y orden de publicación.
 
 S4.7 cerró la sección fotográfica La esencia: buffet de fondo y tres imágenes seleccionables con clic o teclado. Chrome a 1440/390/320 px cargó siete imágenes, sincronizó aria-pressed, sin desbordamiento ni errores. Salida real 320 px: {"width":320,"third":{"focused":"2","pressed":["false","false","true"]},"bounds":{"right":320,"width":320},"overflow":false,"errors":[]}.
 
