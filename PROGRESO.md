@@ -36,8 +36,9 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.3** — servicio abierto en verde profundo con texto claro y acento dorado; Chrome 1440/390/320 px.
 - [x] **S4.4** — proceso con cuatro fotos existentes, degradado y títulos semibold; Chrome 1440/390/320 px, mouse y teclado.
 - [x] **S4.5** — FAQ editorial con foto, numeración y estado abierto; Chrome 1440/390/320 px y teclado.
-- [ ] **S4.6** — footer principal con acabado premium.
-- [ ] **S4.7** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
+- [x] **S4.6** — cierre fotográfico con marca Bella y Catering a gran escala; Chrome 1440/760/390/320 px.
+- [ ] **S4.7** — nueva sección visual de la cocina de Jenny con fotografías y detalles editoriales.
+- [ ] **S4.8** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -89,3 +90,4 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 
 26/09/2026 — S4.4: Chrome a 1440 px confirmó 4 tarjetas y 4 assets locales; al hover la foto tuvo opacity≈1, título crema y Manrope 600. Tab enfocó la segunda con foto visible; a 390/320 px las cuatro imágenes y textos claros quedaron visibles, overflow=false, errors=[].
 26/09/2026 — S4.5: Chrome a 1440/390/320 px confirmó 6 preguntas, fondo abierto rgb(232, 223, 208), borde 3px, foto 1440px cargada, Enter y Espacio, respuesta honesta de meal prep, overflow=false, errors=[].
+26/09/2026 — S4.6: Chrome con carga nueva en 1440/760/390/320 px confirmó foto 1280 px, grandes rótulos Bella y Catering dentro del ancho, ocho enlaces válidos y seguros, sin errores ni scroll horizontal. Salida 320 px: {"width":320,"innerWidth":320,"doc":320,"image":1280,"word1":[13,314],"word2":[23,297],"errors":[]}. El redimensionado inmediato de la misma pestaña mostró ancho de pin temporalmente viejo; cargas nuevas en cada viewport no reprodujeron desbordamiento.

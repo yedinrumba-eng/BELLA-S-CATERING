@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.5; próximo: S4.6 (footer principal)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.6; próximo: S4.7 (sección visual)
 
 ## Estado
 
@@ -203,3 +203,15 @@ Chrome/Playwright (.playwright/s4-5-check.cjs) comprobó clic, Enter, Espacio, f
 {"width":390,"count":6,"first":{"open":true,"background":"rgb(232, 223, 208)","border":"3px","number":"01","answer":115},"closed":true,"meal":{"open":true,"answer":true},"image":{"loaded":true,"width":1440},"overflow":false,"errors":[]}
 {"width":320,"count":6,"first":{"open":true,"background":"rgb(232, 223, 208)","border":"3px","number":"01","answer":115},"closed":true,"meal":{"open":true,"answer":true},"image":{"loaded":true,"width":1440},"overflow":false,"errors":[]}
 ~~~
+## Evidencia de S4.6
+
+Chrome/Playwright (.playwright/s4-6-fresh.cjs) con una carga nueva por viewport:
+
+~~~text
+{"width":1440,"innerWidth":1440,"doc":1440,"image":1280,"word1":[58,1368],"word2":[75,1365],"errors":[]}
+{"width":760,"innerWidth":760,"doc":760,"image":1280,"word1":[30,745],"word2":[23,737],"errors":[]}
+{"width":390,"innerWidth":390,"doc":390,"image":1280,"word1":[16,382],"word2":[23,367],"errors":[]}
+{"width":320,"innerWidth":320,"doc":320,"image":1280,"word1":[13,314],"word2":[23,297],"errors":[]}
+~~~
+
+Se comprobaron ocho enlaces del footer: todos los internos tienen destino y el externo conserva noopener/noreferrer. La miniatura visual se revisó en escritorio y móvil.
