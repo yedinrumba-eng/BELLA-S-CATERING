@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.4; próximo: S4.5 (FAQ editorial)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.5; próximo: S4.6 (footer principal)
 
 ## Estado
 
@@ -193,4 +193,13 @@ Chrome/Playwright (.playwright/s4-4-check.cjs) con mouse, Tab y cambio de ancho 
 {"width":1440,"count":4,"assets":[{"name":"gallery-buffet-wedding.webp","exists":true},{"name":"gallery-dumplings.webp","exists":true},{"name":"gallery-seafood-steak.webp","exists":true},{"name":"gallery-buffet-warm.webp","exists":true}],"hovered":{"opacity":"0.999265","title":"rgb(255, 250, 240)","weight":"600","image":true},"keyboard":{"focused":true,"opacity":"1","title":"rgb(255, 250, 240)"},"overflow":false,"errors":[]}
 {"width":390,"cards":[{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300}],"overflow":false,"errors":[]}
 {"width":320,"cards":[{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300}],"overflow":false,"errors":[]}
+~~~
+## Evidencia de S4.5
+
+Chrome/Playwright (.playwright/s4-5-check.cjs) comprobó clic, Enter, Espacio, foto y respuesta de meal prep:
+
+~~~text
+{"width":1440,"count":6,"first":{"open":true,"background":"rgb(232, 223, 208)","border":"3px","number":"01","answer":115},"closed":true,"meal":{"open":true,"answer":true},"image":{"loaded":true,"width":1440},"overflow":false,"errors":[]}
+{"width":390,"count":6,"first":{"open":true,"background":"rgb(232, 223, 208)","border":"3px","number":"01","answer":115},"closed":true,"meal":{"open":true,"answer":true},"image":{"loaded":true,"width":1440},"overflow":false,"errors":[]}
+{"width":320,"count":6,"first":{"open":true,"background":"rgb(232, 223, 208)","border":"3px","number":"01","answer":115},"closed":true,"meal":{"open":true,"answer":true},"image":{"loaded":true,"width":1440},"overflow":false,"errors":[]}
 ~~~

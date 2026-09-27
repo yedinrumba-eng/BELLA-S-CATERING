@@ -35,7 +35,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.2** — siete platos, seis llegan al centro; salida del pin sincronizada con scroll rápido, Chrome 1440/390/320 y movimiento reducido.
 - [x] **S4.3** — servicio abierto en verde profundo con texto claro y acento dorado; Chrome 1440/390/320 px.
 - [x] **S4.4** — proceso con cuatro fotos existentes, degradado y títulos semibold; Chrome 1440/390/320 px, mouse y teclado.
-- [ ] **S4.5** — FAQ con presentación editorial más cuidada.
+- [x] **S4.5** — FAQ editorial con foto, numeración y estado abierto; Chrome 1440/390/320 px y teclado.
 - [ ] **S4.6** — footer principal con acabado premium.
 - [ ] **S4.7** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
 ## Bitácora
@@ -88,3 +88,4 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 26/09/2026 — S4.3: Chrome hover abrió una sola fila y la segunda cerró la primera. En 1440/390/320 px: fondo rgb(38, 54, 45), título rgb(255, 250, 240), descripción rgb(229, 225, 215), overflow=false, errors=[].
 
 26/09/2026 — S4.4: Chrome a 1440 px confirmó 4 tarjetas y 4 assets locales; al hover la foto tuvo opacity≈1, título crema y Manrope 600. Tab enfocó la segunda con foto visible; a 390/320 px las cuatro imágenes y textos claros quedaron visibles, overflow=false, errors=[].
+26/09/2026 — S4.5: Chrome a 1440/390/320 px confirmó 6 preguntas, fondo abierto rgb(232, 223, 208), borde 3px, foto 1440px cargada, Enter y Espacio, respuesta honesta de meal prep, overflow=false, errors=[].

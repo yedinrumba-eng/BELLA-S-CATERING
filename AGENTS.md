@@ -54,6 +54,8 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D24** — Los cuatro pasos usan imágenes ya incluidas en Recuerdos con degradado oscuro al hover y al foco; en móvil la imagen queda visible. Manrope semibold refuerza los títulos con una fuente local real y mantiene el texto legible.
 
+- **D25** — Las FAQ conservan las seis respuestas y el acordeón nativo; la foto conceptual, números y estado abierto en papel dorado mejoran orientación y jerarquía sin inventar información.
+
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
