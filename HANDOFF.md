@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.3; próximo: S4.4 (proceso fotográfico)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.4; próximo: S4.5 (FAQ editorial)
 
 ## Estado
 
@@ -183,4 +183,14 @@ Chrome/Playwright (.playwright/s4-3-check.cjs) con hover en las dos primeras fil
 {"width":1440,"first":{"open":true,"background":"rgb(38, 54, 45)","title":"rgb(255, 250, 240)","panel":"rgb(229, 225, 215)"},"second":{"open":true,"background":"rgb(38, 54, 45)"},"firstClosed":true,"overflow":false,"errors":[]}
 {"width":390,"first":{"open":true,"background":"rgb(38, 54, 45)","title":"rgb(255, 250, 240)","panel":"rgb(229, 225, 215)"},"second":{"open":true,"background":"rgb(38, 54, 45)"},"firstClosed":true,"overflow":false,"errors":[]}
 {"width":320,"first":{"open":true,"background":"rgb(38, 54, 45)","title":"rgb(255, 250, 240)","panel":"rgb(229, 225, 215)"},"second":{"open":true,"background":"rgb(38, 54, 45)"},"firstClosed":true,"overflow":false,"errors":[]}
+~~~
+
+## Evidencia de S4.4
+
+Chrome/Playwright (.playwright/s4-4-check.cjs) con mouse, Tab y cambio de ancho en la misma página:
+
+~~~text
+{"width":1440,"count":4,"assets":[{"name":"gallery-buffet-wedding.webp","exists":true},{"name":"gallery-dumplings.webp","exists":true},{"name":"gallery-seafood-steak.webp","exists":true},{"name":"gallery-buffet-warm.webp","exists":true}],"hovered":{"opacity":"0.999265","title":"rgb(255, 250, 240)","weight":"600","image":true},"keyboard":{"focused":true,"opacity":"1","title":"rgb(255, 250, 240)"},"overflow":false,"errors":[]}
+{"width":390,"cards":[{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300}],"overflow":false,"errors":[]}
+{"width":320,"cards":[{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300},{"opacity":"1","title":"rgb(255, 250, 240)","weight":"600","height":300}],"overflow":false,"errors":[]}
 ~~~

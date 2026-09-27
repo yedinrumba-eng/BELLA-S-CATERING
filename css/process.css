@@ -32,22 +32,56 @@
   font-size: 19px;
   line-height: 1.65;
 }
-.process__steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #b8b3a6; }
-.process__step { min-width: 0; border-right: 1px solid #b8b3a6; padding: 31px clamp(19px, 2vw, 38px) 0 0; }
-.process__step + .process__step { padding-left: clamp(19px, 2vw, 38px); }
+.process__steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid #b8b3a6; border-bottom: 1px solid #b8b3a6; }
+.process__step {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 380px;
+  overflow: hidden;
+  border-right: 1px solid #b8b3a6;
+  padding: 31px clamp(19px, 2vw, 38px) 29px;
+  outline-offset: -5px;
+}
 .process__step:last-child { border-right: 0; }
+.process__step:nth-child(1) { --step-image: url("../ASSETS/images/gallery-buffet-wedding.webp"); }
+.process__step:nth-child(2) { --step-image: url("../ASSETS/images/gallery-dumplings.webp"); }
+.process__step:nth-child(3) { --step-image: url("../ASSETS/images/gallery-seafood-steak.webp"); }
+.process__step:nth-child(4) { --step-image: url("../ASSETS/images/gallery-buffet-warm.webp"); }
+.process__step::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: linear-gradient(180deg, #101b17a6 0%, #101b17dd 65%, #101b17f2 100%), var(--step-image);
+  background-position: center;
+  background-size: cover;
+  content: "";
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity .45s ease, transform .8s ease;
+}
+.process__step:is(:hover, :focus-visible)::before { opacity: 1; transform: scale(1); }
 .process__step > span { color: #967a49; font-family: "Cormorant", Georgia, serif; font-size: 25px; font-style: italic; }
 .process__step h3 {
-  margin: 61px 0 19px;
-  font-family: "Cormorant", Georgia, serif;
-  font-size: clamp(32px, 2.9vw, 45px);
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: -.025em;
+  margin: auto 0 18px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: clamp(25px, 2.2vw, 34px);
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -.055em;
 }
 .process__step p { margin: 0; color: var(--ink-soft); font-size: 17px; line-height: 1.65; }
-
-.faq {
+.process__step:is(:hover, :focus-visible) > span { color: #e7c88c; }
+.process__step:is(:hover, :focus-visible) h3 { color: var(--cream); }
+.process__step:is(:hover, :focus-visible) p { color: #f0ede6; }
+@media (hover: none) {
+  .process__step::before { opacity: 1; transform: none; }
+  .process__step > span { color: #e7c88c; }
+  .process__step h3 { color: var(--cream); }
+  .process__step p { color: #f0ede6; }
+}.faq {
   display: grid;
   grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr);
   gap: clamp(55px, 8vw, 145px);
@@ -92,9 +126,9 @@
   .process__intro, .faq { grid-template-columns: 1fr; }
   .process__intro { gap: 30px; }
   .process__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .process__step { min-height: 290px; border-bottom: 1px solid #b8b3a6; }
+  .process__step { min-height: 340px; border-bottom: 1px solid #b8b3a6; }
   .process__step:nth-child(2) { border-right: 0; }
-  .process__step:nth-child(3) { padding-left: 0; border-bottom: 0; }
+  .process__step:nth-child(3) { border-bottom: 0; }
   .process__step:nth-child(4) { border-bottom: 0; }
   .faq { gap: 55px; }
 }
@@ -104,15 +138,19 @@
   .process h2, .faq h2 { font-size: clamp(65px, 14vw, 89px); }
   .process__intro > p:last-child { font-size: 17px; }
   .process__steps { grid-template-columns: 1fr; }
-  .process__step, .process__step + .process__step, .process__step:nth-child(3) {
-    min-height: 0;
+  .process__step, .process__step:nth-child(3) {
+    min-height: 300px;
     border-right: 0;
     border-bottom: 1px solid #b8b3a6;
-    padding: 22px 0 31px;
+    padding: 25px 23px 28px;
   }
   .process__step:last-child { border-bottom: 0; }
-  .process__step h3 { margin: 26px 0 12px; font-size: 38px; }
+  .process__step h3 { margin: auto 0 12px; font-size: 30px; }
   .process__step p { font-size: 16px; }
+  .process__step::before { opacity: 1; transform: none; }
+  .process__step > span { color: #e7c88c; }
+  .process__step h3 { color: var(--cream); }
+  .process__step p { color: #f0ede6; }
   .faq { gap: 39px; }
   .faq__list summary { min-height: 83px; gap: 16px; font-size: 17px; }
   .faq__list details > p { margin-right: 38px; font-size: 16px; }

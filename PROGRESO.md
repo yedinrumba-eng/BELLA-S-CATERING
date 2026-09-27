@@ -34,7 +34,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.1** — cifras de Jenny más grandes y en negrita; Chrome 1440/390/320 px sin desbordamiento.
 - [x] **S4.2** — siete platos, seis llegan al centro; salida del pin sincronizada con scroll rápido, Chrome 1440/390/320 y movimiento reducido.
 - [x] **S4.3** — servicio abierto en verde profundo con texto claro y acento dorado; Chrome 1440/390/320 px.
-- [ ] **S4.4** — proceso con fondos fotográficos al hover y títulos más fuertes.
+- [x] **S4.4** — proceso con cuatro fotos existentes, degradado y títulos semibold; Chrome 1440/390/320 px, mouse y teclado.
 - [ ] **S4.5** — FAQ con presentación editorial más cuidada.
 - [ ] **S4.6** — footer principal con acabado premium.
 - [ ] **S4.7** — repaso de motion, referencia y accesibilidad en escritorio/móvil.
@@ -86,3 +86,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 /PRODUCT EXPLOTION y Blender: Yedin prefirió conservar la fotografía del plato sin render 3D. El relevo de imágenes al hacer scroll en la segunda sección continúa aprobado.
 
 26/09/2026 — S4.3: Chrome hover abrió una sola fila y la segunda cerró la primera. En 1440/390/320 px: fondo rgb(38, 54, 45), título rgb(255, 250, 240), descripción rgb(229, 225, 215), overflow=false, errors=[].
+
+26/09/2026 — S4.4: Chrome a 1440 px confirmó 4 tarjetas y 4 assets locales; al hover la foto tuvo opacity≈1, título crema y Manrope 600. Tab enfocó la segunda con foto visible; a 390/320 px las cuatro imágenes y textos claros quedaron visibles, overflow=false, errors=[].
