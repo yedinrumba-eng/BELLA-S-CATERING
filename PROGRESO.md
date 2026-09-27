@@ -43,7 +43,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.10** — Jenny entre FAQ y testimonios; footer negro editorial con marca gigante; Chrome 1440/760/390/320 px, foto y enlaces verificados.
 - [x] **S4.11** — tres testimonios oscuros y cuatro claros; Chrome 1440/760/390/320 px, citas intactas y sin desbordamiento.
 - [x] **S4.12** — dos interludios fotográficos con parallax local y fallback estático; Chrome 1440/390/320 px, modo reducido y sin desbordamiento.
-- [~] **S4.13** — revisión integral final de sitio, recursos y privacidad para vista local.
+- [x] **S4.13** — revisión integral local: Chrome 1440/760/390/320 px, formulario, movimiento reducido, recursos y privacidad.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -109,3 +109,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 27/09/2026 — S4.11: Chrome comprobó 7 tarjetas, dark=[1,4,7], colores oscuros rgb(20, 26, 24)/rgb(35, 48, 40), cuatro fondos claros rgb(249, 245, 237), cardsWithinViewport=true y errores=[] a 1440/760/390/320 px.
 
 27/09/2026 — S4.12: Chrome 1440 px confirmó las dos fotos 1440 px, documentWidth=1440 y cambios de transform. Carga móvil limpia: a 390 px cada imagen pasó de y=-44.0747 a y=47.2906; a 320 px de y=-51.24 a y=46.6167. Movimiento reducido: {"reduced":true,"triggers":0,"visible":[{"loaded":1440,"opacity":"1"},{"loaded":1440,"opacity":"1"}],"errors":[]}.
+
+27/09/2026 — S4.13: Chrome 1440/760/390/320 px: documentWidth=viewport, heroCaps=uppercase, sectionOrder=true, parallaxCount=2, testimonials=7, dark=[1,4,7], badAnchors=[], missingAlt=0. Formulario: {"formOpened":true,"safeHost":true,"hasIdea":true}. Movimiento reducido/red: {"reduced":true,"triggers":0,"errors":[],"external":[]}. Auditoría offline: {"resourceCount":67,"missingResources":[],"trackedCount":61,"privateTracked":[],"secretPatternFiles":[]}; 21 WebP sin metadatos.

@@ -1,8 +1,11 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.12; próximo: S4.13 (revisión integral local)
+Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.13; próximo: S3.4 (publicación cuando haya dominio y orden de push)
 
 ## Estado
+
+S4.13: revisión integral local a 1440/760/390/320 px. Salida 320 px: {"width":320,"documentWidth":320,"heroCaps":"uppercase","locationPx":"11px","sectionOrder":true,"parallaxCount":2,"testimonials":7,"dark":[1,4,7],"footerWords":[[23,181],[65,297]],"badAnchors":[],"missingAlt":0}. Formulario: {"formOpened":true,"safeHost":true,"hasIdea":true}. Movimiento reducido/red: {"reduced":true,"triggers":0,"errors":[],"external":[]}. Auditoría offline: {"resourceCount":67,"missingResources":[],"trackedCount":61,"privateTracked":[],"secretPatternFiles":[]}; 21 WebP sin EXIF/XMP/IPTC/ICC. La captura móvil mostró el enlace de salto por la forma de capturar un footer más alto que el viewport; en la página real seguía arriba a -80 px, sin foco. No hubo push.
+
 
 S4.12: dos interludios fotográficos de buffet y plato entre Servicios/Biografía y Proceso/FAQ, con fondos en parallax por GSAP local y texto estático. Chrome 1440 px: documentWidth=1440, ambas fotos naturalWidth=1440, transformChanged=true, errores=[]. Carga móvil limpia 390 px: primer fondo de y=-44.0747 a y=47.2906 al avanzar el scroll; segundo igual. A 320 px, ambos de y=-51.24 a y=46.6167. Modo reducido: {"reduced":true,"triggers":0,"visible":[{"loaded":1440,"opacity":"1"},{"loaded":1440,"opacity":"1"}],"errors":[]}.
 
