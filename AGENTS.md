@@ -66,6 +66,7 @@ S1.1–S2.10 y S3.1–S3.3 cerrados. S3.4 publicación pendiente del dominio y d
 
 - **D30** — La escena fotográfica de Jenny queda entre FAQ y testimonios para darle una transición editorial al relato; el footer adopta fondo casi negro, tres columnas informativas, navegación real y una marca de gran formato según las capturas de referencia. Solo se publica información y enlaces confirmados.
 - **D31** — Los testimonios 1, 4 y 7 usan fondo oscuro y los otros cuatro papel claro, porque Yedin pidió tres oscuros y cuatro claros; el ritmo alterna los énfasis sin cambiar palabras ni atribuciones.
+- **D32** — Dos pausas fotográficas conceptuales separan Servicios/Biografía y Proceso/FAQ. Mueven solo el fondo con ScrollTrigger, sin fijar pantalla, para dar profundidad al scroll sin competir con la escena principal; en movimiento reducido quedan estáticas.
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.

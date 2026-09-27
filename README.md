@@ -4,7 +4,7 @@ Sitio en español para Bella’s Catering, el servicio de catering y cocina de l
 
 ## Estado y vista local
 
-La página incluye portada gastronómica, escena de platos al hacer scroll, biografía, servicios desplegables, galería, sección fotográfica, proceso, preguntas frecuentes, testimonios de clientes y formulario de cotización por WhatsApp. La escena editorial de Jenny aparece entre las preguntas y los testimonios; el footer negro cierra con navegación, contacto y la marca a gran escala. Meal prep figura como servicio en exploración, sin planes ni compra anunciados. El sitio todavía no está publicado.
+La página incluye portada gastronómica, escena de platos al hacer scroll, biografía, servicios desplegables, galería, sección fotográfica, proceso, preguntas frecuentes, testimonios de clientes y formulario de cotización por WhatsApp. Dos pausas fotográficas añaden parallax suave al recorrido y quedan estáticas si el visitante prefiere menos movimiento. La escena editorial de Jenny aparece entre las preguntas y los testimonios; el footer negro cierra con navegación, contacto y la marca a gran escala. Meal prep figura como servicio en exploración, sin planes ni compra anunciados. El sitio todavía no está publicado.
 
 No se requieren dependencias para verlo. Desde esta carpeta:
 

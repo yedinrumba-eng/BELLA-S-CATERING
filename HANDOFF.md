@@ -1,8 +1,11 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.11; próximo: S4.12 (dos interludios fotográficos con parallax)
+Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.12; próximo: S4.13 (revisión integral local)
 
 ## Estado
+
+S4.12: dos interludios fotográficos de buffet y plato entre Servicios/Biografía y Proceso/FAQ, con fondos en parallax por GSAP local y texto estático. Chrome 1440 px: documentWidth=1440, ambas fotos naturalWidth=1440, transformChanged=true, errores=[]. Carga móvil limpia 390 px: primer fondo de y=-44.0747 a y=47.2906 al avanzar el scroll; segundo igual. A 320 px, ambos de y=-51.24 a y=46.6167. Modo reducido: {"reduced":true,"triggers":0,"visible":[{"loaded":1440,"opacity":"1"},{"loaded":1440,"opacity":"1"}],"errors":[]}.
+
 
 S4.11: siete testimonios intactos, tarjetas 1/4/7 oscuras y las otras cuatro claras. Chrome 1440/760/390/320 px: tarjetas dentro del viewport, documentWidth=viewport, errores=[]. Salida real 320 px: {"width":320,"documentWidth":320,"count":7,"dark":[1,4,7],"colors":["rgb(20, 26, 24)","rgb(249, 245, 237)","rgb(249, 245, 237)","rgb(35, 48, 40)","rgb(249, 245, 237)","rgb(249, 245, 237)","rgb(35, 48, 40)"],"cardsWithinViewport":true}.
 
