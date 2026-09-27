@@ -33,7 +33,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 - [x] **S4.1** — cifras de Jenny más grandes y en negrita; Chrome 1440/390/320 px sin desbordamiento.
 - [x] **S4.2** — siete platos, seis llegan al centro; salida del pin sincronizada con scroll rápido, Chrome 1440/390/320 y movimiento reducido.
-- [ ] **S4.3** — diferenciar el servicio expandido por color.
+- [x] **S4.3** — servicio abierto en verde profundo con texto claro y acento dorado; Chrome 1440/390/320 px.
 - [ ] **S4.4** — proceso con fondos fotográficos al hover y títulos más fuertes.
 - [ ] **S4.5** — FAQ con presentación editorial más cuidada.
 - [ ] **S4.6** — footer principal con acabado premium.
@@ -84,3 +84,5 @@ Los HEIC no se abrían con el visor por defecto de la sesión; un conversor loca
 Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. Assets de las webs de referencia: solo guían el diseño.
 
 /PRODUCT EXPLOTION y Blender: Yedin prefirió conservar la fotografía del plato sin render 3D. El relevo de imágenes al hacer scroll en la segunda sección continúa aprobado.
+
+26/09/2026 — S4.3: Chrome hover abrió una sola fila y la segunda cerró la primera. En 1440/390/320 px: fondo rgb(38, 54, 45), título rgb(255, 250, 240), descripción rgb(229, 225, 215), overflow=false, errors=[].

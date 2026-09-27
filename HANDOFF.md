@@ -1,6 +1,6 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.2; próximo: S4.3 (estado abierto de servicios)
+Actualizado: 26/09/2026 · Rol: editor · Slice cerrado: S4.3; próximo: S4.4 (proceso fotográfico)
 
 ## Estado
 
@@ -174,3 +174,13 @@ Dominio, registro final del negocio y validación con Jenny de platos y preparac
 ## Lecciones ya pagadas
 
 No hay bugs de implementación aún. En preparación, algunas imágenes HEIC no abrían en el visor habitual; se pudieron convertir localmente para revisar todas las referencias de Jenny.
+
+## Evidencia de S4.3
+
+Chrome/Playwright (.playwright/s4-3-check.cjs) con hover en las dos primeras filas. Salida real:
+
+~~~text
+{"width":1440,"first":{"open":true,"background":"rgb(38, 54, 45)","title":"rgb(255, 250, 240)","panel":"rgb(229, 225, 215)"},"second":{"open":true,"background":"rgb(38, 54, 45)"},"firstClosed":true,"overflow":false,"errors":[]}
+{"width":390,"first":{"open":true,"background":"rgb(38, 54, 45)","title":"rgb(255, 250, 240)","panel":"rgb(229, 225, 215)"},"second":{"open":true,"background":"rgb(38, 54, 45)"},"firstClosed":true,"overflow":false,"errors":[]}
+{"width":320,"first":{"open":true,"background":"rgb(38, 54, 45)","title":"rgb(255, 250, 240)","panel":"rgb(229, 225, 215)"},"second":{"open":true,"background":"rgb(38, 54, 45)"},"firstClosed":true,"overflow":false,"errors":[]}
+~~~

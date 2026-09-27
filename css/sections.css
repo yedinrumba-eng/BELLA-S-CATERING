@@ -5,14 +5,21 @@
 .services h2 em, .biography h2 em { color: #9f834e; font-weight: 400; }
 .services__intro > p { max-width: 390px; margin: 0 0 2px; color: var(--ink-soft); font-size: 18px; line-height: 1.65; }
 .services__list { border-top: 1px solid #b8b3a6; }
-.service { border-bottom: 1px solid #b8b3a6; }
+.service { border-bottom: 1px solid #b8b3a6; transition: color .3s ease; }
+.service:not([open]):hover { background: #ece4d6; }
+.service[open] { color: var(--cream); background: #26362d; box-shadow: 0 0 0 12px #26362d; border-color: #26362d; }
+.service[open] .service__summary .service__title { color: var(--cream); }
+.service[open] .service__number { color: #dec58b; }
+.service[open] .service__panel > p { color: #e5e1d7; }
+.service[open] .service__title small { color: #f6e9cc; border-color: #c8ae78; }
+.service[open] .service__mark { color: var(--night); background: #d6bd88; border-color: #d6bd88; }
 .service__summary { display: grid; grid-template-columns: 65px minmax(0, 1fr) 42px; gap: 24px; align-items: center; min-height: 112px; padding: 22px 0; cursor: pointer; list-style: none; }
 .service__summary::-webkit-details-marker { display: none; }
 .service__number { color: #9f834e; font-family: "Cormorant", Georgia, serif; font-size: 23px; font-style: italic; }
 .service__title { font-family: "Cormorant", Georgia, serif; font-size: clamp(39px, 3.4vw, 54px); font-weight: 400; letter-spacing: -.035em; line-height: 1; }
 .service__title small { display: inline-block; vertical-align: middle; margin: 0 0 5px 21px; border: 1px solid #a99877; border-radius: 100px; padding: 7px 12px; color: #745e39; font-family: "Manrope", Arial, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0; white-space: nowrap; }
 .service__mark { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #a99877; border-radius: 50%; color: #806b45; font-family: "Manrope", Arial, sans-serif; font-size: 26px; font-weight: 400; line-height: 1; transition: transform .35s ease, color .35s ease, background .35s ease; }
-.service[open] .service__mark { transform: rotate(45deg); color: var(--paper); background: var(--ink); border-color: var(--ink); }
+.service[open] .service__mark { transform: rotate(45deg); }
 .service__summary:hover .service__title { color: #806b45; }
 .service__panel { display: grid; grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr); gap: clamp(26px, 4vw, 76px); align-items: start; padding: 0 0 36px 89px; animation: service-reveal .45s ease both; }
 .service__panel > p { max-width: 440px; margin: 6px 0 0; color: var(--ink-soft); font-size: 19px; line-height: 1.65; }
