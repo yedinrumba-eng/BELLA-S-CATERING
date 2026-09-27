@@ -1,8 +1,11 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.10; próximo: S4.11 (siete testimonios, tres oscuros)
+Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.11; próximo: S4.12 (dos interludios fotográficos con parallax)
 
 ## Estado
+
+S4.11: siete testimonios intactos, tarjetas 1/4/7 oscuras y las otras cuatro claras. Chrome 1440/760/390/320 px: tarjetas dentro del viewport, documentWidth=viewport, errores=[]. Salida real 320 px: {"width":320,"documentWidth":320,"count":7,"dark":[1,4,7],"colors":["rgb(20, 26, 24)","rgb(249, 245, 237)","rgb(249, 245, 237)","rgb(35, 48, 40)","rgb(249, 245, 237)","rgb(249, 245, 237)","rgb(35, 48, 40)"],"cardsWithinViewport":true}.
+
 
 S4.10: la escena fotográfica de Jenny vive entre FAQ y testimonios; footer negro con tres columnas informativas, enlaces reales y BELLA’S CATERING a gran escala. Chrome 1440/760/390/320 px: documentWidth=viewport, orden FAQ→manera→testimonios, footer rgb(16, 17, 16), anclas=[] y errores=[]. Al desplazar a la escena, la foto carga con naturalWidth=1280 tanto a 1440 como a 390 px. Salida 320 px: {"width":320,"documentWidth":320,"order":4,"wayImage":1280,"footerColor":"rgb(16, 17, 16)","word":[{"left":23,"right":181,"text":"BELLA’S"},{"left":65,"right":297,"text":"CATERING"}],"footerRight":320,"anchors":[]}.
 

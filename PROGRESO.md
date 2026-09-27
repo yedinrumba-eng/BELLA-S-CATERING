@@ -41,6 +41,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.8** — entradas sutiles con scroll, revisión visual de secciones y accesibilidad; Chrome 1440/390/320 px y movimiento reducido.
 - [x] **S4.9** — titular del hero en mayúsculas y Santiago más visible; Chrome 1440/1024/390/320 px.
 - [x] **S4.10** — Jenny entre FAQ y testimonios; footer negro editorial con marca gigante; Chrome 1440/760/390/320 px, foto y enlaces verificados.
+- [x] **S4.11** — tres testimonios oscuros y cuatro claros; Chrome 1440/760/390/320 px, citas intactas y sin desbordamiento.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -102,3 +103,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 26/09/2026 — S4.5: Chrome a 1440/390/320 px confirmó 6 preguntas, fondo abierto rgb(232, 223, 208), borde 3px, foto 1440px cargada, Enter y Espacio, respuesta honesta de meal prep, overflow=false, errors=[].
 26/09/2026 — S4.6: Chrome con carga nueva en 1440/760/390/320 px confirmó foto 1280 px, grandes rótulos Bella y Catering dentro del ancho, ocho enlaces válidos y seguros, sin errores ni scroll horizontal. Salida 320 px: {"width":320,"innerWidth":320,"doc":320,"image":1280,"word1":[13,314],"word2":[23,297],"errors":[]}. El redimensionado inmediato de la misma pestaña mostró ancho de pin temporalmente viejo; cargas nuevas en cada viewport no reprodujeron desbordamiento.
 27/09/2026 — S4.10: Chrome confirmó orden FAQ→manera→testimonios, foto 1280 px tras scroll, footer rgb(16, 17, 16), wordmark dentro del ancho, anclas=[] y errores=[]. Salida 320 px: {"width":320,"documentWidth":320,"order":4,"wayImage":1280,"footerColor":"rgb(16, 17, 16)","word":[{"left":23,"right":181,"text":"BELLA’S"},{"left":65,"right":297,"text":"CATERING"}],"footerRight":320,"anchors":[]}.
+
+27/09/2026 — S4.11: Chrome comprobó 7 tarjetas, dark=[1,4,7], colores oscuros rgb(20, 26, 24)/rgb(35, 48, 40), cuatro fondos claros rgb(249, 245, 237), cardsWithinViewport=true y errores=[] a 1440/760/390/320 px.

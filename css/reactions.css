@@ -46,6 +46,11 @@
   background: var(--night);
   border-color: var(--night);
 }
+.reaction--dark {
+  color: var(--cream);
+  background: #233028;
+  border-color: #233028;
+}
 .reaction:last-child { grid-column: span 2; }
 .reaction blockquote { margin: 0; }
 .reaction blockquote p {
