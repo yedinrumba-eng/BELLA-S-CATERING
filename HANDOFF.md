@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.22; próximo: S4.23 (crédito Korvex con nombre y enlace)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.23; próximo: S4.24 (transiciones horizontales de secciones completas)
 
 ## Estado
+
+S4.23: el crédito muestra «Powered by Korvex Dev» como texto y el logo más pequeño. Todo el bloque enlaza a `https://korvexdev.cc/` sin duplicar el nombre para lectores de pantalla. Chrome local a 1440/390/320 px: loaded=true, creditCenterOffset=0, href correcto, logoWidth=102/92 px, documentWidth=viewport, errors=[]. Capturas `.playwright/s4-21-credit-*.png` actualizadas. No hubo push.
 
 S4.22: la cápsula del nav usa verde profundo `#26362d` con letras crema; botón de cotización crema y menú móvil claro. Chrome local a 1440/390/320 px: headerBackground=`rgb(38, 54, 45)`, headerColor=`rgb(255, 250, 240)`, sello cargado, menú móvil abierto con texto oscuro y Escape lo cierra, errors=[]. Capturas `.playwright/s4-22-nav-*.png`. La medición al cargar en móvil detectó `documentWidth=viewport+3` atribuido a `main`, no al nav; queda por diagnosticar en el pulido de movimiento. No hubo push.
 
