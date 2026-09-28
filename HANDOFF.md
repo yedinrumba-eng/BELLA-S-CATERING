@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.18; próximo: S4.19 (rotación automática de La esencia)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.19; próximo: S4.20 (footer social, crédito Korvex y nav verde)
 
 ## Estado
+
+S4.19: La esencia avanza entre sus tres fotos cada 5 segundos solo cuando está a la vista. Los controles manuales siguen funcionando; el ciclo se pausa al pasar el mouse por ellos o al enfocarlos con teclado, se reanuda al salir, y no se inicia con movimiento reducido. Chrome local: 1440/390/320 px pasaron foto 0→1 tras 5,4 s, slide y aria-pressed sincronizados, documentWidth=viewport, errors=[]. A 390 px: selección manual de foto 2 persistió mientras el mouse estuvo encima (`manualHeld=true`) y volvió a 0 tras apartarlo (`resumed=0`); foco real por Tab: {"target":"1","visible":true,"after":1} tras 5,4 s. Reducido: active=0 tras 5,4 s. No hubo push.
 
 S4.18: ScrollTrigger local mueve horizontalmente por parejas Biografía, Galería, La esencia, Proceso, FAQ y Testimonios al entrar en pantalla. Distancia 74 px en escritorio y 26 px en móvil; el efecto sigue el scroll y se invierte al subir. Chrome local 1440/390/320 px: ocho elementos muestreados x≈±70→0 en escritorio, x≈±25→0 en móvil, opacity≈0.715→1, documentWidth=viewport, errors=[]. Reducido: {"triggers":0,"biographyTransform":"none"}. Capturas `.playwright/s4-18-biography-*.png`. No hubo push.
 

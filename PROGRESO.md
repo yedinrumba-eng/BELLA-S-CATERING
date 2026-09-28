@@ -49,6 +49,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.16** — dos videos comprimidos sustituyen los fondos visuales de La mesa; parallax más claro de fondo y texto, respaldo estático, Chrome 1440/390/320 px y movimiento reducido.
 - [x] **S4.17** — relevo de platos más fluido, pausa final y entrada lateral de Servicios; Chrome local 1440/390/320 px, último plato centrado y movimiento reducido.
 - [x] **S4.18** — entradas horizontales con ScrollTrigger en seis secciones, ajustadas a móvil; Chrome local 1440/390/320 px, sin desbordamiento y con alternativa estática.
+- [x] **S4.19** — La esencia rota cada cinco segundos mientras está visible; selección manual, pausa por interacción y movimiento reducido comprobados en Chrome.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -129,3 +130,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 28/09/2026 — S4.17: Chrome local 1440/390/320 px: documentWidth=viewport, errors=[]. A 320 px, en progreso 0.94/1/1.08/1.22 del ScrollTrigger de platos, último plato opacity=1 y centerOffset=0; Servicios x=70/70/32/0. Reducido: {"triggers":0,"visiblePlates":3,"servicesTransform":"none"}.
 
 28/09/2026 — S4.18: Chrome local 1440/390/320 px: Biografía, Galería, La esencia, Proceso, FAQ y Testimonios x≈±70→0 (desktop), x≈±25→0 (móvil), opacity≈0.715→1, documentWidth=viewport, errors=[]. Reducido: {"triggers":0,"biographyTransform":"none"}.
+
+28/09/2026 — S4.19: Chrome local 1440/390/320 px: controles y foto activa 0→1 después de 5,4 s en pantalla, documentWidth=viewport, errors=[]. A 390 px: manualHeld=true en foto 2 y resumed=0 al salir del control; foco por Tab {"target":"1","visible":true,"after":1} después de 5,4 s. Reducido: active=0 después de 5,4 s.

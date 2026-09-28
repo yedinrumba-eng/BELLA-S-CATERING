@@ -4,8 +4,14 @@
 
   const slides = [...section.querySelectorAll("[data-signature-slide]")];
   const controls = [...section.querySelectorAll("[data-signature-target]")];
+  const controlsGroup = section.querySelector(".signature__controls");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let current = 0;
+  let visible = false;
+  let timer;
 
   const show = (index) => {
+    current = index;
     slides.forEach((slide, position) => {
       const active = position === index;
       slide.classList.toggle("is-active", active);
@@ -16,9 +22,39 @@
     });
   };
 
+  const stopTimer = () => {
+    window.clearInterval(timer);
+    timer = undefined;
+  };
+
+  const syncTimer = () => {
+    stopTimer();
+    const interacting = controlsGroup.matches(":hover") || Boolean(controlsGroup.querySelector(":focus-visible"));
+    if (!visible || document.hidden || reducedMotion.matches || interacting) return;
+    timer = window.setInterval(() => show((current + 1) % slides.length), 5000);
+  };
+
   controls.forEach((control, index) => {
-    control.addEventListener("pointerenter", () => show(index));
-    control.addEventListener("focus", () => show(index));
-    control.addEventListener("click", () => show(index));
+    const select = () => { show(index); syncTimer(); };
+    control.addEventListener("pointerenter", select);
+    control.addEventListener("focus", select);
+    control.addEventListener("click", select);
   });
+
+  controlsGroup.addEventListener("pointerenter", stopTimer);
+  controlsGroup.addEventListener("pointerleave", syncTimer);
+  controlsGroup.addEventListener("focusin", stopTimer);
+  controlsGroup.addEventListener("focusout", () => window.setTimeout(syncTimer, 0));
+  document.addEventListener("visibilitychange", syncTimer);
+  reducedMotion.addEventListener("change", syncTimer);
+
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      syncTimer();
+    }, { threshold: 0.35 }).observe(section);
+  } else {
+    visible = true;
+    syncTimer();
+  }
 })();
