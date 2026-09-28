@@ -35,7 +35,7 @@
 .services__note { max-width: 980px; margin: 35px 0 0; color: #68695e; font-size: 16px; line-height: 1.7; }
 @keyframes service-reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
-.biography { display: grid; grid-template-columns: 51% 49%; min-height: 820px; background: var(--paper-deep); }
+.biography { display: grid; grid-template-columns: 51% 49%; min-height: 820px; overflow-x: clip; background: var(--paper-deep); }
 .biography__visual { position: relative; height: 820px; overflow: hidden; padding: 55px 22px 55px clamp(24px, 7.5vw, 130px); background: var(--paper-deep); }
 .biography__visual > img { width: 100%; height: 100%; border-radius: 48% 48% 0 0 / 34% 34% 0 0; object-fit: cover; object-position: 50% 42%; }
 

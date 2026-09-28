@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.10, S3.1–S3.3 y S4.1–S4.17 cerrados. S3.4 publicación pendiente del dominio y del pedido expreso de push. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.10, S3.1–S3.3 y S4.1–S4.18 cerrados. S3.4 publicación pendiente del dominio y del pedido expreso de push. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -70,6 +70,7 @@ S1.1–S2.10, S3.1–S3.3 y S4.1–S4.17 cerrados. S3.4 publicación pendiente d
 - **D33** — La escena de Jenny recupera CATERING a gran escala en una segunda línea bajo Bella’s, porque Yedin quería conservar las dos palabras y el encuadre permite leerlas completas incluso a 320 px.
 - **D34** — Dos videos aportados por Yedin reemplazan el fondo visible de La mesa, comprimidos a H.264 local sin audio ni datos personales. Las fotografías anteriores quedan como respaldo y para movimiento reducido; fondo y texto avanzan a ritmos opuestos por ScrollTrigger para que el parallax sea perceptible.
 - **D35** — La segunda sección conserva `scrub:true` para evitar que el último plato desaparezca al liberar el pin. Transiciones internas más suaves, mayor pausa final y la entrada lateral de Servicios dan continuidad al paso de verde a papel sin un ScrollSmoother global ni nuevas dependencias.
+- **D36** — Las secciones narrativas entran desde lados alternos con ScrollTrigger ligado al scroll. El recorrido de 74 px baja a 26 px en móvil y se desactiva con movimiento reducido para dar movimiento visible sin perjudicar lectura ni navegación.
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
