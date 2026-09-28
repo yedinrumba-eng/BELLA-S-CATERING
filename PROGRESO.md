@@ -52,6 +52,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.19** — La esencia rota cada cinco segundos mientras está visible; selección manual, pausa por interacción y movimiento reducido comprobados en Chrome.
 - [x] **S4.20** — footer de Instagram, WhatsApp y Facebook; enlaces confirmados y degradados al hover comprobados en Chrome 1440/390/320 px.
 - [x] **S4.21** — crédito y logo Korvex Dev centrados bajo la línea final; Chrome 1440/390/320 px, imagen cargada y sin desbordamiento.
+- [x] **S4.22** — nav verde profundo y menú móvil legible; Chrome 1440/390/320 px, Escape cierra menú, sin errores de página. Se observó un desborde inicial de 3 px en `main` móvil para diagnosticar.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.

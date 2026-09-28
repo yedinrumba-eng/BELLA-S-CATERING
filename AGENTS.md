@@ -74,6 +74,7 @@ S1.1–S2.10, S3.1–S3.3 y S4.1–S4.19 cerrados. S3.4 publicación pendiente d
 - **D37** — La esencia cambia de foto cada cinco segundos solo mientras la sección está visible; pausa durante interacción manual, al ocultar la pestaña y con movimiento reducido para que el movimiento no quite control al visitante.
 - **D38** — Las tres tarjetas superiores del footer muestran Instagram, WhatsApp y Facebook. Solo los dos primeros tienen enlace, porque sus datos comerciales están confirmados; Facebook conserva el icono sin destino hasta recibir el enlace oficial. Los degradados de Instagram y WhatsApp aparecen al hover o foco y no ocultan el texto.
 - **D39** — El crédito de Korvex Dev queda centrado bajo la línea final del footer con el logo original proporcionado por Yedin, porque es una atribución aprobada. El PNG tiene transparencia y no contiene metadatos personales; se presenta sobre fondo oscuro para conservar contraste.
+- **D40** — La cápsula de navegación usa el verde profundo de Servicios y texto crema; el menú desplegable móvil conserva papel claro y texto oscuro para mantener contraste y orientación. El sello original queda intacto sobre su círculo claro.
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
