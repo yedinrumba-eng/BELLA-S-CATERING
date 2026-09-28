@@ -1,11 +1,20 @@
 .site-footer { overflow: hidden; padding: 0 clamp(23px, 7vw, 140px) 28px; color: #f4f0e7; background: #101110; }
-.site-footer__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #ffffff48; border-bottom: 1px solid #ffffff48; }
-.site-footer__fact { display: flex; flex-direction: column; justify-content: space-between; align-items: center; min-height: 262px; border-right: 1px solid #ffffff36; padding: 38px 18px 42px; text-align: center; }
-.site-footer__fact:last-child { border-right: 0; }
-.site-footer__fact > span, .site-footer__directory span { color: #a8aaa4; font-size: 14px; font-weight: 600; letter-spacing: .09em; }
-.site-footer__fact p, .site-footer__fact a { margin: 0; color: #f1eee8; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.5; }
-.site-footer__fact a { border-bottom: 1px solid #d1c3a3; padding-bottom: 5px; }
-.site-footer__fact a:hover, .site-footer__directory a:hover, .site-footer__bottom a:hover { color: #ddc692; }
+.site-footer__socials { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid #ffffff48; border-bottom: 1px solid #ffffff48; }
+.site-footer__social { position: relative; isolation: isolate; display: flex; flex-direction: column; align-items: flex-start; min-height: 306px; overflow: hidden; border-right: 1px solid #ffffff36; padding: 30px clamp(24px, 3vw, 52px) 34px; color: #f4f0e7; background: #101110; }
+.site-footer__social:last-child { border-right: 0; }
+.site-footer__social::before { position: absolute; z-index: -1; inset: 0; content: ""; opacity: 0; transition: opacity .45s ease; }
+.site-footer__social--instagram::before { background: linear-gradient(140deg, #281b40, #6c285c 52%, #ab5139); }
+.site-footer__social--whatsapp::before { background: linear-gradient(140deg, #142c24, #1b6849 65%, #31825b); }
+.site-footer__social--facebook { background: #131b23; }
+.site-footer__social:is(:hover, :focus-visible)::before { opacity: 1; }
+.site-footer__social-label, .site-footer__directory span { color: #a8aaa4; font-size: 14px; font-weight: 600; letter-spacing: .09em; }
+.site-footer__social-label { color: #e8e1d4; }
+.site-footer__social-icon { width: 66px; height: 66px; margin: 35px 0 22px; flex: none; }
+.site-footer__social-name { min-height: 1.5em; font-size: clamp(20px, 2vw, 28px); font-weight: 600; line-height: 1.25; overflow-wrap: anywhere; }
+.site-footer__social-action { display: inline-flex; justify-content: space-between; align-items: center; gap: 22px; min-width: 170px; min-height: 44px; margin-top: 18px; border-bottom: 1px solid #ffffffa6; font-size: 15px; font-weight: 600; }
+.site-footer__social-action span { font-size: 22px; }
+.site-footer__social--facebook .site-footer__social-icon { color: #d0d9e4; }
+.site-footer__directory a:hover, .site-footer__bottom a:hover { color: #ddc692; }
 .site-footer__directory { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 50px; min-height: 310px; border-bottom: 1px solid #ffffff48; padding: 60px 0 65px; }
 .site-footer__directory nav { display: flex; flex-direction: column; align-items: flex-start; }
 .site-footer__directory nav span, .site-footer__conversation > span { margin-bottom: 26px; }
@@ -21,11 +30,13 @@
 }
 @media (max-width: 760px) {
   .site-footer { padding: 0 23px 24px; }
-  .site-footer__facts { grid-template-columns: 1fr; }
-  .site-footer__fact { min-height: 152px; border-right: 0; border-bottom: 1px solid #ffffff36; padding: 27px 15px 29px; gap: 25px; }
-  .site-footer__fact:last-child { border-bottom: 0; }
-  .site-footer__fact > span, .site-footer__directory span { font-size: 12px; }
-  .site-footer__fact p, .site-footer__fact a { font-size: 18px; }
+  .site-footer__socials { grid-template-columns: 1fr; }
+  .site-footer__social { min-height: 220px; border-right: 0; border-bottom: 1px solid #ffffff36; padding: 25px 24px; }
+  .site-footer__social:last-child { border-bottom: 0; }
+  .site-footer__social-label, .site-footer__directory span { font-size: 12px; }
+  .site-footer__social-icon { width: 51px; height: 51px; margin: 22px 0 10px; }
+  .site-footer__social-name { font-size: 21px; }
+  .site-footer__social-action { min-height: 37px; margin-top: 8px; font-size: 14px; }
   .site-footer__directory { grid-template-columns: 1fr 1fr; gap: 42px 18px; padding: 42px 0 50px; }
   .site-footer__directory nav span, .site-footer__conversation > span { margin-bottom: 16px; }
   .site-footer__directory a { min-height: 44px; font-size: 16px; }

@@ -50,6 +50,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.17** — relevo de platos más fluido, pausa final y entrada lateral de Servicios; Chrome local 1440/390/320 px, último plato centrado y movimiento reducido.
 - [x] **S4.18** — entradas horizontales con ScrollTrigger en seis secciones, ajustadas a móvil; Chrome local 1440/390/320 px, sin desbordamiento y con alternativa estática.
 - [x] **S4.19** — La esencia rota cada cinco segundos mientras está visible; selección manual, pausa por interacción y movimiento reducido comprobados en Chrome.
+- [x] **S4.20** — footer de Instagram, WhatsApp y Facebook; enlaces confirmados y degradados al hover comprobados en Chrome 1440/390/320 px.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.

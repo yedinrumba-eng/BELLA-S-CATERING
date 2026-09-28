@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.19; próximo: S4.20 (footer social, crédito Korvex y nav verde)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.20; próximo: S4.21 (crédito Korvex)
 
 ## Estado
+
+S4.20: tres tarjetas de redes sustituyen la fila informativa del footer. Instagram @Bellascatering___ y WhatsApp (849) 453-0297 tienen enlaces y degradados al hover/foco. Facebook muestra su icono sin enlace mientras Yedin obtiene la dirección oficial. Chrome local a 1440/390/320 px: documentWidth=viewport, 3 tarjetas visibles, iconos 66/51 px, opacidad del degradado=1 en ambos hover, errors=[]. En móvil las tarjetas terminan en x=367 de 390 o x=297 de 320; captura `.playwright/s4-20-social-*.png`. No hubo push.
 
 S4.19: La esencia avanza entre sus tres fotos cada 5 segundos solo cuando está a la vista. Los controles manuales siguen funcionando; el ciclo se pausa al pasar el mouse por ellos o al enfocarlos con teclado, se reanuda al salir, y no se inicia con movimiento reducido. Chrome local: 1440/390/320 px pasaron foto 0→1 tras 5,4 s, slide y aria-pressed sincronizados, documentWidth=viewport, errors=[]. A 390 px: selección manual de foto 2 persistió mientras el mouse estuvo encima (`manualHeld=true`) y volvió a 0 tras apartarlo (`resumed=0`); foco real por Tab: {"target":"1","visible":true,"after":1} tras 5,4 s. Reducido: active=0 tras 5,4 s. No hubo push.
 
