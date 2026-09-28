@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.15; próximo: S4.16 (videos de La mesa)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.16; próximo: S4.17 (relevo de platos y entradas horizontales)
 
 ## Estado
+
+S4.16: dos videos entregados por Yedin sustituyen las fotografías como fondo visual de La mesa; las fotos siguen como respaldo. FFmpeg local redujo los archivos de 21.809.571/29.619.859 bytes a 909.153/2.070.834 bytes (H.264, 1280×720, 24 fps, sin audio ni metadatos personales). Chrome local con archivos a 1440/390/320 px: documentWidth=viewport, ambos videos readyState=4, videoVisible=1, videoPaused=false, errors=[]. Scroll real a 320 px: primer panel media y=-58.8713→55.9643 y contenido y=37.3404→-35.4965; segundo panel igual. Movimiento reducido: {"videoDisplay":"none","videoPaused":true,"photoLoaded":1440,"mediaTransform":"none","contentTransform":"none"}. Capturas `.playwright/s4-16-panel-*.png`. No hubo push.
 
 S4.15: la escena de Jenny vuelve a mostrar Bella’s y CATERING en dos líneas grandes. Chrome local con archivos a 1440/390/320 px: documentWidth=viewport y errores=[]. Salida 390 px: {"section":{"height":800,"bottom":849.5},"messageBottom":623,"words":[{"text":"Bella’s","top":691,"bottom":755},{"text":"CATERING","top":755,"bottom":795}]}. Salida 320 px: {"section":{"height":800,"bottom":849.9375},"messageBottom":583,"words":[{"text":"Bella’s","top":699,"bottom":758},{"text":"CATERING","top":758,"bottom":795}]}. Ambas palabras quedan completas dentro de la escena y debajo del mensaje. Capturas locales en `.playwright/s4-15-way-*.png`. No hubo push.
 

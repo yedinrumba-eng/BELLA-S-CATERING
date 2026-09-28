@@ -46,6 +46,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.13** — revisión integral local: Chrome 1440/760/390/320 px, formulario, movimiento reducido, recursos y privacidad.
 - [x] **S4.14** — vista local restaurada en 127.0.0.1:8765; HTTP 200 y proceso aún activo tras cerrar la terminal.
 - [x] **S4.15** — CATERING regresa a gran formato junto a Bella’s en la escena de Jenny; Chrome local 1440/390/320 px, sin corte ni desbordamiento.
+- [x] **S4.16** — dos videos comprimidos sustituyen los fondos visuales de La mesa; parallax más claro de fondo y texto, respaldo estático, Chrome 1440/390/320 px y movimiento reducido.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -120,3 +121,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 27/09/2026 — S4.14: sin listener en 8765; tras iniciar el servidor local, {"status":200,"title":"Bella’s Catering — Chef Jenny Pereyra","bytes":32823,"listening":true}. Cinco segundos después: {"processAlive":true,"listener":true}.
 
 28/09/2026 — S4.15: Chrome local 1440/390/320 px: documentWidth=viewport, errors=[]. A 390 px: sectionBottom=849.5, messageBottom=623, Bella’s=[691,755], CATERING=[755,795]. A 320 px: sectionBottom=849.9375, messageBottom=583, Bella’s=[699,758], CATERING=[758,795]. Capturas `.playwright/s4-15-way-*.png`.
+
+28/09/2026 — S4.16: FFmpeg/ffprobe: `la-mesa-1.mp4` 909153 bytes/9.750 s y `la-mesa-2.mp4` 2070834 bytes/11.167 s, H.264 1280×720 24 fps, sin audio. Chrome local a 1440/390/320 px: ambos videos readyState=4, videoVisible=1, videoPaused=false, documentWidth=viewport, errors=[]. Salida 320 px: primer panel media y=-58.8713→55.9643, contenido y=37.3404→-35.4965; segundo igual. Reducido: {"videoDisplay":"none","videoPaused":true,"photoLoaded":1440,"mediaTransform":"none","contentTransform":"none"}.
