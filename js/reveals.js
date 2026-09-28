@@ -29,5 +29,18 @@
     reveal(".process__step", 0.08);
     reveal(".faq__visual, .bella-way__message");
     reveal(".bella-way__word, .site-footer__wordmark");
+
+    gsap.fromTo(".services__intro", { x: 70, opacity: 0.65 }, {
+      x: 0,
+      opacity: 1,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".services",
+        start: "top 92%",
+        end: "top 45%",
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    });
   });
 })();

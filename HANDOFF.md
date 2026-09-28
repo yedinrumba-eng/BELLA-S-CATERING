@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.16; próximo: S4.17 (relevo de platos y entradas horizontales)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.17; próximo: S4.18 (entradas horizontales entre secciones)
 
 ## Estado
+
+S4.17: el relevo de siete platos usa transiciones más largas y suaves; el título entra/sale lateralmente y el último plato permanece centrado antes y después de liberar el pin. Servicios entra de lado siguiendo el scroll. Se conserva `scrub:true` sin retraso para no repetir el bug de D22. Chrome local a 1440/390/320 px: documentWidth=viewport, errors=[]. Salida a 320 px: progreso 0.94→1.22, último plato opacity=1 y centerOffset=0; entrada de Servicios x=70→0 tras salir del pin. Reducido: {"triggers":0,"visiblePlates":3,"servicesTransform":"none"}. Capturas `.playwright/s4-17-scene-*.png`. No hubo push.
 
 S4.16: dos videos entregados por Yedin sustituyen las fotografías como fondo visual de La mesa; las fotos siguen como respaldo. FFmpeg local redujo los archivos de 21.809.571/29.619.859 bytes a 909.153/2.070.834 bytes (H.264, 1280×720, 24 fps, sin audio ni metadatos personales). Chrome local con archivos a 1440/390/320 px: documentWidth=viewport, ambos videos readyState=4, videoVisible=1, videoPaused=false, errors=[]. Scroll real a 320 px: primer panel media y=-58.8713→55.9643 y contenido y=37.3404→-35.4965; segundo panel igual. Movimiento reducido: {"videoDisplay":"none","videoPaused":true,"photoLoaded":1440,"mediaTransform":"none","contentTransform":"none"}. Capturas `.playwright/s4-16-panel-*.png`. No hubo push.
 

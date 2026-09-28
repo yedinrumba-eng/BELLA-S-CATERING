@@ -7,6 +7,7 @@
   gsap.registerPlugin(ScrollTrigger);
 
   const stage = scene.querySelector(".food-scene__stage");
+  const heading = scene.querySelector(".food-scene__heading");
   const plates = Array.from(scene.querySelectorAll("[data-plate]"));
   const fragments = Array.from(scene.querySelectorAll(".food-scene__fragment"));
   const motion = gsap.matchMedia();
@@ -53,6 +54,7 @@
     });
 
     timeline
+      .fromTo(heading, { x: () => context.conditions.compact ? -28 : -75, opacity: 0.65 }, { x: 0, opacity: 1, duration: 1.1, ease: "power2.out" }, 0)
       .to(plates[0], { ...side(-1), duration: 0.95, ease: "power3.out" }, 0)
       .to(plates[1], { ...center, duration: 1.1, ease: "power3.out" }, 0)
       .to(plates[2], { ...side(1), duration: 1, ease: "power3.out" }, 0);
@@ -62,17 +64,17 @@
       [-145, 65, -100], [32, 122, 50], [-18, -142, -25],
     ];
     const firstSwitch = 1.4;
-    const switchGap = 1.75;
+    const switchGap = 1.65;
 
     for (let step = 0; step < plates.length - 3; step += 1) {
       const at = firstSwitch + step * switchGap;
       timeline
         .set(plates[step + 3], { zIndex: 3 }, at - 0.02)
         .set(plates[step + 2], { zIndex: 2 }, at - 0.02)
-        .to(plates[step], { ...far(-1), duration: 1.2 }, at)
-        .to(plates[step + 1], { ...side(-1), duration: 1.2 }, at)
-        .to(plates[step + 2], { ...center, duration: 1.2 }, at)
-        .to(plates[step + 3], { ...side(1), duration: 1.2 }, at);
+        .to(plates[step], { ...far(-1), duration: 1.35, ease: "sine.inOut" }, at)
+        .to(plates[step + 1], { ...side(-1), duration: 1.35, ease: "sine.inOut" }, at)
+        .to(plates[step + 2], { ...center, duration: 1.35, ease: "sine.inOut" }, at)
+        .to(plates[step + 3], { ...side(1), duration: 1.35, ease: "sine.inOut" }, at);
 
       fragments.forEach((fragment, index) => {
         const [x, y, rotation] = scatter[index];
@@ -93,7 +95,8 @@
       .to(plates[last - 2], { ...far(-1), duration: 1.2 }, finaleAt)
       .to(plates[last - 1], { ...far(-1), duration: 1.2 }, finaleAt)
       .to(plates[last], { ...center, duration: 1.2 }, finaleAt)
-      .to({}, { duration: 0.9 }, finaleAt + 1.2);
+      .to(heading, { x: () => context.conditions.compact ? -28 : -75, opacity: 0.7, duration: 0.8 }, finaleAt + 0.85)
+      .to({}, { duration: 1.5 }, finaleAt + 1.2);
 
     return () => scene.classList.remove("is-motion");
   });
