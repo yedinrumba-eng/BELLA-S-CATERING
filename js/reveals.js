@@ -26,8 +26,7 @@
     };
 
     reveal(".quote__intro");
-    reveal(".bella-way__message");
-    reveal(".bella-way__word, .site-footer__wordmark");
+    reveal(".site-footer__wordmark");
 
     const horizontal = (selector, direction) => {
       document.querySelectorAll(selector).forEach((element, index) => {
@@ -60,8 +59,8 @@
       },
     });
 
-    horizontal(".biography__visual, .gallery__intro, .signature__copy, .process__intro, .faq__intro, .reactions__intro", -1);
-    horizontal(".biography__copy, .signature__showcase, .signature__aside, .process__steps, .faq__visual, .reactions__grid", 1);
+    horizontal(".gallery__intro, .signature__copy, .faq__intro", -1);
+    horizontal(".signature__showcase, .signature__aside, .faq__visual", 1);
     horizontal(".gallery__group-head", (index) => index % 2 === 0 ? 1 : -1);
   });
 })();

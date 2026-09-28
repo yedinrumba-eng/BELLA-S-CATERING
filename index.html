@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/signature.css" />
     <link rel="stylesheet" href="css/bella-way.css" />
     <link rel="stylesheet" href="css/parallax.css" />
+    <link rel="stylesheet" href="css/section-transitions.css" />
     <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
@@ -146,7 +147,8 @@
           <p class="parallax-panel__note">Escena conceptual · Cada propuesta se define con Jenny.</p>
         </div>
       </section>
-      <section class="biography" id="chef" aria-labelledby="biography-title">
+      <div class="section-stage section-stage--biography" id="chef" data-section-motion="left">
+      <section class="biography" aria-labelledby="biography-title">
         <div class="biography__visual">
           <img src="ASSETS/images/jenny-portrait.webp" alt="Representación editorial de la chef Jenny Pereyra en una cocina profesional" width="1500" height="1500" loading="lazy" />
           <div class="biography__stamp" aria-hidden="true"><span>Jenny<br />Pereyra</span><small>Chef &amp; fundadora</small></div>
@@ -160,6 +162,7 @@
           <a class="biography__link" href="https://wa.me/18494530297?text=Hola%2C%20quiero%20hablar%20con%20Jenny%20sobre%20un%20evento." target="_blank" rel="noopener noreferrer">Hablemos de tu celebración ↗</a>
         </div>
       </section>
+      </div>
       <section class="gallery" id="galeria" aria-labelledby="gallery-title">
         <div class="gallery__intro">
           <div><p class="gallery__kicker">Inspiración gastronómica · 05</p><h2 id="gallery-title">Una mesa<br /><em>con carácter.</em></h2></div>
@@ -221,7 +224,8 @@
         </div>
         <p class="signature__note">Imágenes conceptuales. El menú se define para cada ocasión.</p>
       </section>
-      <section class="process" id="proceso" aria-labelledby="process-title">
+      <div class="section-stage section-stage--process" id="proceso" data-section-motion="up">
+      <section class="process" aria-labelledby="process-title">
         <div class="process__intro">
           <div>
             <p class="process__eyebrow">Cómo lo hacemos · 06</p>
@@ -236,6 +240,7 @@
           <article class="process__step" tabindex="0"><span>04</span><h3>Lo llevamos a la mesa</h3><p>Coordinamos la experiencia acordada para que disfrutes la ocasión.</p></article>
         </div>
       </section>
+      </div>
       <section class="parallax-panel parallax-panel--detail" aria-labelledby="detail-title">
         <div class="parallax-panel__media" aria-hidden="true">
           <img class="parallax-panel__image" src="ASSETS/images/gallery-steak-lasagna.webp" alt="" width="1440" height="1440" loading="lazy" />
@@ -266,7 +271,8 @@
           <details><summary><span class="faq__number" aria-hidden="true">06</span><span class="faq__question">¿Cómo pido una cotización?</span><span class="faq__mark" aria-hidden="true">+</span></summary><p>Completa el formulario de esta página. Preparará un mensaje de WhatsApp para que lo revises y decidas si quieres enviarlo.</p></details>
         </div>
       </section>
-      <section class="bella-way" id="manera" aria-labelledby="bella-way-title">
+      <div class="section-stage section-stage--bella-way" id="manera" data-section-motion="right">
+      <section class="bella-way" aria-labelledby="bella-way-title">
         <img class="bella-way__photo" src="ASSETS/images/jenny-plating.webp" alt="" width="1280" height="1440" loading="lazy" />
         <div class="bella-way__frame">
           <p class="bella-way__eyebrow">La manera de Bella’s · 08</p>
@@ -279,7 +285,9 @@
         </div>
         <strong class="bella-way__word" aria-hidden="true"><span>Bella’s</span><span>CATERING</span></strong>
       </section>
-      <section class="reactions" id="reacciones" aria-labelledby="reactions-title">
+      </div>
+      <div class="section-stage section-stage--reactions" id="reacciones" data-section-motion="up">
+      <section class="reactions" aria-labelledby="reactions-title">
         <div class="reactions__intro">
           <div>
             <p class="reactions__eyebrow">Lo que dicen nuestros clientes · 09</p>
@@ -298,6 +306,7 @@
         </div>
         <p class="reactions__note">Testimonios de clientes que contrataron a Jenny para sus eventos.</p>
       </section>
+      </div>
       <section class="quote" id="cotizar" aria-labelledby="quote-title">
         <div class="quote__intro">
           <p class="quote__eyebrow">Hablemos de tu evento · 10</p>
@@ -395,6 +404,7 @@
     <script src="js/vendor/ScrollTrigger.min.js"></script>
     <script src="js/motion.js"></script>
     <script src="js/reveals.js"></script>
+    <script src="js/section-transitions.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/services.js"></script>
     <script src="js/signature.js"></script>

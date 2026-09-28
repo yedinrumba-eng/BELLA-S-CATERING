@@ -1,12 +1,14 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.23; próximo: S4.24 (transiciones horizontales de secciones completas)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.24; próximo: S3.4 cuando exista dominio y Yedin pida publicar
 
 ## Estado
 
+S4.24: cuatro secciones completas entran con ScrollTrigger local: Biografía izquierda, Proceso arriba, La manera derecha y Testimonios arriba. Los ID están en los marcos fijos para que las anclas no salten a paneles transformados. Se eliminó el desborde de 3 px de Servicios al iniciar su revelado. Prueba Chrome local `.playwright/s4-24-sections.cjs` a 1440/390/320 px: `{"width":320,"motions":[{"name":"biography","direction":"left","offsets":[-320,-40,0]},{"name":"process","direction":"up","offsets":[220,28,0]},{"name":"bella-way","direction":"right","offsets":[320,40,0]},{"name":"reactions","direction":"up","offsets":[220,28,0]}],"initialWidth":320,"documentWidth":320,"errors":[]}`. Anclas con desplazamiento suave real: `{"anchors":[{"id":"chef","hash":"#chef","top":0,"menuOpen":false},{"id":"proceso","hash":"#proceso","top":0,"menuOpen":false},{"id":"manera","hash":"#manera","top":0,"menuOpen":false},{"id":"reacciones","hash":"#reacciones","top":0,"menuOpen":false}]}`. Movimiento reducido: `{"reduced":{"stages":["none","none","none","none"],"triggers":0,"documentWidth":390}}`. Vista local HTTP: `{"Status":200,"Title":"Bella’s Catering — Chef Jenny Pereyra","Bytes":35908,"HasTransitions":true}`. No hubo push.
+
 S4.23: el crédito muestra «Powered by Korvex Dev» como texto y el logo más pequeño. Todo el bloque enlaza a `https://korvexdev.cc/` sin duplicar el nombre para lectores de pantalla. Chrome local a 1440/390/320 px: loaded=true, creditCenterOffset=0, href correcto, logoWidth=102/92 px, documentWidth=viewport, errors=[]. Capturas `.playwright/s4-21-credit-*.png` actualizadas. No hubo push.
 
-S4.22: la cápsula del nav usa verde profundo `#26362d` con letras crema; botón de cotización crema y menú móvil claro. Chrome local a 1440/390/320 px: headerBackground=`rgb(38, 54, 45)`, headerColor=`rgb(255, 250, 240)`, sello cargado, menú móvil abierto con texto oscuro y Escape lo cierra, errors=[]. Capturas `.playwright/s4-22-nav-*.png`. La medición al cargar en móvil detectó `documentWidth=viewport+3` atribuido a `main`, no al nav; queda por diagnosticar en el pulido de movimiento. No hubo push.
+S4.22: la cápsula del nav usa verde profundo `#26362d` con letras crema; botón de cotización crema y menú móvil claro. Chrome local a 1440/390/320 px: headerBackground=`rgb(38, 54, 45)`, headerColor=`rgb(255, 250, 240)`, sello cargado, menú móvil abierto con texto oscuro y Escape lo cierra, errors=[]. Capturas `.playwright/s4-22-nav-*.png`. El desborde inicial de 3 px observado entonces quedó corregido y medido en S4.24. No hubo push.
 
 S4.21: el crédito «Powered by» y el logo Korvex Dev suministrado por Yedin aparecen centrados debajo de la línea final del footer. PNG RGBA original de 1536×1024, sin EXIF ni texto incrustado. Chrome local a 1440/390/320 px: imagen loaded=true, creditCenterOffset=0, documentWidth=viewport, errors=[]. Capturas `.playwright/s4-21-credit-*.png`. No hubo push.
 
@@ -212,7 +214,7 @@ Dominio, registro final del negocio y validación con Jenny de platos y preparac
 
 ## Lecciones ya pagadas
 
-No hay bugs de implementación aún. En preparación, algunas imágenes HEIC no abrían en el visor habitual; se pudieron convertir localmente para revisar todas las referencias de Jenny.
+Un `id` en un panel que entra con `translateY` provoca que el navegador calcule el ancla en la posición transformada: al terminar el movimiento, el título puede quedar por encima de la pantalla. El destino debe ir en el marco fijo. Un revelado lateral de Servicios salía 3 px del ancho móvil; `overflow-x: clip` en esa sección lo corrigió sin recortar el contenido. En preparación, algunas imágenes HEIC no abrían en el visor habitual; se pudieron convertir localmente para revisar las referencias de Jenny.
 
 ## Evidencia de S4.3
 

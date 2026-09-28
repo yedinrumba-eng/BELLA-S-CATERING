@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.10, S3.1–S3.3 y S4.1–S4.19 cerrados. S3.4 publicación pendiente del dominio y del pedido expreso de push. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.10, S3.1–S3.3 y S4.1–S4.24 cerrados. S3.4 publicación pendiente del dominio y del pedido expreso de push. No publicar ni hacer push sin pedido expreso.
 
 ## Convenciones
 
@@ -75,6 +75,7 @@ S1.1–S2.10, S3.1–S3.3 y S4.1–S4.19 cerrados. S3.4 publicación pendiente d
 - **D38** — Las tres tarjetas superiores del footer muestran Instagram, WhatsApp y Facebook. Solo los dos primeros tienen enlace, porque sus datos comerciales están confirmados; Facebook conserva el icono sin destino hasta recibir el enlace oficial. Los degradados de Instagram y WhatsApp aparecen al hover o foco y no ocultan el texto.
 - **D39** — El crédito de Korvex Dev queda centrado bajo la línea final del footer con el logo original proporcionado por Yedin, porque es una atribución aprobada. El PNG tiene transparencia y no contiene metadatos personales; se presenta sobre fondo oscuro para conservar contraste. Yedin pidió luego el nombre escrito y el logo más pequeño: ambos comparten un enlace a su sitio oficial `https://korvexdev.cc/`.
 - **D40** — La cápsula de navegación usa el verde profundo de Servicios y texto crema; el menú desplegable móvil conserva papel claro y texto oscuro para mantener contraste y orientación. El sello original queda intacto sobre su círculo claro.
+- **D41** — Biografía y La manera de Bella’s entran como secciones completas desde lados opuestos; Proceso y Testimonios entran desde abajo. Cuatro ScrollTrigger locales ligados al scroll crean el ritmo 2 horizontal/2 vertical pedido por Yedin. Los destinos de las anclas viven en los marcos fijos, porque transformar el elemento con el ID cortaba el título al navegar. El recorrido vertical se limita a 220 px para no dejar una banda vacía grande; movimiento reducido deja las cuatro secciones estáticas. Servicios recorta su entrada lateral para evitar 3 px de desborde móvil.
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
