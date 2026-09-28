@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.20; próximo: S4.21 (crédito Korvex)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.21; próximo: S4.22 (nav verde)
 
 ## Estado
+
+S4.21: el crédito «Powered by» y el logo Korvex Dev suministrado por Yedin aparecen centrados debajo de la línea final del footer. PNG RGBA original de 1536×1024, sin EXIF ni texto incrustado. Chrome local a 1440/390/320 px: imagen loaded=true, creditCenterOffset=0, documentWidth=viewport, errors=[]. Capturas `.playwright/s4-21-credit-*.png`. No hubo push.
 
 S4.20: tres tarjetas de redes sustituyen la fila informativa del footer. Instagram @Bellascatering___ y WhatsApp (849) 453-0297 tienen enlaces y degradados al hover/foco. Facebook muestra su icono sin enlace mientras Yedin obtiene la dirección oficial. Chrome local a 1440/390/320 px: documentWidth=viewport, 3 tarjetas visibles, iconos 66/51 px, opacidad del degradado=1 en ambos hover, errors=[]. En móvil las tarjetas terminan en x=367 de 390 o x=297 de 320; captura `.playwright/s4-20-social-*.png`. No hubo push.
 

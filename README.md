@@ -18,7 +18,7 @@ Abre `http://localhost:8000`. HTML, CSS, JavaScript, fuentes, fotografías optim
 
 - `index.html`: contenido y navegación.
 - `css/` y `js/`: diseño e interacciones.
-- `ASSETS/brand/`: sello vectorial.
+- `ASSETS/brand/`: sello vectorial de Bella’s y logo de Korvex Dev para el crédito del footer.
 - `ASSETS/fonts/`: fuentes locales y licencias.
 - `ASSETS/images/`: imágenes WebP optimizadas.
 - `ASSETS/videos/`: videos MP4 comprimidos para las escenas de La mesa.
