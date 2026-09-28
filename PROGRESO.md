@@ -45,6 +45,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.12** — dos interludios fotográficos con parallax local y fallback estático; Chrome 1440/390/320 px, modo reducido y sin desbordamiento.
 - [x] **S4.13** — revisión integral local: Chrome 1440/760/390/320 px, formulario, movimiento reducido, recursos y privacidad.
 - [x] **S4.14** — vista local restaurada en 127.0.0.1:8765; HTTP 200 y proceso aún activo tras cerrar la terminal.
+- [x] **S4.15** — CATERING regresa a gran formato junto a Bella’s en la escena de Jenny; Chrome local 1440/390/320 px, sin corte ni desbordamiento.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -117,3 +118,5 @@ Astro/CMS, backend y pagos para v1: añaden complejidad sin necesidad aprobada. 
 27/09/2026 — S4.13: Chrome 1440/760/390/320 px: documentWidth=viewport, heroCaps=uppercase, sectionOrder=true, parallaxCount=2, testimonials=7, dark=[1,4,7], badAnchors=[], missingAlt=0. Formulario: {"formOpened":true,"safeHost":true,"hasIdea":true}. Movimiento reducido/red: {"reduced":true,"triggers":0,"errors":[],"external":[]}. Auditoría offline: {"resourceCount":67,"missingResources":[],"trackedCount":61,"privateTracked":[],"secretPatternFiles":[]}; 21 WebP sin metadatos.
 
 27/09/2026 — S4.14: sin listener en 8765; tras iniciar el servidor local, {"status":200,"title":"Bella’s Catering — Chef Jenny Pereyra","bytes":32823,"listening":true}. Cinco segundos después: {"processAlive":true,"listener":true}.
+
+28/09/2026 — S4.15: Chrome local 1440/390/320 px: documentWidth=viewport, errors=[]. A 390 px: sectionBottom=849.5, messageBottom=623, Bella’s=[691,755], CATERING=[755,795]. A 320 px: sectionBottom=849.9375, messageBottom=583, Bella’s=[699,758], CATERING=[758,795]. Capturas `.playwright/s4-15-way-*.png`.

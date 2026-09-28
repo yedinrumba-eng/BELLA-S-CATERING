@@ -1,6 +1,6 @@
 .bella-way {
   position: relative;
-  min-height: min(94svh, 850px);
+  min-height: max(94svh, 1080px);
   overflow: hidden;
   padding: 62px clamp(24px, 6vw, 105px);
   color: var(--cream);
@@ -17,9 +17,11 @@
 .bella-way__message a { display: inline-flex; justify-content: space-between; align-items: center; gap: 30px; min-height: 51px; margin-top: 28px; border-bottom: 1px solid #f3e5c7; font-size: 17px; font-weight: 600; }
 .bella-way__message a:hover { color: #e8d29f; }
 .bella-way__message a span { font-size: 23px; font-weight: 400; }
-.bella-way__word { position: absolute; z-index: 1; right: 5vw; bottom: -14px; left: 4vw; font-family: "Cormorant", Georgia, serif; font-size: clamp(110px, 24vw, 390px); font-weight: 400; letter-spacing: -.085em; line-height: .69; white-space: nowrap; }
+.bella-way__word { position: absolute; z-index: 1; right: 4vw; bottom: 60px; left: 4vw; display: grid; font-family: "Cormorant", Georgia, serif; font-weight: 400; letter-spacing: -.085em; line-height: .68; white-space: nowrap; }
+.bella-way__word span:first-child { font-size: clamp(110px, 24vw, 390px); }
+.bella-way__word span:last-child { justify-self: end; font-size: clamp(92px, 17.5vw, 280px); letter-spacing: -.075em; }
 @media (max-width: 760px) {
-  .bella-way { min-height: 720px; padding: 35px 23px; }
+  .bella-way { min-height: 800px; padding: 35px 23px; }
   .bella-way__photo { object-position: 49% 45%; }
   .bella-way::after { background: linear-gradient(0deg, #0e1512e6, #0e15128c 55%, #0e1512b8); }
   .bella-way__frame { display: block; }
@@ -29,7 +31,9 @@
   .bella-way__message h2 { margin: 8px 0 14px; font-size: 53px; }
   .bella-way__message p { font-size: 17px; }
   .bella-way__message a { margin-top: 19px; font-size: 15px; }
-  .bella-way__word { right: 2vw; bottom: 12px; left: 4vw; font-size: clamp(86px, 24vw, 170px); }
+  .bella-way__word { right: 4vw; bottom: 55px; left: 4vw; }
+  .bella-way__word span:first-child { font-size: clamp(86px, 24vw, 170px); }
+  .bella-way__word span:last-child { font-size: clamp(55px, 15vw, 108px); }
 }
 @media (max-width: 360px) {
   .bella-way__message { margin-top: 195px; }

@@ -1,8 +1,10 @@
 # HANDOFF — Bella’s Catering
 
-Actualizado: 27/09/2026 · Rol: editor · Slice cerrado: S4.14; próximo: S3.4 (publicación cuando haya dominio y orden de push)
+Actualizado: 28/09/2026 · Rol: editor · Slice cerrado: S4.15; próximo: S4.16 (videos de La mesa)
 
 ## Estado
+
+S4.15: la escena de Jenny vuelve a mostrar Bella’s y CATERING en dos líneas grandes. Chrome local con archivos a 1440/390/320 px: documentWidth=viewport y errores=[]. Salida 390 px: {"section":{"height":800,"bottom":849.5},"messageBottom":623,"words":[{"text":"Bella’s","top":691,"bottom":755},{"text":"CATERING","top":755,"bottom":795}]}. Salida 320 px: {"section":{"height":800,"bottom":849.9375},"messageBottom":583,"words":[{"text":"Bella’s","top":699,"bottom":758},{"text":"CATERING","top":758,"bottom":795}]}. Ambas palabras quedan completas dentro de la escena y debajo del mensaje. Capturas locales en `.playwright/s4-15-way-*.png`. No hubo push.
 
 S4.14: la vista local no abría porque el servidor de desarrollo ya no escuchaba en 127.0.0.1:8765; se volvió a iniciar como proceso local independiente. Salida HTTP real: {"status":200,"title":"Bella’s Catering — Chef Jenny Pereyra","bytes":32823,"listening":true}. Cinco segundos después: {"processAlive":true,"listener":true}. Este servidor es temporal de vista previa, no un despliegue público.
 
