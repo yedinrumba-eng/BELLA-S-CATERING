@@ -27,7 +27,8 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S3.1** — seguridad y privacidad: CSS local, cabeceras Cloudflare, .env.example y escaneo de archivos publicables; Chrome 1440/390 sin peticiones externas, errores ni desbordamiento.
 - [x] **S3.2** — teclado, movimiento reducido, foco, imágenes y carga inicial comprobados en Chrome a 1440/390/320 px.
 - [x] **S3.3** — 404.html adaptable, robots con bloqueo temporal, rutas locales y noindex comprobados; dominio y HTTP reales pendientes.
-- [ ] **S3.4** — con dominio definitivo y orden de publicación: canónica, metadatos sociales absolutos, sitemap, abrir indexación, Lighthouse, push y comprobación del despliegue.
+- [x] **S3.4a** — push autorizado a GitHub y vista temporal en Cloudflare Pages. Producción `https://bellas-catering.pages.dev/`: portada, robots, CSS y video responden 200; ruta inexistente responde 404; CSP y meta noindex comprobados.
+- [ ] **S3.4b** — con dominio definitivo: URL canónica, metadatos sociales absolutos, sitemap, abrir indexación y Lighthouse público. Confirmar los despliegues automáticos tras próximos pushes.
 
 ## Fase 4 — Pulido visual solicitado
 
@@ -58,6 +59,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.25** — relevo de pantalla completa perceptible, clics y anclas corregidos; Playwright 1440/390/320 px y medición local de carga/scroll con CPU 4×.
 ## Bitácora
 
+29/09/2026 — S3.4a: `main` y `preview` enviados a GitHub tras permiso expreso. Proyecto Pages conectado al repositorio; primer despliegue iniciado por API y completado con `deploy: success`. HTTP público: inicio 200, `robots.txt` 200 con `Disallow: /`, CSS 200, video MP4 200, ruta inexistente 404; CSP, `X-Frame-Options: DENY`, `nosniff` y meta `noindex, nofollow` presentes en inicio. El dominio y Lighthouse siguen pendientes.
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
 26/09/2026 — S1.2: portada renderizada a 1440 y 390 px, fotos cargadas, sin scroll horizontal; menú abre con Enter.
 26/09/2026 — S1.3: tres platos WebP renderizados; animación GSAP cambia y=-580 a y=0; en movimiento reducido el plato queda estático y visible.

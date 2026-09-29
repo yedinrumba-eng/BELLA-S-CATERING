@@ -4,7 +4,7 @@ Lee `HANDOFF.md` antes de tocar código. Las respuestas de Jenny están en `PRD.
 
 ## Alcance actual
 
-S1.1–S2.10, S3.1–S3.3 y S4.1–S4.25 cerrados. S3.4 publicación pendiente del dominio y del pedido expreso de push. No publicar ni hacer push sin pedido expreso.
+S1.1–S2.10, S3.1–S3.3, S3.4a y S4.1–S4.25 cerrados. S3.4b espera el dominio definitivo y la apertura de indexación. Yedin autorizó el push y la vista temporal en Cloudflare Pages el 29/09/2026; no hacer futuros pushes sin pedido expreso.
 
 ## Convenciones
 
@@ -77,6 +77,7 @@ S1.1–S2.10, S3.1–S3.3 y S4.1–S4.25 cerrados. S3.4 publicación pendiente d
 - **D40** — La cápsula de navegación usa el verde profundo de Servicios y texto crema; el menú desplegable móvil conserva papel claro y texto oscuro para mantener contraste y orientación. El sello original queda intacto sobre su círculo claro.
 - **D41** — Biografía y La manera de Bella’s entran como secciones completas desde lados opuestos; Proceso y Testimonios entran desde abajo. Cuatro ScrollTrigger locales ligados al scroll crean el ritmo 2 horizontal/2 vertical pedido por Yedin. Los destinos de las anclas viven en los marcos fijos, porque transformar el elemento con el ID cortaba el título al navegar. El recorrido vertical se limita a 220 px para no dejar una banda vacía grande; movimiento reducido deja las cuatro secciones estáticas. Servicios recorta su entrada lateral para evitar 3 px de desborde móvil.
 - **D42** — D41 era demasiado rápido y solo revelaba una franja: Playwright vio una rueda de 600 px completar casi todo el efecto en 80 ms. La sección saliente queda fija mientras entra la siguiente; las horizontales compensan el avance vertical y barren todo el alto del viewport, y las verticales suben sobre el fondo anterior. El recorrido ocupa una pantalla con scrub breve y lineal para que se perciba. El marcador de La manera queda fuera del panel que luego se fija, porque el ancla sobre un elemento fijado se desalineaba tras abrir FAQ. Los acordeones recalculan ScrollTrigger al cambiar de altura; la capa transparente deja pasar clics a la FAQ. Movimiento reducido conserva las secciones estáticas.
+- **D43** — La vista temporal se publicó en `bellas-catering.pages.dev` mediante un proyecto Pages conectado a GitHub, porque Yedin pidió compartir el sitio antes de comprar el dominio. Se mantiene `noindex, nofollow` y `robots.txt` bloqueado hasta S3.4b para no indexar la URL temporal. El primer despliegue se inició mediante la API de Pages después del push autorizado; falta confirmar que los siguientes pushes disparen el webhook automáticamente.
 ## Verificación
 
 Ejecutar cada slice y pegar la salida real de su comprobación en `HANDOFF.md` y `PROGRESO.md` antes de marcarlo cerrado. Comprobar escritorio y móvil con navegador real. `git status` antes de cada commit; nunca push automático.
