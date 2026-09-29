@@ -28,7 +28,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S3.2** — teclado, movimiento reducido, foco, imágenes y carga inicial comprobados en Chrome a 1440/390/320 px.
 - [x] **S3.3** — 404.html adaptable, robots con bloqueo temporal, rutas locales y noindex comprobados; dominio y HTTP reales pendientes.
 - [x] **S3.4a** — push autorizado a GitHub y vista temporal en Cloudflare Pages. Producción `https://bellas-catering.pages.dev/`: portada, robots, CSS y video responden 200; ruta inexistente responde 404; CSP y meta noindex comprobados.
-- [ ] **S3.4b** — con dominio definitivo: URL canónica, metadatos sociales absolutos, sitemap, abrir indexación y Lighthouse público. Confirmar los despliegues automáticos tras próximos pushes.
+- [ ] **S3.4b** — con dominio definitivo: URL canónica, metadatos sociales absolutos, sitemap, abrir indexación y Lighthouse público. Revisar el acceso del GitHub App de Cloudflare: los pushes iniciales no dispararon builds automáticos.
 
 ## Fase 4 — Pulido visual solicitado
 
@@ -57,9 +57,12 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.23** — crédito «Powered by Korvex Dev» en texto junto al logo pequeño, ambos en un enlace; Chrome 1440/390/320 px, sin desbordamiento al verlo.
 - [x] **S4.24** — dos entradas horizontales y dos verticales de secciones completas con ScrollTrigger; Chrome 1440/390/320 px, anclas, menú, desplazamiento inverso y movimiento reducido comprobados.
 - [x] **S4.25** — relevo de pantalla completa perceptible, clics y anclas corregidos; Playwright 1440/390/320 px y medición local de carga/scroll con CPU 4×.
+- [x] **S4.26** — biografía y La manera quedan visibles durante 1,1–1,35 pantallas de scroll tras entrar; transición vertical a testimonios conserva el solape. Playwright 1440/390/320 px, anclas y movimiento reducido comprobados.
 ## Bitácora
 
 29/09/2026 — S3.4a: `main` y `preview` enviados a GitHub tras permiso expreso. Proyecto Pages conectado al repositorio; primer despliegue iniciado por API y completado con `deploy: success`. HTTP público: inicio 200, `robots.txt` 200 con `Disallow: /`, CSS 200, video MP4 200, ruta inexistente 404; CSP, `X-Frame-Options: DENY`, `nosniff` y meta `noindex, nofollow` presentes en inicio. El dominio y Lighthouse siguen pendientes.
+
+29/09/2026 — S4.26: Playwright `s4-26-holds.cjs` a 1440/390/320 px: dos pausas de 1215/990/990 px respectivamente; en la biografía top=-63/-629/-741 al 7–8 % y al 65 % de pausa, y en La manera top=-180/0/0 en los mismos puntos. Todos los anchos coincidieron con el viewport, `errors=[]`; movimiento reducido: `{"holds":0,"width":390}`. `s4-25-overlap.cjs` confirmó las cuatro entradas: a 320 px Biografía -320/-160/0, Proceso 112/56/0, La manera 320/160/0, Testimonios -112/-56/0. En mitad del último relevo, `panelTop=344` y `previousBottom=400`, así que se solapan sin hueco. `s4-25-interactions.cjs` comprobó FAQ y anclas a 1440/390/320 px, con `errors=[]`. La verificación fue local; el despliegue público se comprueba por separado.
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
 26/09/2026 — S1.2: portada renderizada a 1440 y 390 px, fotos cargadas, sin scroll horizontal; menú abre con Enter.
 26/09/2026 — S1.3: tres platos WebP renderizados; animación GSAP cambia y=-580 a y=0; en movimiento reducido el plato queda estático y visible.

@@ -10,6 +10,9 @@
     document.querySelectorAll("[data-section-motion]").forEach((stage) => {
       const panel = stage.firstElementChild;
       let previous = stage.previousElementSibling;
+      if (previous?.classList.contains("pin-spacer")) {
+        previous = previous.querySelector("[data-section-hold]") || previous;
+      }
       if (previous?.classList.contains("section-stage-anchor")) {
         previous = previous.previousElementSibling;
       }
@@ -17,10 +20,10 @@
       const isHorizontal = direction === "left" || direction === "right";
       const from = isHorizontal
         ? { xPercent: direction === "left" ? -100 : 100, y: () => -window.innerHeight }
-        : { y: () => Math.min(window.innerHeight * 0.14, 125) };
+        : { y: () => Math.min(window.innerHeight * 0.14, 125) * (previous?.hasAttribute("data-section-hold") ? -1 : 1) };
       const to = isHorizontal ? { xPercent: 0, y: 0 } : { y: 0 };
 
-      if (previous) {
+      if (previous && !previous.hasAttribute("data-section-hold")) {
         ScrollTrigger.create({
           trigger: stage,
           start: "top bottom",
@@ -46,6 +49,18 @@
           invalidateOnRefresh: true,
         },
       });
+
+      if (stage.dataset.sectionHold) {
+        ScrollTrigger.create({
+          id: `section-hold-${stage.dataset.sectionHold}`,
+          trigger: stage,
+          start: () => stage.offsetHeight > window.innerHeight ? "bottom bottom" : "top top",
+          end: () => `+=${Math.round(window.innerHeight * (window.innerWidth <= 760 ? 1.1 : 1.35))}`,
+          pin: stage,
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+        });
+      }
     });
 
     const details = document.querySelectorAll(".service, .faq details");
