@@ -9,24 +9,55 @@
   motion.add("(prefers-reduced-motion: no-preference)", () => {
     document.querySelectorAll("[data-section-motion]").forEach((stage) => {
       const panel = stage.firstElementChild;
+      let previous = stage.previousElementSibling;
+      if (previous?.classList.contains("section-stage-anchor")) {
+        previous = previous.previousElementSibling;
+      }
       const direction = stage.dataset.sectionMotion;
       const isHorizontal = direction === "left" || direction === "right";
       const from = isHorizontal
-        ? { xPercent: direction === "left" ? -100 : 100 }
-        : { y: () => Math.min(window.innerHeight * 0.28, 220) };
-      const to = isHorizontal ? { xPercent: 0 } : { y: 0 };
+        ? { xPercent: direction === "left" ? -100 : 100, y: () => -window.innerHeight }
+        : { y: () => Math.min(window.innerHeight * 0.14, 125) };
+      const to = isHorizontal ? { xPercent: 0, y: 0 } : { y: 0 };
+
+      if (previous) {
+        ScrollTrigger.create({
+          trigger: stage,
+          start: "top bottom",
+          end: () => `+=${Math.round(window.innerHeight * 1.12)}`,
+          pin: previous,
+          pinSpacing: false,
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+        });
+        if (previous.matches("[data-section-motion]")) {
+          previous.parentElement.classList.add("section-stage-pin-spacer");
+        }
+      }
 
       gsap.fromTo(panel, from, {
         ...to,
-        ease: "power2.out",
+        ease: "none",
         scrollTrigger: {
           trigger: stage,
-          start: "top 95%",
-          end: "top 28%",
-          scrub: true,
+          start: "top bottom",
+          end: "top top",
+          scrub: 0.55,
           invalidateOnRefresh: true,
         },
       });
     });
+
+    const details = document.querySelectorAll(".service, .faq details");
+    let refreshFrame = 0;
+    const refreshAfterToggle = () => {
+      cancelAnimationFrame(refreshFrame);
+      refreshFrame = requestAnimationFrame(() => ScrollTrigger.refresh());
+    };
+    details.forEach((item) => item.addEventListener("toggle", refreshAfterToggle));
+    return () => {
+      cancelAnimationFrame(refreshFrame);
+      details.forEach((item) => item.removeEventListener("toggle", refreshAfterToggle));
+    };
   });
 })();

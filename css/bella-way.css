@@ -21,7 +21,7 @@
 .bella-way__word span:first-child { font-size: clamp(110px, 24vw, 390px); }
 .bella-way__word span:last-child { justify-self: end; font-size: clamp(92px, 17.5vw, 280px); letter-spacing: -.075em; }
 @media (max-width: 760px) {
-  .bella-way { min-height: 800px; padding: 35px 23px; }
+  .bella-way { min-height: max(800px, 100svh); padding: 35px 23px; }
   .bella-way__photo { object-position: 49% 45%; }
   .bella-way::after { background: linear-gradient(0deg, #0e1512e6, #0e15128c 55%, #0e1512b8); }
   .bella-way__frame { display: block; }

@@ -1,6 +1,5 @@
-.section-stage { position: relative; overflow: clip; }
-.section-stage > section { width: 100%; }
-.section-stage--biography { background: #111a17; }
-.section-stage--process { background: #1b241f; }
-.section-stage--bella-way { background: var(--paper); }
-.section-stage--reactions { background: var(--night); }
+#contenido { overflow-x: clip; }
+.section-stage-anchor { display: block; height: 0; pointer-events: none; }
+.section-stage-pin-spacer { pointer-events: none; }
+.section-stage { position: relative; z-index: 2; clip-path: inset(-100vh 0 0 0); pointer-events: none; }
+.section-stage > section { width: 100%; pointer-events: auto; }

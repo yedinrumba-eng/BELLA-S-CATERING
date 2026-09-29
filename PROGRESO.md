@@ -55,6 +55,7 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 - [x] **S4.22** — nav verde profundo y menú móvil legible; Chrome 1440/390/320 px, Escape cierra menú, sin errores de página. El desborde inicial de 3 px se corrigió en S4.24.
 - [x] **S4.23** — crédito «Powered by Korvex Dev» en texto junto al logo pequeño, ambos en un enlace; Chrome 1440/390/320 px, sin desbordamiento al verlo.
 - [x] **S4.24** — dos entradas horizontales y dos verticales de secciones completas con ScrollTrigger; Chrome 1440/390/320 px, anclas, menú, desplazamiento inverso y movimiento reducido comprobados.
+- [x] **S4.25** — relevo de pantalla completa perceptible, clics y anclas corregidos; Playwright 1440/390/320 px y medición local de carga/scroll con CPU 4×.
 ## Bitácora
 
 26/09/2026 — S1.1: sello SVG validado y renderizado; licencias de dos fuentes comprobadas; tres WebP generados y medidos.
@@ -96,15 +97,21 @@ Leyenda: `[x]` verificado · `[~]` en curso · `[ ]` pendiente · `[!]` bloquead
 
 28/09/2026 — S4.24: `s4-24-sections.cjs` comprobó el movimiento de secciones completas en Chrome. Salida real móvil: {"width":320,"motions":[{"name":"biography","direction":"left","offsets":[-320,-40,0]},{"name":"process","direction":"up","offsets":[220,28,0]},{"name":"bella-way","direction":"right","offsets":[320,40,0]},{"name":"reactions","direction":"up","offsets":[220,28,0]}],"initialWidth":320,"documentWidth":320,"errors":[]}. Anclas con scroll suave: {"anchors":[{"id":"chef","hash":"#chef","top":0,"menuOpen":false},{"id":"proceso","hash":"#proceso","top":0,"menuOpen":false},{"id":"manera","hash":"#manera","top":0,"menuOpen":false},{"id":"reacciones","hash":"#reacciones","top":0,"menuOpen":false}]}. Reducido: {"reduced":{"stages":["none","none","none","none"],"triggers":0,"documentWidth":390}}. Vista local HTTP 200.
 
+28/09/2026 — S4.25: Playwright a 1440/390/320 px comprobó cuatro relevos con sección anterior fija y sin desborde ni errores. Salida 320 px: {"width":320,"transitions":[{"name":"biography","direction":"left","before":-320,"middle":-160,"after":0,"panelTop":0,"previousBottom":800},{"name":"process","direction":"up","before":112,"middle":56,"after":0,"panelTop":456,"previousBottom":800},{"name":"bella-way","direction":"right","before":320,"middle":160,"after":0,"panelTop":0,"previousBottom":801},{"name":"reactions","direction":"up","before":112,"middle":56,"after":0,"panelTop":456,"previousBottom":800}],"errors":[]}. FAQ visible durante el barrido recibe clic y las anclas terminan bien tras expandirla: {"width":320,"faqHit":true,"faqOpened":true,"manner":{"hash":"#manera","top":0,"panelLeft":0},"reactions":{"hash":"#reacciones","top":-3},"documentWidth":320,"errors":[]}. Reducido: cuatro transforms="none" y triggers=0. Regresión de platos: último opacity=1/centerOffset=0 al liberar pin, errors=[]. HTTP 127.0.0.1:8765: {"Status":200,"Title":"Bella’s Catering — Chef Jenny Pereyra","HasSectionMotion":true}. Performance local Chrome CPU 4×: escritorio load=3578 ms, LCP=2468 ms, frame p95=17 ms; móvil load=3320 ms, LCP=704 ms, frame p95=33 ms; 24 triggers y 0 errores. Reducido: load=2301/1902 ms y 0 triggers. Son cifras de disco local, no Lighthouse ni red pública.
+
 ## Deuda técnica
 
 🟡 Antes de publicar: crear sitemap con el dominio definitivo, abrir indexación, ejecutar Lighthouse, comprobar estado 404 y cabeceras HTTP tras desplegar. Repetir el escaneo de archivos preparados antes del primer push.
+
+🟡 Rendimiento móvil: con CPU 4× el recorrido dio frame p95=33 ms y ocho tareas largas durante la carga. Causa: combinación de 24 ScrollTriggers, imágenes y video al avanzar; hoy se mitiga con carga diferida de imágenes/videos y cero triggers en movimiento reducido. Cura: medir en un teléfono real y perfilar las animaciones antes de añadir más; estimado 2–4 h.
 
 ## Lecciones ya pagadas
 
 La vista previa local dejó de cargar aunque el sitio no cambió: el servidor temporal había terminado y el puerto 8765 no tenía listener. Antes de tocar código, comprobar el puerto; arrancar el servidor como proceso local independiente y verificar HTTP 200 desde otra ejecución.
 
 Un ancla puesta en una sección transformada terminó cortando el título en móvil tras la animación. Pasar el ID al marco fijo hizo que el navegador llegara a la posición correcta. Servicios tenía 3 px de desborde temporal al entrar lateralmente; recortar el eje horizontal de esa sección lo eliminó.
+
+Las pruebas matemáticas de S4.24 mostraban offsets correctos, pero un scroll real completaba casi todo en 80 ms: medir solo el valor final no prueba que el visitante lo vea. El relevo necesita una sección saliente fija, un barrido de pantalla completa y prueba con rueda/captura. Una capa `pin-spacer` transparente interceptaba FAQ; se dejó pasar el clic. El ID de La manera dentro de un elemento que después se fija desalineaba el enlace desde el footer; un marcador anterior estable lo corrigió.
 
 
 Una prueba de resize marcó 390 px de ancho al pasar a 320 px mientras scrollTo seguía una transición suave. No era desbordamiento persistente: al asentarse daba 320 px. La prueba final usa scroll instantáneo antes de refrescar ScrollTrigger.
