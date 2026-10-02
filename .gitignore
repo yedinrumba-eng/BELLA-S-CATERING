@@ -3,6 +3,7 @@
 !.env.example
 node_modules/
 .playwright/
+.playwright-mcp/
 playwright-report/
 test-results/
 *.log
@@ -15,5 +16,6 @@ ASSETS/brand/*-preview.png
 # Private business notes and original identity references
 **/[Pp][Rr][Dd]*
 docs/*RESPUESTAS*
+docs/*.pdf
 *.heic
 *.HEIC
